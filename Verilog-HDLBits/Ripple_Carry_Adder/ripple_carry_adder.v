@@ -4,7 +4,7 @@ module top_module(
     output [99:0] cout,
     output [99:0] sum );
     
-    wire [100:0] carry;
+    wire [100:0] carry; //store all carrys
     
     assign carry[0] = cin;
     assign cout = carry[100:1];
