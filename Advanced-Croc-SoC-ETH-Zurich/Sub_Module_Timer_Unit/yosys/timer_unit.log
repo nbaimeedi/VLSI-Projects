@@ -1,0 +1,1504 @@
+[2025-06-07 03:41 UTC] using: sv_flist= '/fosic/designs/croc/croc.flist'
+[2025-06-07 03:41 UTC] using: top_design= 'timer_unit'
+[2025-06-07 03:41 UTC] using: out_dir= '/fosic/designs/croc/yosys/out'
+[2025-06-07 03:41 UTC] using: tmp_dir= '/fosic/designs/croc/yosys/tmp'
+[2025-06-07 03:41 UTC] using: rep_dir= '/fosic/designs/croc/yosys/reports'
+[2025-06-07 03:41 UTC] 0. Executing init_tech: load technology from Github PDK
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC]  /----------------------------------------------------------------------------\
+[2025-06-07 03:41 UTC]  |  yosys -- Yosys Open SYnthesis Suite                                       |
+[2025-06-07 03:41 UTC]  |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+[2025-06-07 03:41 UTC]  |  Distributed under an ISC-like license, type "license" to see terms        |
+[2025-06-07 03:41 UTC]  \----------------------------------------------------------------------------/
+[2025-06-07 03:41 UTC]  Yosys 0.51 (git sha1 c4b519022, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 1. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 78 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 2. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_512x64_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 3. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x8_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 4. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x64_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 5. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_4096x16_c3_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 6. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_256x64_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 7. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_2048x64_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 8. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_256x48_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 9. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_4096x8_c3_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 10. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x16_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 11. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_64x64_c2_bm_bist_typ_1p20V_25C.lib
+[2025-06-07 03:41 UTC] Imported 1 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 12. Executing Liberty frontend: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib
+[2025-06-07 03:41 UTC] Imported 14 cell types from liberty file.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13. Executing SLANG frontend.
+[2025-06-07 03:41 UTC] Top level design units:
+[2025-06-07 03:41 UTC]     timer_unit
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] Build succeeded: 0 errors, 0 warnings
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.1. Executing UNDRIVEN pass. (resolve undriven signals)
+[2025-06-07 03:41 UTC] <suppressed ~395 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.2. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-06-07 03:41 UTC] Found and cleaned up 4 empty switches in `\timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$546'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$541'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$541'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$523'.
+[2025-06-07 03:41 UTC] Found and cleaned up 4 empty switches in `\timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$513'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$508'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$508'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$490'.
+[2025-06-07 03:41 UTC] Found and cleaned up 4 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$480'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$475'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$475'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$453'.
+[2025-06-07 03:41 UTC] Found and cleaned up 4 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$443'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$438'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$438'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$416'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$389'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$389'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$374'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$241'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$152'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$145'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$140'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$140'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$24'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$19'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$19'.
+[2025-06-07 03:41 UTC] Found and cleaned up 2 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$6'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$1'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2285:handle_ff_process$1'.
+[2025-06-07 03:41 UTC] Cleaned up 60 empty switches.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.3. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2025-06-07 03:41 UTC] Marked 1 switch rules as full_case in process $auto$slang_frontend.cc:2285:handle_ff_process$546 in module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Marked 4 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$523 in module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Marked 1 switch rules as full_case in process $auto$slang_frontend.cc:2285:handle_ff_process$513 in module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Marked 4 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$490 in module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Marked 1 switch rules as full_case in process $auto$slang_frontend.cc:2285:handle_ff_process$480 in module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Marked 4 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$453 in module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Marked 1 switch rules as full_case in process $auto$slang_frontend.cc:2285:handle_ff_process$443 in module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Marked 4 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$416 in module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Marked 1 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$145 in module timer_unit.
+[2025-06-07 03:41 UTC] Marked 1 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$374 in module timer_unit.
+[2025-06-07 03:41 UTC] Marked 14 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$24 in module timer_unit.
+[2025-06-07 03:41 UTC] Marked 20 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$241 in module timer_unit.
+[2025-06-07 03:41 UTC] Marked 5 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$6 in module timer_unit.
+[2025-06-07 03:41 UTC] Marked 13 switch rules as full_case in process $auto$slang_frontend.cc:2207:handle_comb_like_process$152 in module timer_unit.
+[2025-06-07 03:41 UTC] Removed a total of 0 dead cases.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.4. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2025-06-07 03:41 UTC] Removed 42 redundant assignments.
+[2025-06-07 03:41 UTC] Promoted 0 assignments to connections.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.5. Executing PROC_INIT pass (extract init attributes).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2025-06-07 03:41 UTC] Converted 0 switches.
+[2025-06-07 03:41 UTC] <suppressed ~96 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$546'.
+[2025-06-07 03:41 UTC]      1/1: $auto$slang_frontend.cc:694:finish$\target_reached_o$555
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$523'.
+[2025-06-07 03:41 UTC]      1/3: $auto$slang_frontend.cc:694:finish$\s_count$538
+[2025-06-07 03:41 UTC]      2/3: $auto$slang_frontend.cc:694:finish$\s_count$539
+[2025-06-07 03:41 UTC]      3/3: $auto$slang_frontend.cc:694:finish$\s_count$540
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$513'.
+[2025-06-07 03:41 UTC]      1/1: $auto$slang_frontend.cc:694:finish$\target_reached_o$522
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$490'.
+[2025-06-07 03:41 UTC]      1/3: $auto$slang_frontend.cc:694:finish$\s_count$505
+[2025-06-07 03:41 UTC]      2/3: $auto$slang_frontend.cc:694:finish$\s_count$506
+[2025-06-07 03:41 UTC]      3/3: $auto$slang_frontend.cc:694:finish$\s_count$507
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$480'.
+[2025-06-07 03:41 UTC]      1/1: $auto$slang_frontend.cc:694:finish$\target_reached_o$489
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$453'.
+[2025-06-07 03:41 UTC]      1/3: $auto$slang_frontend.cc:694:finish$\s_count$472
+[2025-06-07 03:41 UTC]      2/3: $auto$slang_frontend.cc:694:finish$\s_count$473
+[2025-06-07 03:41 UTC]      3/3: $auto$slang_frontend.cc:694:finish$\s_count$474
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$443'.
+[2025-06-07 03:41 UTC]      1/1: $auto$slang_frontend.cc:694:finish$\target_reached_o$452
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$416'.
+[2025-06-07 03:41 UTC]      1/3: $auto$slang_frontend.cc:694:finish$\s_count$435
+[2025-06-07 03:41 UTC]      2/3: $auto$slang_frontend.cc:694:finish$\s_count$436
+[2025-06-07 03:41 UTC]      3/3: $auto$slang_frontend.cc:694:finish$\s_count$437
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$145'.
+[2025-06-07 03:41 UTC]      1/2: $auto$slang_frontend.cc:694:finish$\r_rdata_o$150
+[2025-06-07 03:41 UTC]      2/2: $auto$slang_frontend.cc:694:finish$\r_rdata_o$151
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$374'.
+[2025-06-07 03:41 UTC]      1/2: $auto$slang_frontend.cc:694:finish$\irq_hi_o$388
+[2025-06-07 03:41 UTC]      2/2: $auto$slang_frontend.cc:694:finish$\irq_lo_o$387
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$24'.
+[2025-06-07 03:41 UTC]      1/29: $auto$slang_frontend.cc:694:finish$\s_cfg_hi[1]$139
+[2025-06-07 03:41 UTC]      2/29: $auto$slang_frontend.cc:694:finish$\s_cfg_lo[1]$134
+[2025-06-07 03:41 UTC]      3/29: $auto$slang_frontend.cc:694:finish$\s_cfg_hi[0]$127
+[2025-06-07 03:41 UTC]      4/29: $auto$slang_frontend.cc:694:finish$\s_cfg_hi[0]$128
+[2025-06-07 03:41 UTC]      5/29: $auto$slang_frontend.cc:694:finish$\s_cfg_hi[0]$129
+[2025-06-07 03:41 UTC]      6/29: $auto$slang_frontend.cc:694:finish$\s_cfg_lo[0]$88
+[2025-06-07 03:41 UTC]      7/29: $auto$slang_frontend.cc:694:finish$\s_cfg_lo[0]$89
+[2025-06-07 03:41 UTC]      8/29: $auto$slang_frontend.cc:694:finish$\s_cfg_lo[0]$75
+[2025-06-07 03:41 UTC]      9/29: $auto$slang_frontend.cc:694:finish$\s_cfg_lo[0]$90
+[2025-06-07 03:41 UTC]     10/29: $auto$slang_frontend.cc:694:finish$\s_timer_cmp_hi$40
+[2025-06-07 03:41 UTC]     11/29: $auto$slang_frontend.cc:694:finish$\s_timer_cmp_lo$39
+[2025-06-07 03:41 UTC]     12/29: $auto$slang_frontend.cc:694:finish$\s_cfg_hi$38
+[2025-06-07 03:41 UTC]     13/29: $auto$slang_frontend.cc:694:finish$\s_cfg_lo$37
+[2025-06-07 03:41 UTC]     14/29: $auto$slang_frontend.cc:694:finish$\s_reset_timer_hi$36
+[2025-06-07 03:41 UTC]     15/29: $auto$slang_frontend.cc:694:finish$\s_reset_timer_lo$35
+[2025-06-07 03:41 UTC]     16/29: $auto$slang_frontend.cc:694:finish$\s_start_timer_hi$34
+[2025-06-07 03:41 UTC]     17/29: $auto$slang_frontend.cc:694:finish$\s_start_timer_lo$33
+[2025-06-07 03:41 UTC]     18/29: $auto$slang_frontend.cc:694:finish$\s_write_counter_hi$32
+[2025-06-07 03:41 UTC]     19/29: $auto$slang_frontend.cc:694:finish$\s_write_counter_lo$31
+[2025-06-07 03:41 UTC]     20/29: $auto$slang_frontend.cc:694:finish$\s_timer_cmp_hi$50
+[2025-06-07 03:41 UTC]     21/29: $auto$slang_frontend.cc:694:finish$\s_timer_cmp_lo$49
+[2025-06-07 03:41 UTC]     22/29: $auto$slang_frontend.cc:694:finish$\s_cfg_hi$48
+[2025-06-07 03:41 UTC]     23/29: $auto$slang_frontend.cc:694:finish$\s_cfg_lo$47
+[2025-06-07 03:41 UTC]     24/29: $auto$slang_frontend.cc:694:finish$\s_reset_timer_hi$46
+[2025-06-07 03:41 UTC]     25/29: $auto$slang_frontend.cc:694:finish$\s_reset_timer_lo$45
+[2025-06-07 03:41 UTC]     26/29: $auto$slang_frontend.cc:694:finish$\s_start_timer_hi$44
+[2025-06-07 03:41 UTC]     27/29: $auto$slang_frontend.cc:694:finish$\s_start_timer_lo$43
+[2025-06-07 03:41 UTC]     28/29: $auto$slang_frontend.cc:694:finish$\s_write_counter_hi$42
+[2025-06-07 03:41 UTC]     29/29: $auto$slang_frontend.cc:694:finish$\s_write_counter_lo$41
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$241'.
+[2025-06-07 03:41 UTC]      1/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$364
+[2025-06-07 03:41 UTC]      2/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$363
+[2025-06-07 03:41 UTC]      3/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$362
+[2025-06-07 03:41 UTC]      4/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$366
+[2025-06-07 03:41 UTC]      5/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$365
+[2025-06-07 03:41 UTC]      6/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$367
+[2025-06-07 03:41 UTC]      7/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$369
+[2025-06-07 03:41 UTC]      8/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$368
+[2025-06-07 03:41 UTC]      9/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$370
+[2025-06-07 03:41 UTC]     10/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$373
+[2025-06-07 03:41 UTC]     11/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$372
+[2025-06-07 03:41 UTC]     12/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$371
+[2025-06-07 03:41 UTC]     13/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_hi$307
+[2025-06-07 03:41 UTC]     14/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$306
+[2025-06-07 03:41 UTC]     15/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$308
+[2025-06-07 03:41 UTC]     16/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_hi$309
+[2025-06-07 03:41 UTC]     17/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$310
+[2025-06-07 03:41 UTC]     18/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_hi$311
+[2025-06-07 03:41 UTC]     19/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_hi$313
+[2025-06-07 03:41 UTC]     20/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_hi$312
+[2025-06-07 03:41 UTC]     21/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$271
+[2025-06-07 03:41 UTC]     22/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$270
+[2025-06-07 03:41 UTC]     23/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$272
+[2025-06-07 03:41 UTC]     24/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$273
+[2025-06-07 03:41 UTC]     25/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$274
+[2025-06-07 03:41 UTC]     26/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$275
+[2025-06-07 03:41 UTC]     27/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_prescaler_lo$277
+[2025-06-07 03:41 UTC]     28/28: $auto$slang_frontend.cc:694:finish$\s_enable_count_lo$276
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$6'.
+[2025-06-07 03:41 UTC]      1/4: $auto$slang_frontend.cc:694:finish$\NS$16
+[2025-06-07 03:41 UTC]      2/4: $auto$slang_frontend.cc:694:finish$\NS$18
+[2025-06-07 03:41 UTC]      3/4: $auto$slang_frontend.cc:694:finish$\NS$11
+[2025-06-07 03:41 UTC]      4/4: $auto$slang_frontend.cc:694:finish$\r_valid_o$17
+[2025-06-07 03:41 UTC] Creating decoders for process `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$152'.
+[2025-06-07 03:41 UTC]      1/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_prescaler_hi$240
+[2025-06-07 03:41 UTC]      2/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_prescaler_lo$233
+[2025-06-07 03:41 UTC]      3/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_hi$223
+[2025-06-07 03:41 UTC]      4/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_hi$224
+[2025-06-07 03:41 UTC]      5/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_hi$210
+[2025-06-07 03:41 UTC]      6/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_prescaler_hi$226
+[2025-06-07 03:41 UTC]      7/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_hi$225
+[2025-06-07 03:41 UTC]      8/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_lo$186
+[2025-06-07 03:41 UTC]      9/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_lo$187
+[2025-06-07 03:41 UTC]     10/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_lo$173
+[2025-06-07 03:41 UTC]     11/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_prescaler_lo$189
+[2025-06-07 03:41 UTC]     12/12: $auto$slang_frontend.cc:694:finish$\s_reset_count_lo$188
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-06-07 03:41 UTC] Found and cleaned up 1 empty switch in `\timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$546'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$546'.
+[2025-06-07 03:41 UTC] Found and cleaned up 5 empty switches in `\timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$523'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter$timer_unit.counter_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$523'.
+[2025-06-07 03:41 UTC] Found and cleaned up 1 empty switch in `\timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$513'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$513'.
+[2025-06-07 03:41 UTC] Found and cleaned up 5 empty switches in `\timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$490'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter$timer_unit.counter_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$490'.
+[2025-06-07 03:41 UTC] Found and cleaned up 1 empty switch in `\timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$480'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2285:handle_ff_process$480'.
+[2025-06-07 03:41 UTC] Found and cleaned up 5 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$453'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$453'.
+[2025-06-07 03:41 UTC] Found and cleaned up 1 empty switch in `\timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$443'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2285:handle_ff_process$443'.
+[2025-06-07 03:41 UTC] Found and cleaned up 5 empty switches in `\timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$416'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$slang_frontend.cc:2207:handle_comb_like_process$416'.
+[2025-06-07 03:41 UTC] Found and cleaned up 3 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$145'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$145'.
+[2025-06-07 03:41 UTC] Found and cleaned up 1 empty switch in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$374'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$374'.
+[2025-06-07 03:41 UTC] Found and cleaned up 21 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$24'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$24'.
+[2025-06-07 03:41 UTC] Found and cleaned up 23 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$241'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$241'.
+[2025-06-07 03:41 UTC] Found and cleaned up 5 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$6'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$6'.
+[2025-06-07 03:41 UTC] Found and cleaned up 19 empty switches in `\timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$152'.
+[2025-06-07 03:41 UTC] Removing empty process `timer_unit.$auto$slang_frontend.cc:2207:handle_comb_like_process$152'.
+[2025-06-07 03:41 UTC] Cleaned up 96 empty switches.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 13.9. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] <suppressed ~9 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] <suppressed ~9 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] <suppressed ~10 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] <suppressed ~10 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] <suppressed ~124 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 14. Executing ATTRMAP pass (move or copy attributes).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 15. Executing ATTRMVCP pass (move or copy attributes).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 16. Executing HIERARCHY pass (managing design hierarchy).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 16.1. Analyzing design hierarchy..
+[2025-06-07 03:41 UTC] Top module:  \timer_unit
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter$timer_unit.counter_hi_i
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter$timer_unit.counter_lo_i
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter_presc$timer_unit.prescaler_hi_i
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter_presc$timer_unit.prescaler_lo_i
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 16.2. Analyzing design hierarchy..
+[2025-06-07 03:41 UTC] Top module:  \timer_unit
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter$timer_unit.counter_hi_i
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter$timer_unit.counter_lo_i
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter_presc$timer_unit.prescaler_hi_i
+[2025-06-07 03:41 UTC] Used module:     \timer_unit_counter_presc$timer_unit.prescaler_lo_i
+[2025-06-07 03:41 UTC] Removed 0 unused modules.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 17. Executing CHECK pass (checking for obvious problems).
+[2025-06-07 03:41 UTC] Checking module timer_unit_counter$timer_unit.counter_hi_i...
+[2025-06-07 03:41 UTC] Checking module timer_unit_counter$timer_unit.counter_lo_i...
+[2025-06-07 03:41 UTC] Checking module timer_unit_counter_presc$timer_unit.prescaler_hi_i...
+[2025-06-07 03:41 UTC] Checking module timer_unit_counter_presc$timer_unit.prescaler_lo_i...
+[2025-06-07 03:41 UTC] Checking module timer_unit...
+[2025-06-07 03:41 UTC] Found and reported 0 problems.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18. Executing PROC pass (convert processes to netlists).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-06-07 03:41 UTC] Cleaned up 0 empty switches.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+[2025-06-07 03:41 UTC] Removed a total of 0 dead cases.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+[2025-06-07 03:41 UTC] Removed 0 redundant assignments.
+[2025-06-07 03:41 UTC] Promoted 0 assignments to connections.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.4. Executing PROC_INIT pass (extract init attributes).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.5. Executing PROC_ARST pass (detect async resets in processes).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.6. Executing PROC_ROM pass (convert switches to ROMs).
+[2025-06-07 03:41 UTC] Converted 0 switches.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.9. Executing PROC_DFF pass (convert process syncs to FFs).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+[2025-06-07 03:41 UTC] Cleaned up 0 empty switches.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 18.12. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] 20. Executing Verilog backend.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 21. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22. Executing OPT pass (performing simple optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.1. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.2. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] <suppressed ~78 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Removed a total of 30 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1002.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1009.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1024.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1027.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1029.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1034.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1037.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1039.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1046.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1048.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1055.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1057.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1063.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1069.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1081.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1094.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1112.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1115.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1124.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1130.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1133.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$1149.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1152.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1160.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1165.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$1168.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$651.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$676.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$679.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$688.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$701.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$704.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$713.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$719.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$722.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$736.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$745.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$757.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$770.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$774.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$779.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$785.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$792.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$802.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$813.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$849.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$852.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$854.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$862.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$865.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$867.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$874.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$877.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$879.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$888.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$890.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$899.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$901.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$910.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$912.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$920.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$928.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$936.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$959.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$962.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$964.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$970.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$973.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$975.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$983.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$985.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$993.
+[2025-06-07 03:41 UTC]     dead port 2/2 on $mux $procmux$995.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$562.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$565.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$572.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$584.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$587.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$594.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$606.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$609.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$616.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$628.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$631.
+[2025-06-07 03:41 UTC]     dead port 1/2 on $mux $procmux$638.
+[2025-06-07 03:41 UTC] Removed 85 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~38 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.5. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] <suppressed ~15 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 5 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] Removed 6 unused cells and 546 unused wires.
+[2025-06-07 03:41 UTC] <suppressed ~15 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.7. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.8. Rerunning OPT passes. (Maybe there is more to do..)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~41 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]     New ctrl vector for $pmux cell $procmux$1085: $auto$opt_reduce.cc:137:opt_pmux$1179
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 1 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.11. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.13. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.14. Rerunning OPT passes. (Maybe there is more to do..)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.15. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~41 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.16. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.17. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.19. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 22.20. Finished OPT passes. (There is nothing left to do.)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23. Executing FSM pass (extract and optimize FSM).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.1. Executing FSM_DETECT pass (finding FSMs in design).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 23.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+[2025-06-07 03:41 UTC] 25. Executing WREDUCE pass (reducing word size of cells).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 6) from port B of cell timer_unit.$procmux$645_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 6) from port B of cell timer_unit.$procmux$646_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 2 bits (of 6) from port B of cell timer_unit.$procmux$647_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 2 bits (of 6) from port B of cell timer_unit.$procmux$648_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 3 bits (of 6) from port B of cell timer_unit.$procmux$649_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 6) from port B of cell timer_unit.$procmux$735_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 6) from port B of cell timer_unit.$procmux$744_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 3 bits (of 6) from port B of cell timer_unit.$procmux$756_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 6) from port B of cell timer_unit.$procmux$784_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 6) from port B of cell timer_unit.$procmux$791_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 2 bits (of 6) from port B of cell timer_unit.$procmux$801_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 2 bits (of 6) from port B of cell timer_unit.$procmux$812_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 2) from mux cell timer_unit.$procmux$1079 ($mux).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 2) from port B of cell timer_unit.$procmux$1082_CMP0 ($eq).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 2) from mux cell timer_unit.$procmux$1085 ($mux).
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 2) from wire timer_unit.$auto$slang_frontend.cc:694:finish$\NS$11.
+[2025-06-07 03:41 UTC] Removed top 1 bits (of 2) from wire timer_unit.NS.
+[2025-06-07 03:41 UTC] Removed top 31 bits (of 32) from port B of cell timer_unit_counter$timer_unit.counter_hi_i.$auto$builder.cc:330:Biop$536 ($add).
+[2025-06-07 03:41 UTC] Removed top 31 bits (of 32) from port B of cell timer_unit_counter$timer_unit.counter_lo_i.$auto$builder.cc:330:Biop$503 ($add).
+[2025-06-07 03:41 UTC] Removed top 31 bits (of 32) from port B of cell timer_unit_counter_presc$timer_unit.prescaler_hi_i.$auto$builder.cc:330:Biop$470 ($add).
+[2025-06-07 03:41 UTC] Removed top 31 bits (of 32) from port B of cell timer_unit_counter_presc$timer_unit.prescaler_lo_i.$auto$builder.cc:330:Biop$433 ($add).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 26. Executing PEEPOPT pass (run peephole optimizers).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 27. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] Removed 0 unused cells and 2 unused wires.
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28. Executing OPT pass (performing simple optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.1. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] <suppressed ~34 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.2. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~25 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.5. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.6. Executing OPT_SHARE pass.
+[2025-06-07 03:41 UTC]     Found cells that share an operand and can be merged by moving the $mux $procmux$660 in front of them:
+[2025-06-07 03:41 UTC]         $auto$builder.cc:330:Biop$385
+[2025-06-07 03:41 UTC]         $auto$builder.cc:330:Biop$379
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC]     Found cells that share an operand and can be merged by moving the $mux $procmux$859 in front of them:
+[2025-06-07 03:41 UTC]         $auto$builder.cc:330:Biop$356
+[2025-06-07 03:41 UTC]         $auto$builder.cc:330:Biop$360
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.7. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_wen ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_timer_cmp_lo_reg ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Adding EN signal on $driver$s_timer_cmp_lo_reg ($aldff) from module timer_unit (D = \wdata_i, Q = \s_timer_cmp_lo_reg).
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_timer_cmp_hi_reg ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Adding EN signal on $driver$s_timer_cmp_hi_reg ($aldff) from module timer_unit (D = \wdata_i, Q = \s_timer_cmp_hi_reg).
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_req ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_ref_clk3 ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_ref_clk2 ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_ref_clk1 ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_ref_clk0 ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_cfg_lo_reg ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Adding EN signal on $driver$s_cfg_lo_reg ($aldff) from module timer_unit (D = { \wdata_i [31:6] \wdata_i [4] \wdata_i [2] }, Q = { \s_cfg_lo_reg [31:6] \s_cfg_lo_reg [4] \s_cfg_lo_reg [2] }).
+[2025-06-07 03:41 UTC] Adding EN signal on $driver$s_cfg_lo_reg ($aldff) from module timer_unit (D = \s_cfg_lo [1], Q = \s_cfg_lo_reg [1]).
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_cfg_hi_reg ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Adding EN signal on $driver$s_cfg_hi_reg ($aldff) from module timer_unit (D = { \wdata_i [31:6] \wdata_i [4] \wdata_i [2] }, Q = { \s_cfg_hi_reg [31:6] \s_cfg_hi_reg [4] \s_cfg_hi_reg [2] }).
+[2025-06-07 03:41 UTC] Adding EN signal on $driver$s_cfg_hi_reg ($aldff) from module timer_unit (D = \s_cfg_hi [1], Q = \s_cfg_hi_reg [1]).
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_addr ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$r_id_o ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$CS ($aldff) from module timer_unit.
+[2025-06-07 03:41 UTC] Setting constant 0-bit at position 1 on $driver$CS ($adff) from module timer_unit.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$target_reached_o ($aldff) from module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_count_reg ($aldff) from module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$target_reached_o ($aldff) from module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_count_reg ($aldff) from module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$target_reached_o ($aldff) from module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_count_reg ($aldff) from module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$target_reached_o ($aldff) from module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Changing const-value async load to async reset on $driver$s_count_reg ($aldff) from module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] Removed 4 unused cells and 27 unused wires.
+[2025-06-07 03:41 UTC] <suppressed ~11 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.9. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] <suppressed ~8 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.10. Rerunning OPT passes. (Maybe there is more to do..)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~24 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.13. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 1 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.14. Executing OPT_SHARE pass.
+[2025-06-07 03:41 UTC]     Found cells that share an operand and can be merged by moving the $mux $procmux$885 in front of them:
+[2025-06-07 03:41 UTC]         $auto$builder.cc:330:Biop$342
+[2025-06-07 03:41 UTC]         $auto$builder.cc:330:Biop$356
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.15. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] Removed 1 unused cells and 6 unused wires.
+[2025-06-07 03:41 UTC] <suppressed ~2 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.17. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.18. Rerunning OPT passes. (Maybe there is more to do..)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~24 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.21. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.22. Executing OPT_SHARE pass.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.23. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] Removed 0 unused cells and 1 unused wires.
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.25. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.26. Rerunning OPT passes. (Maybe there is more to do..)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~24 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.29. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.30. Executing OPT_SHARE pass.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.31. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.33. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 28.34. Finished OPT passes. (There is nothing left to do.)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 29. Executing BOOTH pass (map to Booth multipliers).
+[2025-06-07 03:41 UTC] Mapped 0 multipliers.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 30. Executing SHARE pass (SAT-based resource sharing).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31. Executing OPT pass (performing simple optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.1. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.2. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~24 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.5. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.6. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.8. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 31.9. Finished OPT passes. (There is nothing left to do.)
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32. Executing MEMORY pass.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.1. Executing OPT_MEM pass (optimize memories).
+[2025-06-07 03:41 UTC] Performed a total of 0 transformations.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+[2025-06-07 03:41 UTC] Performed a total of 0 transformations.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+[2025-06-07 03:41 UTC] Performed a total of 0 transformations.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 32.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+[2025-06-07 03:41 UTC] 34. Executing Verilog backend.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 35. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 36. Executing OPT pass (performing simple optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 36.1. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 36.2. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 36.3. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 36.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 36.5. Finished fast OPT passes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 37. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 38. Executing SHARE pass (SAT-based resource sharing).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39. Executing OPT pass (performing simple optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.1. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.2. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Running muxtree optimizer on module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC]   Creating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Evaluating internal representation of mux trees.
+[2025-06-07 03:41 UTC]   Analyzing evaluation results.
+[2025-06-07 03:41 UTC] Removed 0 multiplexer ports.
+[2025-06-07 03:41 UTC] <suppressed ~24 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC]   Optimizing cells in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] Performed a total of 0 changes.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.5. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] Removed a total of 0 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.6. Executing OPT_SHARE pass.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.7. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.9. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 39.10. Finished OPT passes. (There is nothing left to do.)
+[2025-06-07 03:41 UTC] Removed 0 unused cells and 7 unused wires.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 40. Executing Verilog backend.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 40.1. Executing BMUXMAP pass.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 40.2. Executing DEMUXMAP pass.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] 42. Executing TECHMAP pass (map to technology primitives).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 42.1. Executing Verilog-2005 frontend: /foss/tools/yosys/bin/../share/yosys/techmap.v
+[2025-06-07 03:41 UTC] Parsing Verilog input from `/foss/tools/yosys/bin/../share/yosys/techmap.v' to AST representation.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_simplemap_various'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_simplemap_registers'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_shift_shiftx'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_fa'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_alu'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_macc'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_alumacc'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\$__div_mod_u'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\$__div_mod_trunc'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_div'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_mod'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\$__div_mod_floor'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_divfloor'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_modfloor'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_pow'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_pmux'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_demux'.
+[2025-06-07 03:41 UTC] Generating RTLIL representation for module `\_90_lut'.
+[2025-06-07 03:41 UTC] Successfully finished Verilog frontend.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 42.2. Continuing TECHMAP pass.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $logic_or.
+[2025-06-07 03:41 UTC] Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=32:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=32:394426c56d1a028ba8fdd5469b163e04011def47.
+[2025-06-07 03:41 UTC] Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=32:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=32:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=32:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=32:394426c56d1a028ba8fdd5469b163e04011def47.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $adff.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $eq.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $mux.
+[2025-06-07 03:41 UTC] Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $xor.
+[2025-06-07 03:41 UTC] Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $and.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $pos.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $not.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $or.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $logic_and.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $adffe.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $reduce_bool.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $reduce_and.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $ne.
+[2025-06-07 03:41 UTC] Using template $paramod$c96def1cdcef2eee3c62e5dfb7ba2dd09c9f74dd\_90_pmux for cells of type $pmux.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $logic_not.
+[2025-06-07 03:41 UTC] Using extmapper simplemap for cells of type $reduce_or.
+[2025-06-07 03:41 UTC] No more expansions possible.
+[2025-06-07 03:41 UTC] <suppressed ~1066 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 43. Executing OPT pass (performing simple optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 43.1. Executing OPT_EXPR pass (perform const folding).
+[2025-06-07 03:41 UTC] Optimizing module timer_unit.
+[2025-06-07 03:41 UTC] <suppressed ~186 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] <suppressed ~183 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] <suppressed ~183 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] <suppressed ~183 debug messages>
+[2025-06-07 03:41 UTC] Optimizing module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] <suppressed ~183 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 43.2. Executing OPT_MERGE pass (detect identical cells).
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit'.
+[2025-06-07 03:41 UTC] <suppressed ~171 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_hi_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter$timer_unit.counter_lo_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_hi_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Finding identical cells in module `\timer_unit_counter_presc$timer_unit.prescaler_lo_i'.
+[2025-06-07 03:41 UTC] <suppressed ~3 debug messages>
+[2025-06-07 03:41 UTC] Removed a total of 61 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 43.3. Executing OPT_DFF pass (perform DFF optimizations).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 43.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter$timer_unit.counter_lo_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_hi_i..
+[2025-06-07 03:41 UTC] Finding unused cells or wires in module \timer_unit_counter_presc$timer_unit.prescaler_lo_i..
+[2025-06-07 03:41 UTC] Removed 282 unused cells and 657 unused wires.
+[2025-06-07 03:41 UTC] <suppressed ~287 debug messages>
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 43.5. Finished fast OPT passes.
+[2025-06-07 03:41 UTC] 45. Executing FLATTEN pass (flatten design).
+[2025-06-07 03:41 UTC] Deleting now unused module timer_unit_counter$timer_unit.counter_hi_i.
+[2025-06-07 03:41 UTC] Deleting now unused module timer_unit_counter$timer_unit.counter_lo_i.
+[2025-06-07 03:41 UTC] Deleting now unused module timer_unit_counter_presc$timer_unit.prescaler_hi_i.
+[2025-06-07 03:41 UTC] Deleting now unused module timer_unit_counter_presc$timer_unit.prescaler_lo_i.
+[2025-06-07 03:41 UTC] <suppressed ~4 debug messages>
+[2025-06-07 03:41 UTC] Removed 0 unused cells and 32 unused wires.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 46. Executing SPLITNETS pass (splitting up multi-bit signals).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 47. Executing AUTONAME pass.
+[2025-06-07 03:41 UTC] Renamed 11145 objects in module timer_unit (30 iterations).
+[2025-06-07 03:41 UTC] <suppressed ~3091 debug messages>
+[2025-06-07 03:41 UTC] Removed 0 unused cells and 417 unused wires.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 48. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+[2025-06-07 03:41 UTC]   cell sg13g2_dfrbp_1 (noninv, pins=5, area=47.17) is a direct match for cell type $_DFF_PN0_.
+[2025-06-07 03:41 UTC]   final dff cell mappings:
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_N_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_P_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_NN0_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_NN1_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_NP0_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_NP1_
+[2025-06-07 03:41 UTC]     \sg13g2_dfrbp_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R));
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_PN1_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_PP0_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFF_PP1_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFE_NN_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFE_NP_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFE_PN_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFE_PP_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_NNN_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_NNP_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_NPN_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_NPP_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_PNN_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_PNP_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_PPN_
+[2025-06-07 03:41 UTC]     unmapped dff cell: $_DFFSR_PPP_
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 48.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+[2025-06-07 03:41 UTC] <suppressed ~1 debug messages>
+[2025-06-07 03:41 UTC] Mapping DFF cells in module `\timer_unit':
+[2025-06-07 03:41 UTC]   mapped 277 $_DFF_PN0_ cells to \sg13g2_dfrbp_1 cells.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 49. Executing ABC pass (technology mapping using ABC).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 49.1. Extracting gate netlist of module `\timer_unit' to `/tmp/yosys-abc-l0fJ4z/input.blif'..
+[2025-06-07 03:41 UTC] Replacing 4 occurrences of constant undef bits with constant zero bits
+[2025-06-07 03:41 UTC] Extracted 1761 gates and 2122 wires to a netlist network with 358 inputs and 295 outputs.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 49.1.1. Executing ABC.
+[2025-06-07 03:41 UTC] Running ABC command: "/foss/tools/yosys/bin/yosys-abc" -s -f /tmp/yosys-abc-l0fJ4z/abc.script 2>&1
+[2025-06-07 03:41 UTC] ABC: ABC command line: "source /tmp/yosys-abc-l0fJ4z/abc.script".
+[2025-06-07 03:41 UTC] ABC: 
+[2025-06-07 03:41 UTC] ABC: + read_blif /tmp/yosys-abc-l0fJ4z/input.blif 
+[2025-06-07 03:41 UTC] ABC: + read_lib -w /fosic/designs/croc/yosys/../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib 
+[2025-06-07 03:41 UTC] ABC: Parsing finished successfully.  Parsing time =     0.06 sec
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_antennanp" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_4" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_8" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbp_1".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbp_2".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhq_1".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhr_1".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhrq_1".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllr_1".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllrq_1".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_2".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_4".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_8".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_2".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_4".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_8".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_1" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_2" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_4" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_8" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_lgcp_1" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfbbp_1".
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_sighold" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_slgcp_1" due to dont_use attribute.
+[2025-06-07 03:41 UTC] ABC: Library "sg13g2_stdcell_typ_1p20V_25C" from "/fosic/designs/croc/yosys/../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib" has 54 cells (14 skipped: 8 seq; 6 tri-state; 0 no func; 10 dont_use).  Time =     0.09 sec
+[2025-06-07 03:41 UTC] ABC: Memory =    2.40 MB. Time =     0.09 sec
+[2025-06-07 03:41 UTC] ABC: + read_constr -v /fosic/designs/croc/yosys/src/abc.constr 
+[2025-06-07 03:41 UTC] ABC: Unrecognized token "#".
+[2025-06-07 03:41 UTC] ABC: Unrecognized token "#".
+[2025-06-07 03:41 UTC] ABC: Unrecognized token "#".
+[2025-06-07 03:41 UTC] ABC: Unrecognized token "#".
+[2025-06-07 03:41 UTC] ABC: Unrecognized token "#".
+[2025-06-07 03:41 UTC] ABC: Unrecognized token "#".
+[2025-06-07 03:41 UTC] ABC: Setting driving cell to be "sg13g2_buf_1".
+[2025-06-07 03:41 UTC] ABC: Setting output load to be 0.015000.
+[2025-06-07 03:41 UTC] ABC: + source /fosic/designs/croc/yosys/tmp/abc-opt.script 
+[2025-06-07 03:41 UTC] ABC: netlist                       : i/o =  358/  295  lat =    0  nd =  1764  edge =   4062  cube =  3006  lev = 19
+[2025-06-07 03:41 UTC] ABC: Initial network: 
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2664  lev =   23 (9.81)  mem = 0.05 MB
+[2025-06-07 03:41 UTC] ABC: High effort delay optimization... 
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2284  lev =   24 (9.68)  mem = 0.04 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2337  lev =   26 (9.86)  mem = 0.04 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2436  lev =   25 (9.70)  mem = 0.05 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2484  lev =   23 (9.83)  mem = 0.05 MB
+[2025-06-07 03:41 UTC] ABC: Opt+mapping Iterations... 
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2500  lev =   25 (9.83)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2488  lev =   23 (9.55)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2480  lev =   24 (9.78)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2474  lev =   25 (9.75)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2478  lev =   25 (9.96)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2470  lev =   25 (9.74)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2476  lev =   23 (9.75)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: netlist  : i/o =    358/    295  and =    2482  lev =   23 (9.83)  mem = 0.09 MB
+[2025-06-07 03:41 UTC] ABC: WireLoad = "none"  Gates =   1315 (  4.3 %)   Cap =  6.8 ff (  2.2 %)   Area =    14097.47 ( 95.6 %)   Delay =  2334.80 ps  (  4.0 %)               
+[2025-06-07 03:41 UTC] ABC: buffering for delay and fanout... 
+[2025-06-07 03:41 UTC] ABC: resizing cells... 
+[2025-06-07 03:41 UTC] ABC: Final timing: 
+[2025-06-07 03:41 UTC] ABC: WireLoad = "none"  Gates =   1412 ( 10.8 %)   Cap =  6.5 ff (  4.8 %)   Area =    14877.66 ( 89.0 %)   Delay =  1740.11 ps  (  5.2 %)               
+[2025-06-07 03:41 UTC] ABC: + write_blif /tmp/yosys-abc-l0fJ4z/output.blif 
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 49.1.2. Re-integrating ABC results.
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_a21o_1 cells:       13
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_a21oi_1 cells:       42
+[2025-06-07 03:41 UTC] ABC RESULTS:   sg13g2_a221oi_1 cells:        9
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_a22oi_1 cells:      107
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_and2_1 cells:       21
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_and3_1 cells:       28
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_and4_1 cells:       11
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_and4_2 cells:        1
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_buf_1 cells:       90
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_buf_2 cells:        3
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_buf_4 cells:        3
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_buf_8 cells:        1
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_inv_1 cells:       56
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_mux2_1 cells:      120
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_nand2_1 cells:       74
+[2025-06-07 03:41 UTC] ABC RESULTS:   sg13g2_nand2b_1 cells:       23
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_nand3_1 cells:       91
+[2025-06-07 03:41 UTC] ABC RESULTS:   sg13g2_nand3b_1 cells:        8
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_nand4_1 cells:       36
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_nor2_1 cells:      197
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_nor2b_1 cells:       41
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_nor3_1 cells:      102
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_nor3_2 cells:        1
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_nor4_1 cells:       41
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_nor4_2 cells:        2
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_o21ai_1 cells:       68
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_or2_1 cells:        7
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_or2_2 cells:        1
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_or3_1 cells:       12
+[2025-06-07 03:41 UTC] ABC RESULTS:      sg13g2_or4_1 cells:        5
+[2025-06-07 03:41 UTC] ABC RESULTS:    sg13g2_xnor2_1 cells:      125
+[2025-06-07 03:41 UTC] ABC RESULTS:     sg13g2_xor2_1 cells:       73
+[2025-06-07 03:41 UTC] ABC RESULTS:        internal signals:     1469
+[2025-06-07 03:41 UTC] ABC RESULTS:           input signals:      358
+[2025-06-07 03:41 UTC] ABC RESULTS:          output signals:      295
+[2025-06-07 03:41 UTC] Removing temp directory.
+[2025-06-07 03:41 UTC] Removed 0 unused cells and 2165 unused wires.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 50. Executing Verilog backend.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit'.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 51. Executing SPLITNETS pass (splitting up multi-bit signals).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 52. Executing SETUNDEF pass (replace undef values with defined constants).
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] 53. Executing HILOMAP pass (mapping to constant drivers).
+[2025-06-07 03:41 UTC] 57. Executing Verilog backend.
+[2025-06-07 03:41 UTC] Dumping module `\timer_unit'.
+[2025-06-07 03:41 UTC] 
+[2025-06-07 03:41 UTC] End of script. Logfile hash: 7279e4c0c4, CPU: user 3.31s system 0.18s, MEM: 76.77 MB peak
+[2025-06-07 03:41 UTC] Yosys 0.51 (git sha1 c4b519022, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+[2025-06-07 03:41 UTC] Time spent: 88% 1x abc (25 sec), 1% 20x opt_expr (0 sec), ...

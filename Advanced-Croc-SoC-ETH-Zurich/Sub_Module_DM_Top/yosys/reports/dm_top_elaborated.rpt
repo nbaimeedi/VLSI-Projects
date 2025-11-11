@@ -1,0 +1,208 @@
+
+19. Printing statistics.
+
+=== debug_rom$dm_top.i_dm_mem.gen_rom_snd_scratch.i_debug_rom ===
+
+   Number of wires:                 20
+   Number of wire bits:           1689
+   Number of public wires:           8
+   Number of public wire bits:    1421
+   Number of ports:                  5
+   Number of port bits:            131
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $aldff                          1
+     $bmux                           1
+     $logic_not                      1
+     $lt                             2
+     $mux                            3
+
+=== fifo_v3$dm_top.i_dm_csrs.i_fifo ===
+
+   Number of wires:                115
+   Number of wire bits:           1085
+   Number of public wires:          20
+   Number of public wire bits:     222
+   Number of ports:                 11
+   Number of port bits:             77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     $add                            3
+     $aldff                          5
+     $bmux                           1
+     $bwmux                          1
+     $demux                          2
+     $eq                             1
+     $ge                             1
+     $logic_and                      6
+     $logic_not                      3
+     $lt                             2
+     $mux                           15
+     $not                            4
+     $sub                            1
+
+=== dm_mem$dm_top.i_dm_mem ===
+
+   Number of wires:               1033
+   Number of wire bits:          15045
+   Number of public wires:          59
+   Number of public wire bits:    1828
+   Number of ports:                 25
+   Number of port bits:            554
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                497
+     $add                            1
+     $aldff                          6
+     $and                            3
+     $bmux                          12
+     $demux                         12
+     $eq                            25
+     $ge                            13
+     $le                             5
+     $logic_and                     28
+     $logic_not                     50
+     $logic_or                       1
+     $lt                            19
+     $mux                          302
+     $not                            2
+     $or                             2
+     $pmux                           6
+     $reduce_bool                    2
+     $sub                            7
+     debug_rom$dm_top.i_dm_mem.gen_rom_snd_scratch.i_debug_rom      1
+
+=== dm_sba$dm_top.i_dm_sba ===
+
+   Number of wires:                292
+   Number of wire bits:           1234
+   Number of public wires:          41
+   Number of public wire bits:     370
+   Number of ports:                 28
+   Number of port bits:            252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                153
+     $add                            1
+     $aldff                          1
+     $and                            4
+     $demux                          2
+     $eq                            38
+     $ge                             1
+     $gt                             1
+     $logic_and                      5
+     $logic_not                      6
+     $lt                             1
+     $mul                            2
+     $mux                           67
+     $neg                            4
+     $not                            1
+     $pmux                           7
+     $reduce_bool                    3
+     $reduce_or                      1
+     $shift                          2
+     $shiftx                         2
+     $shl                            3
+     $shr                            1
+
+=== dm_csrs$dm_top.i_dm_csrs ===
+
+   Number of wires:               1069
+   Number of wire bits:          12765
+   Number of public wires:         101
+   Number of public wire bits:    2541
+   Number of ports:                 46
+   Number of port bits:            742
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                528
+     $aldff                         48
+     $and                           11
+     $bmux                          21
+     $bwmux                          2
+     $demux                          6
+     $eq                            30
+     $ge                             9
+     $gt                             2
+     $le                             5
+     $logic_and                     15
+     $logic_not                     20
+     $logic_or                       6
+     $lt                            32
+     $mux                          297
+     $not                           13
+     $pmux                           8
+     $reduce_or                      1
+     $sub                            1
+     fifo_v3$dm_top.i_dm_csrs.i_fifo      1
+
+=== dm_top ===
+
+   Number of wires:                 64
+   Number of wire bits:            952
+   Number of public wires:          64
+   Number of public wire bits:     952
+   Number of ports:                 33
+   Number of port bits:            360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     dm_csrs$dm_top.i_dm_csrs        1
+     dm_mem$dm_top.i_dm_mem          1
+     dm_sba$dm_top.i_dm_sba          1
+
+=== design hierarchy ===
+
+   dm_top                            1
+     dm_csrs$dm_top.i_dm_csrs        1
+       fifo_v3$dm_top.i_dm_csrs.i_fifo      1
+     dm_mem$dm_top.i_dm_mem          1
+       debug_rom$dm_top.i_dm_mem.gen_rom_snd_scratch.i_debug_rom      1
+     dm_sba$dm_top.i_dm_sba          1
+
+   Number of wires:               2593
+   Number of wire bits:          32770
+   Number of public wires:         293
+   Number of public wire bits:    7334
+   Number of ports:                148
+   Number of port bits:           2116
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1229
+     $add                            5
+     $aldff                         61
+     $and                           18
+     $bmux                          35
+     $bwmux                          3
+     $demux                         22
+     $eq                            94
+     $ge                            24
+     $gt                             3
+     $le                            10
+     $logic_and                     54
+     $logic_not                     80
+     $logic_or                       7
+     $lt                            56
+     $mul                            2
+     $mux                          684
+     $neg                            4
+     $not                           20
+     $or                             2
+     $pmux                          21
+     $reduce_bool                    5
+     $reduce_or                      2
+     $shift                          2
+     $shiftx                         2
+     $shl                            3
+     $shr                            1
+     $sub                            9
+

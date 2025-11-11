@@ -1,0 +1,769 @@
+{
+   "creator": "Yosys 0.51 (git sha1 c4b519022, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json -tech cmos ",
+   "modules": {
+      "\\cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req": {
+         "num_wires":         29,
+         "num_wire_bits":     149,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 145,
+         "num_ports":         14,
+         "num_port_bits":     94,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13,
+         "num_cells_by_type": {
+            "$_AND_": 4,
+            "$_DFF_PN0_": 4,
+            "$_NOT_": 2,
+            "cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst": 1,
+            "cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src": 1,
+            "cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr": 1
+         },
+         "estimated_num_transistors": "28+"
+      },
+      "\\cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp": {
+         "num_wires":         29,
+         "num_wire_bits":     128,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 124,
+         "num_ports":         14,
+         "num_port_bits":     80,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13,
+         "num_cells_by_type": {
+            "$_AND_": 4,
+            "$_DFF_PN0_": 4,
+            "$_NOT_": 2,
+            "cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst": 1,
+            "cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src": 1,
+            "cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr": 1
+         },
+         "estimated_num_transistors": "28+"
+      },
+      "\\cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst": {
+         "num_wires":         21,
+         "num_wire_bits":     181,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 175,
+         "num_ports":         9,
+         "num_port_bits":     89,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         93,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 41,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 42,
+            "$_NOT_": 2,
+            "$_OR_": 1,
+            "$_XOR_": 2,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "550+"
+      },
+      "\\cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst": {
+         "num_wires":         21,
+         "num_wire_bits":     153,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 147,
+         "num_ports":         9,
+         "num_port_bits":     75,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         79,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 34,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 35,
+            "$_NOT_": 2,
+            "$_OR_": 1,
+            "$_XOR_": 2,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "466+"
+      },
+      "\\cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src": {
+         "num_wires":         21,
+         "num_wire_bits":     221,
+         "num_pub_wires":     14,
+         "num_pub_wire_bits": 174,
+         "num_ports":         9,
+         "num_port_bits":     89,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         133,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 41,
+            "$_MUX_": 83,
+            "$_NOT_": 3,
+            "$_OR_": 1,
+            "$_XOR_": 1,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync": 1
+         },
+         "estimated_num_transistors": "1032+"
+      },
+      "\\cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src": {
+         "num_wires":         21,
+         "num_wire_bits":     186,
+         "num_pub_wires":     14,
+         "num_pub_wire_bits": 146,
+         "num_ports":         9,
+         "num_port_bits":     75,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         112,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 34,
+            "$_MUX_": 69,
+            "$_NOT_": 3,
+            "$_OR_": 1,
+            "$_XOR_": 1,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync": 1
+         },
+         "estimated_num_transistors": "864+"
+      },
+      "\\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr": {
+         "num_wires":         20,
+         "num_wire_bits":     22,
+         "num_pub_wires":     20,
+         "num_pub_wire_bits": 22,
+         "num_ports":         14,
+         "num_port_bits":     14,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": 1,
+            "cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr": {
+         "num_wires":         20,
+         "num_wire_bits":     22,
+         "num_pub_wires":     20,
+         "num_pub_wire_bits": 22,
+         "num_ports":         14,
+         "num_port_bits":     14,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": 1,
+            "cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\dmi_cdc$dmi_jtag.i_dmi_cdc": {
+         "num_wires":         23,
+         "num_wire_bits":     169,
+         "num_pub_wires":     21,
+         "num_pub_wire_bits": 167,
+         "num_ports":         18,
+         "num_port_bits":     164,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFF_PN0_": 1,
+            "$_DFF_PN1_": 1,
+            "$_NOT_": 2,
+            "cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req": 1,
+            "cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp": 1
+         },
+         "estimated_num_transistors": "10+"
+      },
+      "\\dmi_jtag": {
+         "num_wires":         141,
+         "num_wire_bits":     1058,
+         "num_pub_wires":     43,
+         "num_pub_wire_bits": 411,
+         "num_ports":         16,
+         "num_port_bits":     89,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         802,
+         "num_cells_by_type": {
+            "$_AND_": 55,
+            "$_DFFE_PN0P_": 44,
+            "$_DFF_PN0_": 73,
+            "$_MUX_": 529,
+            "$_NOT_": 25,
+            "$_OR_": 74,
+            "dmi_cdc$dmi_jtag.i_dmi_cdc": 1,
+            "dmi_jtag_tap$dmi_jtag.i_dmi_jtag_tap": 1
+         },
+         "estimated_num_transistors": "7172+"
+      },
+      "\\dmi_jtag_tap$dmi_jtag.i_dmi_jtag_tap": {
+         "num_wires":         114,
+         "num_wire_bits":     436,
+         "num_pub_wires":     34,
+         "num_pub_wire_bits": 118,
+         "num_ports":         17,
+         "num_port_bits":     17,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         376,
+         "num_cells_by_type": {
+            "$_AND_": 22,
+            "$_DFFE_PN0P_": 9,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN0_": 30,
+            "$_DFF_PN1_": 9,
+            "$_MUX_": 184,
+            "$_NOT_": 26,
+            "$_OR_": 93,
+            "tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv": 1,
+            "tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux": 1
+         },
+         "estimated_num_transistors": "2950+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv": {
+         "num_wires":         2,
+         "num_wire_bits":     2,
+         "num_pub_wires":     2,
+         "num_pub_wire_bits": 2,
+         "num_ports":         2,
+         "num_port_bits":     2,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "sg13g2_inv_1": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux": {
+         "num_wires":         4,
+         "num_wire_bits":     4,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 4,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "sg13g2_mux2_1": 1
+         },
+         "estimated_num_transistors": "0+"
+      }
+   },
+      "design": {
+         "num_wires":         1258,
+         "num_wire_bits":     4035,
+         "num_pub_wires":     528,
+         "num_pub_wire_bits": 2033,
+         "num_ports":         313,
+         "num_port_bits":     994,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2450,
+         "num_cells_by_type": {
+            "$_AND_": 214,
+            "$_DFFE_PN0P_": 97,
+            "$_DFFE_PN1P_": 9,
+            "$_DFFE_PP_": 150,
+            "$_DFF_PN0_": 146,
+            "$_DFF_PN1_": 14,
+            "$_MUX_": 1034,
+            "$_NOT_": 231,
+            "$_OR_": 547,
+            "$_XOR_": 6,
+            "sg13g2_inv_1": 1,
+            "sg13g2_mux2_1": 1
+         },
+         "estimated_num_transistors": "17508+"
+      }
+}
+

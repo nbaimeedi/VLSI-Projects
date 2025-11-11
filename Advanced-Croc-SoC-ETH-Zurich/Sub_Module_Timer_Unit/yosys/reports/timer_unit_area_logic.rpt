@@ -1,0 +1,56 @@
+56. Printing statistics.
+
+=== timer_unit ===
+
+   Number of wires:               2050
+   Number of wire bits:           2050
+   Number of public wires:         577
+   Number of public wire bits:     577
+   Number of ports:                123
+   Number of port bits:            123
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1695
+     $scopeinfo                      4
+     sg13g2_a21o_1                  13
+     sg13g2_a21oi_1                 42
+     sg13g2_a221oi_1                 9
+     sg13g2_a22oi_1                107
+     sg13g2_and2_1                  21
+     sg13g2_and3_1                  28
+     sg13g2_and4_1                  11
+     sg13g2_and4_2                   1
+     sg13g2_buf_1                   90
+     sg13g2_buf_2                    3
+     sg13g2_buf_4                    3
+     sg13g2_buf_8                    1
+     sg13g2_dfrbp_1                277
+     sg13g2_inv_1                   56
+     sg13g2_mux2_1                 120
+     sg13g2_nand2_1                 74
+     sg13g2_nand2b_1                23
+     sg13g2_nand3_1                 91
+     sg13g2_nand3b_1                 8
+     sg13g2_nand4_1                 36
+     sg13g2_nor2_1                 197
+     sg13g2_nor2b_1                 41
+     sg13g2_nor3_1                 102
+     sg13g2_nor3_2                   1
+     sg13g2_nor4_1                  41
+     sg13g2_nor4_2                   2
+     sg13g2_o21ai_1                 68
+     sg13g2_or2_1                    7
+     sg13g2_or2_2                    1
+     sg13g2_or3_1                   12
+     sg13g2_or4_1                    5
+     sg13g2_tiehi                    1
+     sg13g2_tielo                    1
+     sg13g2_xnor2_1                125
+     sg13g2_xor2_1                  73
+
+   Area for cell type $scopeinfo is unknown!
+
+   Chip area for module '\timer_unit': 27959.488200
+     of which used for sequential elements: 13067.308800 (46.74%)
+

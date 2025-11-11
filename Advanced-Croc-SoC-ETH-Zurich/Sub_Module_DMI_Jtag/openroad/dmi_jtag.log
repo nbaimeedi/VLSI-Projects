@@ -1,0 +1,1483 @@
+OpenROAD v2.0-16235-gedf00dff9 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Init tech from Github PDK
+Init standard cells
+Init IO cells
+Init SRAM macros
+Init tech-lef
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 300 vias
+Init cell-lef
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 78 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0227] LEF file: ../ihp13/bondpad/lef/bondpad_70x70.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef, created 1 library cells
+###############################################################################
+# Step 00: Initialization
+###############################################################################
+Read netlist
+Read constraints
+[WARNING STA-0361] net 'i_croc_soc/i_croc/i_dmi_jtag/i_dmi_cdc.i_cdc_req/*async_*' not found.
+[WARNING STA-0361] net 'i_croc_soc/i_croc/i_dmi_jtag/i_dmi_cdc.i_cdc_resp/*async_*' not found.
+Clocks...
+[WARNING STA-0366] port 'jtag_tck_i' not found.
+[WARNING STA-0366] port 'ref_clk_i' not found.
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+CDC/Sync...
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING STA-0472] no valid objects specified for -through
+Input/Outputs...
+JTAG...
+[WARNING STA-0366] port 'jtag_tdi_i' not found.
+[WARNING STA-0366] port 'jtag_tms_i' not found.
+[WARNING STA-0366] port 'jtag_tdi_i' not found.
+[WARNING STA-0366] port 'jtag_tms_i' not found.
+[WARNING STA-0366] port 'jtag_tdo_o' not found.
+[WARNING STA-0366] port 'jtag_tdo_o' not found.
+[WARNING STA-0366] port 'jtag_trst_ni' not found.
+[WARNING STA-0366] port 'jtag_trst_ni' not found.
+[WARNING STA-0471] no valid objects specified for -from.
+[WARNING STA-0366] port 'jtag_trst_ni' not found.
+[WARNING STA-0471] no valid objects specified for -from.
+GPIO...
+[WARNING STA-0366] port 'gpio*' not found.
+[WARNING STA-0366] port 'fetch_en_i' not found.
+[WARNING STA-0366] port 'gpio*' not found.
+[WARNING STA-0366] port 'fetch_en_i' not found.
+[WARNING STA-0366] port 'status_o' not found.
+[WARNING STA-0366] port 'gpio*' not found.
+[WARNING STA-0366] port 'status_o' not found.
+[WARNING STA-0366] port 'gpio*' not found.
+UART...
+[WARNING STA-0366] port 'uart_rx_i' not found.
+[WARNING STA-0366] port 'uart_rx_i' not found.
+[WARNING STA-0366] port 'uart_tx_o' not found.
+[WARNING STA-0366] port 'uart_tx_o' not found.
+Check constraints
+Initialize Chip
+[WARNING IFP-0028] Core area lower left (25.000, 25.000) snapped to (25.440, 26.460).
+[INFO IFP-0001] Added 145 rows of 1144 site CoreSite.
+Connect global nets (power)
+[WARNING STA-0235] report_net -connections is deprecated.
+Net VDD
+ Pin capacitance: 0.00
+ Wire capacitance: 0.00
+ Total capacitance: 0.00
+ Number of drivers: 0
+ Number of loads: 0
+ Number of pins: 0
+
+[WARNING STA-0235] report_net -connections is deprecated.
+Net VSS
+ Pin capacitance: 0.00
+ Wire capacitance: 0.00
+ Total capacitance: 0.00
+ Number of drivers: 0
+ Number of loads: 0
+ Number of pins: 0
+
+Create Floorplan
+Metal Tracks
+Create Power Grid
+Power Grid
+Pin Placement
+[INFO PPL-0049] Restrict input pins to region 0.0u-600.0u, in the left edge.
+[INFO PPL-0049] Restrict output pins to region 0.0u-600.0u, in the right edge.
+[INFO PPL-0049] Restrict inout pins to region 0.0u-600.0u, in the left edge.
+Found 0 macro blocks.
+[INFO PPL-0010] Tentative 0 to set up sections.
+[INFO PPL-0001] Number of slots           810
+[INFO PPL-0002] Number of I/O             89
+[INFO PPL-0003] Number of I/O w/sink      89
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0006] Slots increase factor     0.01
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 29197.62 um.
+###############################################################################
+# Step 01: Initial Repair Netlist
+###############################################################################
+Repair tie fanout
+[INFO RSZ-0042] Inserted 2 tie sg13g2_tielo instances.
+[INFO RSZ-0042] Inserted 151 tie sg13g2_tiehi instances.
+Remove buffers
+[INFO RSZ-0026] Removed 129 buffers.
+Repair design
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+[INFO RSZ-0058] Using max wire length 3224um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      2583
+      100 |       0 |       0 |             0 |      2483
+      200 |       0 |       0 |             0 |      2383
+      300 |       0 |       0 |             1 |      2283
+      400 |       0 |       0 |             2 |      2183
+      500 |       0 |       0 |             5 |      2083
+      600 |       0 |       0 |             5 |      1983
+      700 |       0 |       0 |             7 |      1883
+      800 |       0 |       0 |             8 |      1783
+      900 |       0 |       0 |             9 |      1683
+     1000 |       0 |       0 |             9 |      1583
+     1100 |       0 |       0 |             9 |      1483
+     1200 |       0 |       0 |            10 |      1383
+     1300 |       0 |       0 |            12 |      1283
+     1400 |       0 |      13 |            18 |      1183
+     1500 |       0 |      20 |            21 |      1083
+     1600 |       0 |      20 |            26 |       983
+     1700 |       0 |      20 |            26 |       883
+     1800 |       0 |      20 |            26 |       783
+     1900 |       0 |      20 |            35 |       683
+     2000 |       0 |      20 |            35 |       583
+     2100 |       0 |      20 |            39 |       483
+     2200 |       0 |      20 |            42 |       383
+     2300 |       0 |      20 |            42 |       283
+     2400 |       0 |      21 |            45 |       183
+     2500 |       0 |      21 |            45 |        83
+    final |       0 |      21 |            45 |         0
+---------------------------------------------------------
+[INFO RSZ-0035] Found 45 fanout violations.
+[INFO RSZ-0038] Inserted 21 buffers in 45 nets.
+###############################################################################
+# Step 02: GLOBAL PLACEMENT
+###############################################################################
+[INFO ORD-0030] Using 6 thread(s).
+Global Placement (1)
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.480  3.780 ) um
+[INFO GPL-0004] CoreBBox: ( 25.440 26.460 ) ( 574.560 574.560 ) um
+[INFO GPL-0006] NumInstances:              2145
+[INFO GPL-0007] NumPlaceInstances:         2145
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   2612
+[INFO GPL-0011] NumPins:                   8012
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 600.000 600.000 ) um
+[INFO GPL-0013] CoreBBox: ( 25.440 26.460 ) ( 574.560 574.560 ) um
+[INFO GPL-0016] CoreArea:            300972.672 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       38296.541 um^2
+[INFO GPL-0019] Util:                    12.724 %
+[INFO GPL-0020] StdInstsArea:         38296.541 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00335581 HPWL: 91881974
+[InitialPlace]  Iter: 2 CG residual: 0.00133147 HPWL: 60052240
+[InitialPlace]  Iter: 3 CG residual: 0.00090337 HPWL: 59798292
+[InitialPlace]  Iter: 4 CG residual: 0.00103294 HPWL: 59978343
+[InitialPlace]  Iter: 5 CG residual: 0.00049864 HPWL: 60121347
+[InitialPlace]  Iter: 6 CG residual: 0.00065929 HPWL: 60165672
+[InitialPlace]  Iter: 7 CG residual: 0.00071454 HPWL: 60101047
+[InitialPlace]  Iter: 8 CG residual: 0.00053805 HPWL: 60121683
+[InitialPlace]  Iter: 9 CG residual: 0.00070773 HPWL: 60049259
+[InitialPlace]  Iter: 10 CG residual: 0.00048750 HPWL: 60081565
+[InitialPlace]  Iter: 11 CG residual: 0.00048301 HPWL: 60008003
+[InitialPlace]  Iter: 12 CG residual: 0.00042685 HPWL: 60013888
+[InitialPlace]  Iter: 13 CG residual: 0.00050036 HPWL: 59943257
+[InitialPlace]  Iter: 14 CG residual: 0.00054950 HPWL: 59957322
+[InitialPlace]  Iter: 15 CG residual: 0.00060155 HPWL: 59888549
+[InitialPlace]  Iter: 16 CG residual: 0.00069106 HPWL: 59914517
+[InitialPlace]  Iter: 17 CG residual: 0.00090640 HPWL: 59844619
+[InitialPlace]  Iter: 18 CG residual: 0.00041325 HPWL: 59860354
+[InitialPlace]  Iter: 19 CG residual: 0.00022444 HPWL: 59801318
+[InitialPlace]  Iter: 20 CG residual: 0.00044350 HPWL: 59809052
+[INFO GPL-0031] FillerInit:NumGCells:     10584
+[INFO GPL-0032] FillerInit:NumGNets:       2612
+[INFO GPL-0033] FillerInit:NumGPins:       8012
+[INFO GPL-0023] TargetDensity:            0.600
+[INFO GPL-0024] AvrgPlaceInstArea:       17.854 um^2
+[INFO GPL-0025] IdealBinArea:            29.756 um^2
+[INFO GPL-0026] IdealBinCnt:              10114
+[INFO GPL-0027] TotalBinArea:        300972.672 um^2
+[INFO GPL-0028] BinCnt:        64     64
+[INFO GPL-0029] BinSize: (  8.580  8.565 )
+[INFO GPL-0030] NumBins: 4096
+[NesterovSolve] Iter:    1 overflow: 0.936 HPWL: 38336195
+[NesterovSolve] Iter:   10 overflow: 0.826 HPWL: 44028941
+[NesterovSolve] Iter:   20 overflow: 0.781 HPWL: 44613710
+[NesterovSolve] Iter:   30 overflow: 0.762 HPWL: 44013415
+[NesterovSolve] Iter:   40 overflow: 0.759 HPWL: 43847901
+[NesterovSolve] Iter:   50 overflow: 0.757 HPWL: 43594529
+[NesterovSolve] Iter:   60 overflow: 0.761 HPWL: 43540879
+[NesterovSolve] Iter:   70 overflow: 0.756 HPWL: 43547684
+[NesterovSolve] Iter:   80 overflow: 0.747 HPWL: 43471532
+[NesterovSolve] Iter:   90 overflow: 0.746 HPWL: 43442758
+[NesterovSolve] Iter:  100 overflow: 0.746 HPWL: 43457178
+[NesterovSolve] Iter:  110 overflow: 0.745 HPWL: 43440934
+[NesterovSolve] Iter:  120 overflow: 0.742 HPWL: 43387431
+[NesterovSolve] Iter:  130 overflow: 0.741 HPWL: 43355147
+[NesterovSolve] Iter:  140 overflow: 0.741 HPWL: 43381264
+[NesterovSolve] Iter:  150 overflow: 0.742 HPWL: 43445046
+[NesterovSolve] Iter:  160 overflow: 0.740 HPWL: 43534566
+[NesterovSolve] Iter:  170 overflow: 0.735 HPWL: 43689117
+[NesterovSolve] Iter:  180 overflow: 0.724 HPWL: 43826918
+[NesterovSolve] Iter:  190 overflow: 0.709 HPWL: 44035940
+[NesterovSolve] Iter:  200 overflow: 0.688 HPWL: 44066515
+[NesterovSolve] Iter:  210 overflow: 0.673 HPWL: 44064207
+[NesterovSolve] Iter:  220 overflow: 0.646 HPWL: 44517950
+[NesterovSolve] Iter:  230 overflow: 0.615 HPWL: 44996112
+[NesterovSolve] Iter:  240 overflow: 0.585 HPWL: 45032144
+[NesterovSolve] Iter:  250 overflow: 0.557 HPWL: 45391568
+[NesterovSolve] Iter:  260 overflow: 0.517 HPWL: 45191191
+[NesterovSolve] Iter:  270 overflow: 0.471 HPWL: 44941611
+[NesterovSolve] Iter:  280 overflow: 0.424 HPWL: 44701501
+[NesterovSolve] Iter:  290 overflow: 0.377 HPWL: 44909520
+[NesterovSolve] Iter:  300 overflow: 0.340 HPWL: 45425627
+[NesterovSolve] Iter:  310 overflow: 0.316 HPWL: 45721922
+[NesterovSolve] Iter:  320 overflow: 0.290 HPWL: 45855960
+[NesterovSolve] Iter:  330 overflow: 0.256 HPWL: 46058490
+[NesterovSolve] Iter:  340 overflow: 0.232 HPWL: 46281231
+[NesterovSolve] Iter:  350 overflow: 0.207 HPWL: 46465906
+[NesterovSolve] Iter:  360 overflow: 0.183 HPWL: 46861549
+[NesterovSolve] Iter:  370 overflow: 0.161 HPWL: 47213456
+[NesterovSolve] Iter:  380 overflow: 0.141 HPWL: 47543288
+[NesterovSolve] Iter:  390 overflow: 0.117 HPWL: 47797276
+[NesterovSolve] Finished with Overflow: 0.099054
+Estimate parasitics
+Repair design
+[INFO RSZ-0058] Using max wire length 3224um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      2604
+      100 |       0 |       0 |             0 |      2504
+      200 |       0 |       0 |             0 |      2404
+      300 |      16 |      17 |             1 |      2304
+      400 |      24 |      24 |             2 |      2204
+      500 |      46 |      46 |             5 |      2104
+      600 |      53 |      46 |             7 |      2004
+      700 |      77 |      69 |             9 |      1904
+      800 |      81 |      74 |            10 |      1804
+      900 |      85 |      79 |            11 |      1704
+     1000 |      85 |      79 |            11 |      1604
+     1100 |      88 |      79 |            11 |      1504
+     1200 |     100 |      84 |            12 |      1404
+     1300 |     124 |      91 |            14 |      1304
+     1400 |     161 |     115 |            20 |      1204
+     1500 |     198 |     137 |            23 |      1104
+     1600 |     213 |     146 |            28 |      1004
+     1700 |     214 |     146 |            28 |       904
+     1800 |     214 |     146 |            28 |       804
+     1900 |     229 |     160 |            37 |       704
+     2000 |     229 |     160 |            37 |       604
+     2100 |     229 |     160 |            75 |       504
+     2200 |     241 |     170 |            85 |       404
+     2300 |     242 |     170 |            86 |       304
+     2400 |     242 |     170 |            86 |       204
+     2500 |     287 |     214 |            88 |       104
+     2600 |     287 |     214 |            88 |         4
+    final |     287 |     214 |            88 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 46 slew violations.
+[INFO RSZ-0035] Found 42 fanout violations.
+[INFO RSZ-0036] Found 46 capacitance violations.
+[INFO RSZ-0038] Inserted 214 buffers in 88 nets.
+[INFO RSZ-0039] Resized 287 instances.
+Repair setup
+[INFO RSZ-0094] Found 82 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 82 out of 82 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        1 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        2 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        3 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        4 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        5 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        6 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        7 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        8 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+        9 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       10 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       10 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       11 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       12 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       13 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       14 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       15 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       16 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       17 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       18 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       19 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       20 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       20 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       21 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       22 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       23 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       24 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       25 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       26 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       27 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       28 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       29 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       30 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       30 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       31 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       32 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       33 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       34 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       35 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       36 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       37 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       38 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       39 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       40 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       40 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       41 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       42 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       43 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       44 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       45 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       46 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       47 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       48 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       49 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       50 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       50 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       51 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       52 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       53 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       54 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       55 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       56 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       57 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       58 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       59 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       60 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       60 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       61 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       62 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       63 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       64 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       65 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       66 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       67 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       68 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       69 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       70 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       70 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       71 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       72 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       73 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       74 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       75 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       76 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       77 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       78 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       79 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       80 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       80 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       81 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+       82 |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+    final |       0 |       0 |        0 |      0 |     0 |  -10.959 |     -446.9 |     82 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[40\]_reg/D
+---------------------------------------------------------------------------------------------------
+[WARNING RSZ-0062] Unable to repair all setup violations.
+Global Placement (2)
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.480  3.780 ) um
+[INFO GPL-0004] CoreBBox: ( 25.440 26.460 ) ( 574.560 574.560 ) um
+[INFO GPL-0006] NumInstances:              2359
+[INFO GPL-0007] NumPlaceInstances:         2359
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   2826
+[INFO GPL-0011] NumPins:                   8440
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 600.000 600.000 ) um
+[INFO GPL-0013] CoreBBox: ( 25.440 26.460 ) ( 574.560 574.560 ) um
+[INFO GPL-0016] CoreArea:            300972.672 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       41691.283 um^2
+[INFO GPL-0019] Util:                    13.852 %
+[INFO GPL-0020] StdInstsArea:         41691.283 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00109084 HPWL: 88201041
+[InitialPlace]  Iter: 2 CG residual: 0.00066033 HPWL: 63040898
+[InitialPlace]  Iter: 3 CG residual: 0.00021610 HPWL: 62719161
+[InitialPlace]  Iter: 4 CG residual: 0.00013971 HPWL: 62862919
+[InitialPlace]  Iter: 5 CG residual: 0.00049828 HPWL: 62945817
+[InitialPlace]  Iter: 6 CG residual: 0.00028478 HPWL: 63025855
+[InitialPlace]  Iter: 7 CG residual: 0.00018952 HPWL: 62946760
+[InitialPlace]  Iter: 8 CG residual: 0.00008727 HPWL: 62972501
+[InitialPlace]  Iter: 9 CG residual: 0.00015396 HPWL: 62886132
+[InitialPlace]  Iter: 10 CG residual: 0.00006205 HPWL: 62917361
+[InitialPlace]  Iter: 11 CG residual: 0.00005725 HPWL: 62827264
+[InitialPlace]  Iter: 12 CG residual: 0.00012953 HPWL: 62864215
+[InitialPlace]  Iter: 13 CG residual: 0.00016033 HPWL: 62782945
+[InitialPlace]  Iter: 14 CG residual: 0.00009334 HPWL: 62819747
+[InitialPlace]  Iter: 15 CG residual: 0.00010887 HPWL: 62730725
+[InitialPlace]  Iter: 16 CG residual: 0.00004330 HPWL: 62771719
+[InitialPlace]  Iter: 17 CG residual: 0.00019787 HPWL: 62686892
+[InitialPlace]  Iter: 18 CG residual: 0.00004893 HPWL: 62726466
+[InitialPlace]  Iter: 19 CG residual: 0.00013992 HPWL: 62640313
+[InitialPlace]  Iter: 20 CG residual: 0.00004514 HPWL: 62686722
+[INFO GPL-0031] FillerInit:NumGCells:     10902
+[INFO GPL-0032] FillerInit:NumGNets:       2826
+[INFO GPL-0033] FillerInit:NumGPins:       8440
+[INFO GPL-0023] TargetDensity:            0.600
+[INFO GPL-0024] AvrgPlaceInstArea:       17.673 um^2
+[INFO GPL-0025] IdealBinArea:            29.455 um^2
+[INFO GPL-0026] IdealBinCnt:              10217
+[INFO GPL-0027] TotalBinArea:        300972.672 um^2
+[INFO GPL-0028] BinCnt:        64     64
+[INFO GPL-0029] BinSize: (  8.580  8.565 )
+[INFO GPL-0030] NumBins: 4096
+[NesterovSolve] Iter:    1 overflow: 0.946 HPWL: 40381135
+[NesterovSolve] Iter:   10 overflow: 0.838 HPWL: 46670638
+[NesterovSolve] Iter:   20 overflow: 0.800 HPWL: 47218048
+[NesterovSolve] Iter:   30 overflow: 0.790 HPWL: 47113058
+[NesterovSolve] Iter:   40 overflow: 0.794 HPWL: 46910199
+[NesterovSolve] Iter:   50 overflow: 0.797 HPWL: 46585802
+[NesterovSolve] Iter:   60 overflow: 0.790 HPWL: 46483775
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack -1.09e-08
+[INFO GPL-0103] Timing-driven: weighted 281 nets.
+[NesterovSolve] Iter:   70 overflow: 0.789 HPWL: 46516376
+[NesterovSolve] Iter:   80 overflow: 0.766 HPWL: 47777331
+[NesterovSolve] Iter:   90 overflow: 0.769 HPWL: 47628390
+[NesterovSolve] Iter:  100 overflow: 0.767 HPWL: 47418904
+[NesterovSolve] Iter:  110 overflow: 0.765 HPWL: 47453746
+[NesterovSolve] Iter:  120 overflow: 0.761 HPWL: 47100836
+[NesterovSolve] Iter:  130 overflow: 0.761 HPWL: 46965907
+[NesterovSolve] Iter:  140 overflow: 0.762 HPWL: 46936675
+[NesterovSolve] Iter:  150 overflow: 0.763 HPWL: 46850706
+[NesterovSolve] Iter:  160 overflow: 0.764 HPWL: 46955885
+[NesterovSolve] Iter:  170 overflow: 0.761 HPWL: 47058303
+[NesterovSolve] Iter:  180 overflow: 0.756 HPWL: 47169678
+[NesterovSolve] Iter:  190 overflow: 0.751 HPWL: 47381657
+[NesterovSolve] Iter:  200 overflow: 0.733 HPWL: 47568556
+[NesterovSolve] Iter:  210 overflow: 0.709 HPWL: 47833984
+[NesterovSolve] Iter:  220 overflow: 0.676 HPWL: 48557349
+[NesterovSolve] Iter:  230 overflow: 0.643 HPWL: 49353407
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack -1.11e-08
+[INFO GPL-0103] Timing-driven: weighted 281 nets.
+[NesterovSolve] Iter:  240 overflow: 0.614 HPWL: 49709204
+[NesterovSolve] Snapshot saved at iter = 243
+[NesterovSolve] Iter:  250 overflow: 0.579 HPWL: 50164009
+[NesterovSolve] Iter:  260 overflow: 0.543 HPWL: 50407713
+[NesterovSolve] Iter:  270 overflow: 0.506 HPWL: 50542605
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack -1.11e-08
+[INFO GPL-0103] Timing-driven: weighted 281 nets.
+[NesterovSolve] Iter:  280 overflow: 0.470 HPWL: 51036671
+[NesterovSolve] Iter:  290 overflow: 0.441 HPWL: 51602930
+[NesterovSolve] Iter:  300 overflow: 0.397 HPWL: 52122968
+[NesterovSolve] Iter:  310 overflow: 0.357 HPWL: 52747301
+[NesterovSolve] Iter:  320 overflow: 0.317 HPWL: 53008388
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileBBox: (    0    0 ) ( 7200 7200 ) DBU
+[INFO GPL-0038] TileCnt:      83   83
+[INFO GPL-0040] NumTiles: 6889
+[INFO GPL-0081] TotalRouteOverflow: 0.0
+[INFO GPL-0082] OverflowTileCnt: 0
+[INFO GPL-0083] 0.5%RC: 0.40183959347861153
+[INFO GPL-0084] 1.0%RC: 0.36194280696951825
+[INFO GPL-0085] 2.0%RC: 0.32324035228162573
+[INFO GPL-0086] 5.0%RC: 0.26837567890035935
+[INFO GPL-0087] FinalRC: 0.3818912
+[INFO GPL-0077] FinalRC lower than targetRC(1.01), routability not needed.
+[NesterovSolve] Iter:  330 overflow: 0.285 HPWL: 53337842
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack -1.1e-08
+[INFO GPL-0103] Timing-driven: weighted 279 nets.
+[NesterovSolve] Iter:  340 overflow: 0.255 HPWL: 53921505
+[NesterovSolve] Iter:  350 overflow: 0.226 HPWL: 54307927
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack -1.1e-08
+[INFO GPL-0103] Timing-driven: weighted 279 nets.
+[NesterovSolve] Iter:  360 overflow: 0.197 HPWL: 55013644
+[NesterovSolve] Iter:  370 overflow: 0.167 HPWL: 55687101
+[NesterovSolve] Iter:  380 overflow: 0.144 HPWL: 56106487
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack -1.1e-08
+[INFO GPL-0103] Timing-driven: weighted 280 nets.
+[NesterovSolve] Iter:  390 overflow: 0.121 HPWL: 56316465
+[NesterovSolve] Iter:  400 overflow: 0.103 HPWL: 56706308
+[NesterovSolve] Finished with Overflow: 0.099054
+###############################################################################
+# Step 03: DETAILED PLACEMENT
+###############################################################################
+Detailed placement
+Placement Analysis
+---------------------------------
+total displacement       7278.0 u
+average displacement        3.1 u
+max displacement           12.8 u
+original HPWL           56811.5 u
+legalized HPWL          63650.8 u
+delta HPWL                   12 %
+
+Optimize mirroring
+[INFO DPL-0020] Mirrored 887 instances
+[INFO DPL-0021] HPWL before           63650.8 u
+[INFO DPL-0022] HPWL after            62506.9 u
+[INFO DPL-0023] HPWL delta               -1.8 %
+Estimate parasitics
+###############################################################################
+# Step 04: CLOCK TREE SYNTHESIS
+###############################################################################
+Repair clock inverters
+Clock Tree Synthesis
+[INFO CTS-0050] Root buffer is sg13g2_buf_8.
+[INFO CTS-0051] Sink buffer is sg13g2_buf_16.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sg13g2_buf_2
+                    sg13g2_buf_4
+                    sg13g2_buf_8
+                    sg13g2_buf_16
+[INFO CTS-0049] Characterization buffer is sg13g2_buf_16.
+[INFO CTS-0007] Net "clk_i" found for clock "clk_sys".
+[INFO CTS-0010]  Clock net "clk_i" has 126 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 4 buffer(s) types.
+[INFO CTS-0200] 0 placement blockages have been identified.
+[INFO CTS-0201] 0 placed hard macros will be treated like blockages.
+[INFO CTS-0027] Generating H-Tree topology for net clk_i.
+[INFO CTS-0028]  Total number of sinks: 126.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 8 and with maximum cluster diameter of 50.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 18900  dbu (18 um).
+[INFO CTS-0023]  Original sink region: [(31123, 239708), (567038, 402697)].
+[INFO CTS-0024]  Normalized sink region: [(1.64672, 12.683), (30.002, 21.3067)].
+[INFO CTS-0025]     Width:  28.3553.
+[INFO CTS-0026]     Height: 8.6238.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 63
+    Sub-region size: 14.1776 X 8.6238
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 32
+    Sub-region size: 14.1776 X 4.3119
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 16
+    Sub-region size: 7.0888 X 4.3119
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 4
+    Direction: Vertical
+    Sinks per sub-region: 8
+    Sub-region size: 7.0888 X 2.1559
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 5
+    Direction: Horizontal
+    Sinks per sub-region: 4
+    Sub-region size: 3.5444 X 2.1559
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 8.
+[INFO CTS-0035]  Number of sinks covered: 126.
+[INFO CTS-0018]     Created 49 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 49 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 3:2, 4:30..
+[INFO CTS-0017]     Max level of the clock tree: 5.
+[INFO CTS-0098] Clock net "clk_i"
+[INFO CTS-0099]  Sinks 135
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 622.02 um
+[INFO CTS-0102]  Path depth 3 - 3
+[INFO CTS-0207]  Leaf load cells 9
+Repair clock nets
+[INFO RSZ-0058] Using max wire length 3224um.
+Detailed placement
+Placement Analysis
+---------------------------------
+total displacement        527.0 u
+average displacement        0.2 u
+max displacement           17.6 u
+original HPWL           65929.3 u
+legalized HPWL          67449.2 u
+delta HPWL                    2 %
+
+Estimate parasitics
+[WARNING STA-0450] virtual clock clk_jtg can not be propagated.
+[WARNING STA-0450] virtual clock clk_rtc can not be propagated.
+Repair setup
+[INFO RSZ-0094] Found 41 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 41 out of 41 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        1 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        2 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        3 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        4 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        5 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        6 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        7 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        8 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+        9 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       10 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       10 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       11 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       12 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       13 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       14 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       15 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       16 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       17 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       18 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       19 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       20 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       20 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       21 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       22 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       23 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       24 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       25 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       26 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       27 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       28 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       29 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       30 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       30 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       31 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       32 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       33 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       34 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       35 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       36 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       37 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       38 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       39 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       40 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       40 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+       41 |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+    final |       0 |       0 |        0 |      0 |     0 |  -10.939 |     -446.1 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[12\]_reg/D
+---------------------------------------------------------------------------------------------------
+[WARNING RSZ-0062] Unable to repair all setup violations.
+Detailed placement
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           67449.2 u
+legalized HPWL          67449.2 u
+delta HPWL                    0 %
+
+Check placement
+Estimate parasitics
+###############################################################################
+# Step 05: GLOBAL ROUTE
+###############################################################################
+Global route
+Estimate parasitics
+Perform buffer insertion...
+[INFO RSZ-0058] Using max wire length 3224um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      2818
+      100 |       0 |       0 |             0 |      2718
+      200 |       0 |       0 |             0 |      2618
+      300 |       0 |       0 |             0 |      2518
+      400 |       0 |       0 |             0 |      2418
+      500 |       0 |       0 |             0 |      2318
+      600 |       0 |       0 |             0 |      2218
+      700 |       0 |       0 |             2 |      2118
+      800 |       0 |       0 |             2 |      2018
+      900 |       0 |       0 |             2 |      1918
+     1000 |       0 |       0 |             2 |      1818
+     1100 |       0 |       0 |             2 |      1718
+     1200 |       0 |       0 |             2 |      1618
+     1300 |       0 |       0 |             2 |      1518
+     1400 |       0 |       0 |             2 |      1418
+     1500 |       0 |       0 |             2 |      1318
+     1600 |       0 |       0 |             4 |      1218
+     1700 |       0 |       0 |             4 |      1118
+     1800 |       0 |       0 |             4 |      1018
+     1900 |       0 |       0 |             4 |       918
+     2000 |       0 |       0 |             4 |       818
+     2100 |       0 |       0 |             4 |       718
+     2200 |       0 |       0 |             7 |       618
+     2300 |       0 |       0 |            45 |       518
+     2400 |       0 |       0 |            45 |       418
+     2500 |       0 |       0 |            46 |       318
+     2600 |       0 |       0 |            46 |       218
+     2700 |       0 |      50 |            47 |       118
+     2800 |       0 |      50 |            47 |        18
+    final |       0 |      50 |            47 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 92 slew violations.
+[INFO RSZ-0035] Found 1 fanout violations.
+[INFO RSZ-0036] Found 92 capacitance violations.
+[INFO RSZ-0038] Inserted 50 buffers in 47 nets.
+Repair setup and hold violations...
+[INFO RSZ-0094] Found 41 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 41 out of 41 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        1 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        2 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        3 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        4 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        5 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        6 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        7 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        8 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+        9 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       10 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       10 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       11 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       12 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       13 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       14 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       15 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       16 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       17 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       18 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       19 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       20 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       20 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       21 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       22 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       23 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       24 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       25 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       26 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       27 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       28 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       29 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       30 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       30 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       31 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       32 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       33 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       34 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       35 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       36 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       37 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       38 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       39 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       40 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       40 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+       41 |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+    final |       0 |       0 |        0 |      0 |     0 |  -11.664 |     -457.4 |     41 | i_dmi_cdc.i_cdc_req/i_dst/data_o\[23\]_reg/D
+---------------------------------------------------------------------------------------------------
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0046] Found 10 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   WNS   |   TNS   | Endpoint
+---------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |   0.030 |   0.000 | i_dmi_cdc.i_cdc_req/i_dst/i_sync/serial_o_reg/D
+    final |       0 |      10 |            0 |   0.109 |   0.000 | i_dmi_cdc.i_cdc_resp/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_a/i_state_transition_cdc_dst/async_ack_o_reg/D
+---------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 10 hold buffers.
+GRT incremental...
+Placement Analysis
+---------------------------------
+total displacement        225.5 u
+average displacement        0.1 u
+max displacement            8.1 u
+original HPWL           71111.2 u
+legalized HPWL          71240.7 u
+delta HPWL                    0 %
+
+[INFO GRT-0009] rerouting 53 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 9
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1           92927          2818            3.03%             0 /  0 /  0
+Metal2           54626          5563           10.18%             0 /  0 /  0
+Metal3          102500          1039            1.01%             0 /  0 /  0
+Metal4          116112          1390            1.20%             0 /  0 /  0
+Metal5           82000             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           448165         10810            2.41%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 120232 um
+[INFO GRT-0014] Routed nets: 2405
+Saving checkpoint 10_dmi_jtag.g_route
+Time: 110.240801 sec deltaT: 109.972778
+###############################################################################
+# Step 06: DETAILED ROUTE
+###############################################################################
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 2 antenna violations.
+[INFO GRT-0015] Inserted 2 diodes.
+[INFO GRT-0009] rerouting 9 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 7
+[INFO GRT-0006] Repairing antennas, iteration 2.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 4
+[INFO GRT-0002] Maximum degree: 4
+[INFO GRT-0006] Repairing antennas, iteration 3.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 5
+[INFO GRT-0002] Maximum degree: 5
+[INFO GRT-0006] Repairing antennas, iteration 4.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 6
+[INFO GRT-0002] Maximum degree: 6
+[INFO GRT-0006] Repairing antennas, iteration 5.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 7
+[INFO GRT-0002] Maximum degree: 7
+Detailed route
+[INFO ORD-0030] Using 6 thread(s).
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Cont
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+
+Units:                1000
+Number of layers:     15
+Number of macros:     111
+Number of vias:       300
+Number of viarulegen: 6
+
+[INFO DRT-0150] Reading design.
+
+Design:                   dmi_jtag
+Die area:                 ( 0 0 ) ( 600000 600000 )
+Number of track patterns: 14
+Number of DEF vias:       0
+Number of components:     2483
+Number of terminals:      89
+Number of snets:          4
+Number of nets:           2935
+
+[INFO DRT-0167] List of default vias:
+  Layer Via1
+    default via: Via1_YX_so
+  Layer Via2
+    default via: Via2_YX_so
+  Layer Via3
+    default via: Via3_YX_so
+  Layer Via4
+    default via: Via4_YX_so
+  Layer TopVia1
+    default via: TopVia1EWNS
+  Layer TopVia2
+    default via: TopVia2EWNS
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 85.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete GatPoly.
+[INFO DRT-0024]   Complete Cont.
+[INFO DRT-0024]   Complete Metal1.
+[INFO DRT-0024]   Complete Via1.
+[INFO DRT-0024]   Complete Metal2.
+[INFO DRT-0024]   Complete Via2.
+[INFO DRT-0024]   Complete Metal3.
+[INFO DRT-0024]   Complete Via3.
+[INFO DRT-0024]   Complete Metal4.
+[INFO DRT-0024]   Complete Via4.
+[INFO DRT-0024]   Complete Metal5.
+[INFO DRT-0024]   Complete TopVia1.
+[INFO DRT-0024]   Complete TopMetal1.
+[INFO DRT-0024]   Complete TopVia2.
+[INFO DRT-0024]   Complete TopMetal2.
+[INFO DRT-0033] GatPoly shape region query size = 0.
+[INFO DRT-0033] Cont shape region query size = 0.
+[INFO DRT-0033] Metal1 shape region query size = 85429.
+[INFO DRT-0033] Via1 shape region query size = 1641.
+[INFO DRT-0033] Metal2 shape region query size = 1922.
+[INFO DRT-0033] Via2 shape region query size = 0.
+[INFO DRT-0033] Metal3 shape region query size = 0.
+[INFO DRT-0033] Via3 shape region query size = 0.
+[INFO DRT-0033] Metal4 shape region query size = 0.
+[INFO DRT-0033] Via4 shape region query size = 0.
+[INFO DRT-0033] Metal5 shape region query size = 0.
+[INFO DRT-0033] TopVia1 shape region query size = 0.
+[INFO DRT-0033] TopMetal1 shape region query size = 0.
+[INFO DRT-0033] TopVia2 shape region query size = 0.
+[INFO DRT-0033] TopMetal2 shape region query size = 0.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 287 pins.
+[INFO DRT-0081]   Complete 85 unique inst patterns.
+[INFO DRT-0084]   Complete 1339 groups.
+#scanned instances     = 2483
+#unique  instances     = 85
+#stdCellGenAp          = 3164
+#stdCellValidPlanarAp  = 106
+#stdCellValidViaAp     = 2194
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 8578
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:01:29, elapsed time = 00:00:18, memory = 1981.74 (MB), peak = 1981.74 (MB)
+
+[INFO DRT-0157] Number of guides:     13117
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 83 STEP 7200 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 83 STEP 7200 ;
+[INFO DRT-0028]   Complete GatPoly.
+[INFO DRT-0028]   Complete Cont.
+[INFO DRT-0028]   Complete Metal1.
+[INFO DRT-0028]   Complete Via1.
+[INFO DRT-0028]   Complete Metal2.
+[INFO DRT-0028]   Complete Via2.
+[INFO DRT-0028]   Complete Metal3.
+[INFO DRT-0028]   Complete Via3.
+[INFO DRT-0028]   Complete Metal4.
+[INFO DRT-0028]   Complete Via4.
+[INFO DRT-0028]   Complete Metal5.
+[INFO DRT-0028]   Complete TopVia1.
+[INFO DRT-0028]   Complete TopMetal1.
+[INFO DRT-0028]   Complete TopVia2.
+[INFO DRT-0028]   Complete TopMetal2.
+[WARNING DRT-0225] net219 7 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net218 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net217 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net211 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net210 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net208 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net207 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net206 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net282 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net279 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net278 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net277 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0248_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0250_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0269_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net272 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0311_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net266 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net262 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net259 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net250 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0405_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net245 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net242 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0539_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net236 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net235 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net233 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net231 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net228 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net227 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net224 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net222 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] data_q_0_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_0_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_12_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_20_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_23_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_26_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_32_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_39_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_8_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_req_o_38_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dmi_resp_i_6_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dtmcs_q_12_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dtmcs_q_16_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dtmcs_q_28_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] dtmcs_q_31_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] error_q_0_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] error_q_1_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] td_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/async_ack 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/async_data_10_ 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/async_data_7_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/s_dst_clear_req 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/s_src_clear_req 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/src_clear_pending_o 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net205 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net204 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net203 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_a/_025_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net202 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net201 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net200 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_a/initiator_state_q_1__$_NOT__A_Y 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net199 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_b/initiator_clear_seq_phase_1_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_b/receiver_next_phase_0_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_req/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_b/i_state_transition_cdc_dst/_03_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net195 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net194 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net193 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net192 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net189 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net188 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net187 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net186 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net185 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net184 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net183 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net182 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net180 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net179 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net178 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_resp/async_req 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_resp/s_src_isolate_ack_q 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_resp/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_a/receiver_phase_q_0_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_resp/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_a/receiver_phase_q_1__$_NOT__A_Y 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_resp/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_a/receiver_phase_req 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net172 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net170 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_resp/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_b/initiator_state_q_2_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] i_dmi_cdc.i_cdc_resp/i_cdc_reset_ctrlr/i_cdc_reset_ctrlr_half_b/i_state_transition_cdc_src/ack_synced 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net169 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net168 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net163 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net160 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net156 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net155 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net285 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net290 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net292 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net293 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net294 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net297 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net298 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net300 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net303 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net304 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net307 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net310 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net311 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net312 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net319 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net321 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net330 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net334 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net338 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net341 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net346 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net347 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net348 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net349 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net350 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net353 7 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net358 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net360 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net361 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net362 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net363 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net365 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net372 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net375 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net377 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net382 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net383 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_1__leaf_clk_i 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_2__leaf_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_4__leaf_clk_i 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_17__leaf_clk_i 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_21__leaf_clk_i 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_22__leaf_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_23__leaf_clk_i 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_24__leaf_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_27__leaf_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_5_29__leaf_clk_i 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net389 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net391 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net394 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net396 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net398 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net399 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net400 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net402 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net404 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net406 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net407 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net415 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net417 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net418 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net421 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net422 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net423 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net425 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net426 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net427 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net428 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net429 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net430 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net431 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net432 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net433 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net435 4 pin not visited, fall back to feedthrough mode.
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0035]   Complete GatPoly (guide).
+[INFO DRT-0035]   Complete Cont (guide).
+[INFO DRT-0035]   Complete Metal1 (guide).
+[INFO DRT-0035]   Complete Via1 (guide).
+[INFO DRT-0035]   Complete Metal2 (guide).
+[INFO DRT-0035]   Complete Via2 (guide).
+[INFO DRT-0035]   Complete Metal3 (guide).
+[INFO DRT-0035]   Complete Via3 (guide).
+[INFO DRT-0035]   Complete Metal4 (guide).
+[INFO DRT-0035]   Complete Via4 (guide).
+[INFO DRT-0035]   Complete Metal5 (guide).
+[INFO DRT-0035]   Complete TopVia1 (guide).
+[INFO DRT-0035]   Complete TopMetal1 (guide).
+[INFO DRT-0035]   Complete TopVia2 (guide).
+[INFO DRT-0035]   Complete TopMetal2 (guide).
+[INFO DRT-0036] GatPoly guide region query size = 0.
+[INFO DRT-0036] Cont guide region query size = 0.
+[INFO DRT-0036] Metal1 guide region query size = 5488.
+[INFO DRT-0036] Via1 guide region query size = 0.
+[INFO DRT-0036] Metal2 guide region query size = 3185.
+[INFO DRT-0036] Via2 guide region query size = 0.
+[INFO DRT-0036] Metal3 guide region query size = 578.
+[INFO DRT-0036] Via3 guide region query size = 0.
+[INFO DRT-0036] Metal4 guide region query size = 79.
+[INFO DRT-0036] Via4 guide region query size = 0.
+[INFO DRT-0036] Metal5 guide region query size = 0.
+[INFO DRT-0036] TopVia1 guide region query size = 0.
+[INFO DRT-0036] TopMetal1 guide region query size = 0.
+[INFO DRT-0036] TopVia2 guide region query size = 0.
+[INFO DRT-0036] TopMetal2 guide region query size = 0.
+[INFO DRT-0179] Init gr pin query.
+[INFO DRT-0185] Post process initialize RPin region query.
+[INFO DRT-0181] Start track assignment.
+[INFO DRT-0184] Done with 6066 vertical wires in 2 frboxes and 3264 horizontal wires in 2 frboxes.
+[INFO DRT-0186] Done with 2632 vertical wires in 2 frboxes and 1172 horizontal wires in 2 frboxes.
+[INFO DRT-0182] Complete track assignment.
+[INFO DRT-0267] cpu time = 00:00:02, elapsed time = 00:00:01, memory = 2007.87 (MB), peak = 2007.87 (MB)
+[INFO DRT-0187] Start routing data preparation.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2007.87 (MB), peak = 2007.87 (MB)
+[INFO DRT-0194] Start detail routing.
+[INFO DRT-0195] Start 0th optimization iteration.
+    Completing 10% with 0 violations.
+    elapsed time = 00:00:00, memory = 2056.99 (MB).
+    Completing 20% with 0 violations.
+    elapsed time = 00:00:03, memory = 2165.87 (MB).
+    Completing 30% with 444 violations.
+    elapsed time = 00:00:29, memory = 2137.61 (MB).
+    Completing 40% with 444 violations.
+    elapsed time = 00:00:31, memory = 2246.49 (MB).
+    Completing 50% with 444 violations.
+    elapsed time = 00:01:22, memory = 2209.28 (MB).
+    Completing 60% with 993 violations.
+    elapsed time = 00:01:22, memory = 2230.28 (MB).
+    Completing 70% with 993 violations.
+    elapsed time = 00:01:34, memory = 2279.53 (MB).
+    Completing 80% with 1704 violations.
+    elapsed time = 00:01:50, memory = 2279.57 (MB).
+    Completing 90% with 1704 violations.
+    elapsed time = 00:01:55, memory = 2367.94 (MB).
+    Completing 100% with 2237 violations.
+    elapsed time = 00:02:33, memory = 2303.38 (MB).
+[INFO DRT-0199]   Number of violations = 2870.
+Viol/Layer      Metal1   Via1 Metal2   Via2 Metal3 Metal4
+Cut Spacing          0      8      0      0      0      0
+Metal Spacing      532      0    465      0      1      0
+NS Metal             3      0      1      0      0      0
+Recheck            300      0    281      0     50      2
+Short              687     45    481     13      1      0
+[INFO DRT-0267] cpu time = 00:08:26, elapsed time = 00:02:34, memory = 2648.75 (MB), peak = 2648.75 (MB)
+Total wire length = 81737 um.
+Total wire length on LAYER Metal1 = 3819 um.
+Total wire length on LAYER Metal2 = 46807 um.
+Total wire length on LAYER Metal3 = 20765 um.
+Total wire length on LAYER Metal4 = 10343 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 15714.
+Up-via summary (total 15714):
+
+-------------------
+   GatPoly        0
+    Metal1     9298
+    Metal2     6097
+    Metal3      319
+    Metal4        0
+    Metal5        0
+ TopMetal1        0
+-------------------
+              15714
+
+
+[INFO DRT-0195] Start 1st optimization iteration.
+    Completing 10% with 2870 violations.
+    elapsed time = 00:00:00, memory = 2648.75 (MB).
+    Completing 20% with 2870 violations.
+    elapsed time = 00:00:06, memory = 2698.25 (MB).
+    Completing 30% with 2460 violations.
+    elapsed time = 00:00:22, memory = 2659.43 (MB).
+    Completing 40% with 2460 violations.
+    elapsed time = 00:00:23, memory = 2659.43 (MB).
+    Completing 50% with 2460 violations.
+    elapsed time = 00:00:32, memory = 2698.80 (MB).
+    Completing 60% with 1694 violations.
+    elapsed time = 00:01:00, memory = 2667.95 (MB).
+    Completing 70% with 1694 violations.
+    elapsed time = 00:01:05, memory = 2733.95 (MB).
+    Completing 80% with 1286 violations.
+    elapsed time = 00:01:31, memory = 2668.16 (MB).
+    Completing 90% with 1286 violations.
+    elapsed time = 00:01:33, memory = 2711.91 (MB).
+    Completing 100% with 474 violations.
+    elapsed time = 00:02:06, memory = 2669.79 (MB).
+[INFO DRT-0199]   Number of violations = 486.
+Viol/Layer      Metal2 Metal3
+Metal Spacing      263      2
+Recheck             11      1
+Short              207      2
+[INFO DRT-0267] cpu time = 00:05:50, elapsed time = 00:02:06, memory = 2669.79 (MB), peak = 2733.95 (MB)
+Total wire length = 80767 um.
+Total wire length on LAYER Metal1 = 3016 um.
+Total wire length on LAYER Metal2 = 45882 um.
+Total wire length on LAYER Metal3 = 21481 um.
+Total wire length on LAYER Metal4 = 10386 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 15293.
+Up-via summary (total 15293):
+
+-------------------
+   GatPoly        0
+    Metal1     8834
+    Metal2     6112
+    Metal3      347
+    Metal4        0
+    Metal5        0
+ TopMetal1        0
+-------------------
+              15293
+
+
+[INFO DRT-0195] Start 2nd optimization iteration.
+    Completing 10% with 486 violations.
+    elapsed time = 00:00:00, memory = 2669.79 (MB).
+    Completing 20% with 486 violations.
+    elapsed time = 00:00:04, memory = 2722.16 (MB).
+    Completing 30% with 474 violations.
+    elapsed time = 00:00:36, memory = 2675.12 (MB).
+    Completing 40% with 474 violations.
+    elapsed time = 00:00:36, memory = 2675.12 (MB).
+    Completing 50% with 474 violations.
+    elapsed time = 00:00:39, memory = 2745.25 (MB).
+    Completing 60% with 445 violations.
+    elapsed time = 00:01:05, memory = 2679.21 (MB).
+    Completing 70% with 445 violations.
+    elapsed time = 00:01:07, memory = 2773.71 (MB).
+    Completing 80% with 439 violations.
+    elapsed time = 00:01:59, memory = 2686.00 (MB).
+    Completing 90% with 439 violations.
+    elapsed time = 00:01:59, memory = 2686.00 (MB).
+    Completing 100% with 414 violations.
+    elapsed time = 00:02:32, memory = 2686.09 (MB).
+[INFO DRT-0199]   Number of violations = 416.
+Viol/Layer      Metal2
+Metal Spacing      241
+Recheck              2
+Short              173
+[INFO DRT-0267] cpu time = 00:06:22, elapsed time = 00:02:33, memory = 2689.09 (MB), peak = 2787.71 (MB)
+Total wire length = 80573 um.
+Total wire length on LAYER Metal1 = 2915 um.
+Total wire length on LAYER Metal2 = 45917 um.
+Total wire length on LAYER Metal3 = 21414 um.
+Total wire length on LAYER Metal4 = 10325 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 15118.
+Up-via summary (total 15118):
+
+-------------------
+   GatPoly        0
+    Metal1     8792
+    Metal2     6024
+    Metal3      302
+    Metal4        0
+    Metal5        0
+ TopMetal1        0
+-------------------
+              15118
+
+
+[INFO DRT-0195] Start 3rd optimization iteration.
+    Completing 10% with 416 violations.
+    elapsed time = 00:00:00, memory = 2689.09 (MB).
+    Completing 20% with 416 violations.
+    elapsed time = 00:00:00, memory = 2720.59 (MB).
+    Completing 30% with 371 violations.
+    elapsed time = 00:00:17, memory = 2689.09 (MB).
+    Completing 40% with 371 violations.
+    elapsed time = 00:00:17, memory = 2689.09 (MB).
+    Completing 50% with 371 violations.
+    elapsed time = 00:00:35, memory = 2688.93 (MB).
+    Completing 60% with 213 violations.
+    elapsed time = 00:00:35, memory = 2688.93 (MB).
+    Completing 70% with 213 violations.
+    elapsed time = 00:00:36, memory = 2721.56 (MB).
+    Completing 80% with 145 violations.
+    elapsed time = 00:00:48, memory = 2688.92 (MB).
+    Completing 90% with 145 violations.
+    elapsed time = 00:00:48, memory = 2768.67 (MB).
+    Completing 100% with 31 violations.
+    elapsed time = 00:01:10, memory = 2689.00 (MB).
+[INFO DRT-0199]   Number of violations = 31.
+Viol/Layer      Metal2
+Metal Spacing       25
+Short                6
+[INFO DRT-0267] cpu time = 00:02:59, elapsed time = 00:01:11, memory = 2689.00 (MB), peak = 2814.71 (MB)
+Total wire length = 80288 um.
+Total wire length on LAYER Metal1 = 2496 um.
+Total wire length on LAYER Metal2 = 43550 um.
+Total wire length on LAYER Metal3 = 22189 um.
+Total wire length on LAYER Metal4 = 12043 um.
+Total wire length on LAYER Metal5 = 8 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 15633.
+Up-via summary (total 15633):
+
+-------------------
+   GatPoly        0
+    Metal1     8605
+    Metal2     6327
+    Metal3      699
+    Metal4        2
+    Metal5        0
+ TopMetal1        0
+-------------------
+              15633
+
+
+[INFO DRT-0195] Start 4th optimization iteration.
+    Completing 10% with 31 violations.
+    elapsed time = 00:00:00, memory = 2689.00 (MB).
+    Completing 20% with 31 violations.
+    elapsed time = 00:00:00, memory = 2689.00 (MB).
+    Completing 30% with 17 violations.
+    elapsed time = 00:00:02, memory = 2690.87 (MB).
+    Completing 40% with 17 violations.
+    elapsed time = 00:00:02, memory = 2690.87 (MB).
+    Completing 50% with 17 violations.
+    elapsed time = 00:00:04, memory = 2690.87 (MB).
+    Completing 60% with 13 violations.
+    elapsed time = 00:00:04, memory = 2690.87 (MB).
+    Completing 70% with 13 violations.
+    elapsed time = 00:00:04, memory = 2690.87 (MB).
+    Completing 80% with 6 violations.
+    elapsed time = 00:00:05, memory = 2690.87 (MB).
+    Completing 90% with 6 violations.
+    elapsed time = 00:00:05, memory = 2690.87 (MB).
+    Completing 100% with 0 violations.
+    elapsed time = 00:00:12, memory = 2690.81 (MB).
+[INFO DRT-0199]   Number of violations = 0.
+[INFO DRT-0267] cpu time = 00:00:17, elapsed time = 00:00:13, memory = 2690.81 (MB), peak = 2814.71 (MB)
+Total wire length = 80276 um.
+Total wire length on LAYER Metal1 = 2497 um.
+Total wire length on LAYER Metal2 = 43552 um.
+Total wire length on LAYER Metal3 = 22192 um.
+Total wire length on LAYER Metal4 = 12025 um.
+Total wire length on LAYER Metal5 = 8 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 15633.
+Up-via summary (total 15633):
+
+-------------------
+   GatPoly        0
+    Metal1     8607
+    Metal2     6325
+    Metal3      699
+    Metal4        2
+    Metal5        0
+ TopMetal1        0
+-------------------
+              15633
+
+
+[INFO DRT-0198] Complete detail routing.
+Total wire length = 80276 um.
+Total wire length on LAYER Metal1 = 2497 um.
+Total wire length on LAYER Metal2 = 43552 um.
+Total wire length on LAYER Metal3 = 22192 um.
+Total wire length on LAYER Metal4 = 12025 um.
+Total wire length on LAYER Metal5 = 8 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 15633.
+Up-via summary (total 15633):
+
+-------------------
+   GatPoly        0
+    Metal1     8607
+    Metal2     6325
+    Metal3      699
+    Metal4        2
+    Metal5        0
+ TopMetal1        0
+-------------------
+              15633
+
+
+[INFO DRT-0267] cpu time = 00:23:56, elapsed time = 00:08:39, memory = 2690.81 (MB), peak = 2814.71 (MB)
+[INFO DRT-0180] Post processing.
+Saving detailed route
+Saving checkpoint 11_dmi_jtag.d_route
+Time: 652.827333 sec deltaT: 542.586509
+###############################################################################
+# Step 07: FINISHING
+###############################################################################
+Filler placement
+[INFO DPL-0001] Placed 19150 filler instances.
+Saving checkpoint 07_dmi_jtag.final
+Time: 654.61473 sec deltaT: 1.78736600000002
+saving image to /fosic/designs/croc/openroad/reports/07_dmi_jtag.final.png
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation dmi_jtag (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 11517 rc segments
+[INFO RCX-0439] Coupling Cap extraction dmi_jtag ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 50% of 17936 wires extracted
+[INFO RCX-0442] 100% of 17936 wires extracted
+[INFO RCX-0045] Extract 2937 nets, 13905 rsegs, 13905 caps, 19270 ccs
+[INFO RCX-0443] 2935 nets finished
+Warning: There are 41 input ports missing set_input_delay.
+Warning: There are 46 output ports missing set_output_delay.
+Warning: There are 290 unclocked register/latch pins.
+Warning: There are 342 unconstrained endpoints.
+Write output

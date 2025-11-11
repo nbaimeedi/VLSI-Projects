@@ -1,0 +1,725 @@
+
+24. Printing statistics.
+
+=== cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req ===
+
+   Number of wires:                 31
+   Number of wire bits:            151
+   Number of public wires:          27
+   Number of public wire bits:     147
+   Number of ports:                 14
+   Number of port bits:             94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $aldff                          4
+     $and                            4
+     $logic_not                      2
+     cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst      1
+     cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src      1
+     cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr      1
+
+=== cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp ===
+
+   Number of wires:                 31
+   Number of wire bits:            130
+   Number of public wires:          27
+   Number of public wire bits:     126
+   Number of ports:                 14
+   Number of port bits:             80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $aldff                          4
+     $and                            4
+     $logic_not                      2
+     cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst      1
+     cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src      1
+     cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr      1
+
+=== cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst ===
+
+   Number of wires:                 21
+   Number of wire bits:            181
+   Number of public wires:          15
+   Number of public wire bits:     175
+   Number of ports:                  9
+   Number of port bits:             89
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $aldff                          2
+     $dff                            3
+     $logic_and                      2
+     $logic_not                      1
+     $mux                            3
+     $ne                             2
+     $not                            1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync      1
+
+=== cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst ===
+
+   Number of wires:                 21
+   Number of wire bits:            153
+   Number of public wires:          15
+   Number of public wire bits:     147
+   Number of ports:                  9
+   Number of port bits:             75
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $aldff                          2
+     $dff                            2
+     $logic_and                      2
+     $logic_not                      1
+     $mux                            3
+     $ne                             2
+     $not                            1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync      1
+
+=== cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src ===
+
+   Number of wires:                 18
+   Number of wire bits:            218
+   Number of public wires:          14
+   Number of public wire bits:     174
+   Number of ports:                  9
+   Number of port bits:             89
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $aldff                          1
+     $dff                            3
+     $eq                             1
+     $logic_and                      1
+     $mux                            4
+     $not                            1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync      1
+
+=== cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src ===
+
+   Number of wires:                 18
+   Number of wire bits:            183
+   Number of public wires:          14
+   Number of public wire bits:     146
+   Number of ports:                  9
+   Number of port bits:             75
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $aldff                          1
+     $dff                            2
+     $eq                             1
+     $logic_and                      1
+     $mux                            4
+     $not                            1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync      1
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ===
+
+   Number of wires:                 24
+   Number of wire bits:             32
+   Number of public wires:          15
+   Number of public wire bits:      19
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $aldff                          2
+     $eq                             2
+     $logic_not                      1
+     $mux                            6
+     $pmux                           3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ===
+
+   Number of wires:                 24
+   Number of wire bits:             32
+   Number of public wires:          15
+   Number of public wire bits:      19
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $aldff                          2
+     $eq                             2
+     $logic_not                      1
+     $mux                            6
+     $pmux                           3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ===
+
+   Number of wires:                 24
+   Number of wire bits:             32
+   Number of public wires:          15
+   Number of public wire bits:      19
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $aldff                          2
+     $eq                             2
+     $logic_not                      1
+     $mux                            6
+     $pmux                           3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ===
+
+   Number of wires:                 24
+   Number of wire bits:             32
+   Number of public wires:          15
+   Number of public wire bits:      19
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $aldff                          2
+     $eq                             2
+     $logic_not                      1
+     $mux                            6
+     $pmux                           3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ===
+
+   Number of wires:                 24
+   Number of wire bits:             34
+   Number of public wires:          15
+   Number of public wire bits:      21
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $aldff                          3
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $pmux                           2
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ===
+
+   Number of wires:                 24
+   Number of wire bits:             34
+   Number of public wires:          15
+   Number of public wire bits:      21
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $aldff                          3
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $pmux                           2
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ===
+
+   Number of wires:                 24
+   Number of wire bits:             34
+   Number of public wires:          15
+   Number of public wire bits:      21
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $aldff                          3
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $pmux                           2
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ===
+
+   Number of wires:                 24
+   Number of wire bits:             34
+   Number of public wires:          15
+   Number of public wire bits:      21
+   Number of ports:                  8
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $aldff                          3
+     $eq                             2
+     $logic_not                      1
+     $mux                            8
+     $pmux                           2
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+
+=== cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr ===
+
+   Number of wires:                 20
+   Number of wire bits:             22
+   Number of public wires:          20
+   Number of public wire bits:      22
+   Number of ports:                 14
+   Number of port bits:             14
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+
+=== cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr ===
+
+   Number of wires:                 20
+   Number of wire bits:             22
+   Number of public wires:          20
+   Number of public wire bits:      22
+   Number of ports:                 14
+   Number of port bits:             14
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ===
+
+   Number of wires:                 74
+   Number of wire bits:            125
+   Number of public wires:          26
+   Number of public wire bits:      37
+   Number of ports:                 13
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 62
+     $aldff                          2
+     $eq                            14
+     $logic_and                      3
+     $logic_not                      3
+     $logic_or                       2
+     $mux                           20
+     $pmux                           7
+     $reduce_or                      9
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ===
+
+   Number of wires:                 74
+   Number of wire bits:            125
+   Number of public wires:          26
+   Number of public wire bits:      37
+   Number of ports:                 13
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 62
+     $aldff                          2
+     $eq                            14
+     $logic_and                      3
+     $logic_not                      3
+     $logic_or                       2
+     $mux                           20
+     $pmux                           7
+     $reduce_or                      9
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ===
+
+   Number of wires:                 74
+   Number of wire bits:            125
+   Number of public wires:          26
+   Number of public wire bits:      37
+   Number of ports:                 13
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 62
+     $aldff                          2
+     $eq                            14
+     $logic_and                      3
+     $logic_not                      3
+     $logic_or                       2
+     $mux                           20
+     $pmux                           7
+     $reduce_or                      9
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ===
+
+   Number of wires:                 74
+   Number of wire bits:            125
+   Number of public wires:          26
+   Number of public wire bits:      37
+   Number of ports:                 13
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 62
+     $aldff                          2
+     $eq                            14
+     $logic_and                      3
+     $logic_not                      3
+     $logic_or                       2
+     $mux                           20
+     $pmux                           7
+     $reduce_or                      9
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+
+=== dmi_cdc$dmi_jtag.i_dmi_cdc ===
+
+   Number of wires:                 24
+   Number of wire bits:            170
+   Number of public wires:          22
+   Number of public wire bits:     168
+   Number of ports:                 18
+   Number of port bits:            164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $aldff                          2
+     $logic_and                      1
+     $logic_not                      1
+     $not                            1
+     cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req      1
+     cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp      1
+
+=== dmi_jtag ===
+
+   Number of wires:                111
+   Number of wire bits:           1005
+   Number of public wires:          46
+   Number of public wire bits:     454
+   Number of ports:                 16
+   Number of port bits:             89
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 90
+     $aldff                         13
+     $eq                             9
+     $logic_and                     11
+     $logic_not                      4
+     $logic_or                       2
+     $mux                           42
+     $pmux                           3
+     $reduce_bool                    2
+     $reduce_or                      2
+     dmi_cdc$dmi_jtag.i_dmi_cdc      1
+     dmi_jtag_tap$dmi_jtag.i_dmi_jtag_tap      1
+
+=== dmi_jtag_tap$dmi_jtag.i_dmi_jtag_tap ===
+
+   Number of wires:                 87
+   Number of wire bits:            343
+   Number of public wires:          38
+   Number of public wire bits:     122
+   Number of ports:                 17
+   Number of port bits:             17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 74
+     $aldff                          7
+     $eq                            18
+     $logic_not                      1
+     $mux                           37
+     $or                             1
+     $pmux                           3
+     $reduce_or                      5
+     tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv      1
+     tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux      1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              6
+   Number of public wires:           5
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync ===
+
+   Number of wires:                  5
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $aldff                          1
+
+=== tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sg13g2_inv_1                    1
+
+=== tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sg13g2_mux2_1                   1
+
+=== design hierarchy ===
+
+   dmi_jtag                          1
+     dmi_cdc$dmi_jtag.i_dmi_cdc      1
+       cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req      1
+         cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst      1
+           sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync      1
+         cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src      1
+           sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync      1
+         cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr      1
+           cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+             cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+             cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+           cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+             cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+             cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+       cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp      1
+         cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst      1
+           sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync      1
+         cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src      1
+           sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync      1
+         cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr      1
+           cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+             cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+             cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+           cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+             cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+             cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+               sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+     dmi_jtag_tap$dmi_jtag.i_dmi_jtag_tap      1
+       tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv      1
+       tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux      1
+
+   Number of wires:                956
+   Number of wire bits:           3424
+   Number of public wires:         548
+   Number of public wire bits:    2093
+   Number of ports:                313
+   Number of port bits:            994
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                607
+     $aldff                         76
+     $and                            8
+     $dff                           10
+     $eq                           101
+     $logic_and                     30
+     $logic_not                     32
+     $logic_or                      10
+     $mux                          229
+     $ne                             4
+     $not                            5
+     $or                             1
+     $pmux                          54
+     $reduce_bool                    2
+     $reduce_or                     43
+     sg13g2_inv_1                    1
+     sg13g2_mux2_1                   1
+

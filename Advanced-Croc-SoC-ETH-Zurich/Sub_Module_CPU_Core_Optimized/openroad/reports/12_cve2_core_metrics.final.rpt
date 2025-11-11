@@ -1,0 +1,520 @@
+
+==========================================================================
+12_cve2_core_metrics.final check_setup
+--------------------------------------------------------------------------
+0
+
+==========================================================================
+12_cve2_core_metrics.final report_tns
+--------------------------------------------------------------------------
+tns -182912.33
+
+==========================================================================
+12_cve2_core_metrics.final report_wns
+--------------------------------------------------------------------------
+wns -221.85
+
+==========================================================================
+12_cve2_core_metrics.final report_worst_slack
+--------------------------------------------------------------------------
+worst slack -221.85
+
+==========================================================================
+12_cve2_core_metrics.final report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: if_stage_i.prefetch_buffer_i.fifo_i.err_q_0__reg
+            (rising edge-triggered flip-flop clocked by clk_sys)
+Endpoint: id_stage_i.controller_i.instr_fetch_err_plus2_i_reg
+          (rising edge-triggered flip-flop clocked by clk_sys)
+Path Group: clk_sys
+Path Type: min
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.07    0.23    0.02    0.02 ^ clk_i (in)
+                                         clk_i (net)
+                  0.17    0.00    0.02 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+     4    0.20    0.07    0.13    0.15 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.09    0.02    0.17 ^ clkbuf_2_1_0_clk_i/A (sg13g2_buf_16)
+    16    0.47    0.08    0.11    0.28 ^ clkbuf_2_1_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_2_1_0_clk_i (net)
+                  0.09    0.02    0.30 ^ clkbuf_6_26_0_clk_i/A (sg13g2_buf_16)
+     6    0.14    0.03    0.08    0.38 ^ clkbuf_6_26_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_6_26_0_clk_i (net)
+                  0.03    0.00    0.39 ^ clkbuf_leaf_166_clk_i/A (sg13g2_buf_16)
+     7    0.04    0.02    0.05    0.44 ^ clkbuf_leaf_166_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_166_clk_i (net)
+                  0.02    0.00    0.44 ^ if_stage_i.prefetch_buffer_i.fifo_i.err_q_0__reg/CLK (sg13g2_dfrbp_1)
+     1    0.01    0.04    0.13    0.57 v if_stage_i.prefetch_buffer_i.fifo_i.err_q_0__reg/Q_N (sg13g2_dfrbp_1)
+                                         if_stage_i.prefetch_buffer_i.fifo_i.err_plus2_$_AND__Y_B (net)
+                  0.04    0.00    0.57 v _15974_/B (sg13g2_nand4_1)
+     1    0.01    0.04    0.05    0.61 ^ _15974_/Y (sg13g2_nand4_1)
+                                         _07562_ (net)
+                  0.04    0.00    0.61 ^ _15975_/B1 (sg13g2_o21ai_1)
+     1    0.00    0.02    0.03    0.64 v _15975_/Y (sg13g2_o21ai_1)
+                                         _00258_ (net)
+                  0.02    0.00    0.64 v id_stage_i.controller_i.instr_fetch_err_plus2_i_reg/D (sg13g2_dfrbp_2)
+                                  0.64   data arrival time
+
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.07    0.23    0.02    0.02 ^ clk_i (in)
+                                         clk_i (net)
+                  0.17    0.00    0.02 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+     4    0.20    0.07    0.13    0.15 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.08    0.02    0.17 ^ clkbuf_2_3_0_clk_i/A (sg13g2_buf_16)
+    16    0.49    0.06    0.08    0.25 ^ clkbuf_2_3_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_2_3_0_clk_i (net)
+                  0.15    0.06    0.31 ^ clkbuf_6_52_0_clk_i/A (sg13g2_buf_16)
+     6    0.14    0.04    0.10    0.41 ^ clkbuf_6_52_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_6_52_0_clk_i (net)
+                  0.04    0.01    0.42 ^ clkbuf_leaf_169_clk_i/A (sg13g2_buf_16)
+     8    0.04    0.02    0.06    0.48 ^ clkbuf_leaf_169_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_169_clk_i (net)
+                  0.02    0.00    0.48 ^ id_stage_i.controller_i.instr_fetch_err_plus2_i_reg/CLK (sg13g2_dfrbp_2)
+                          0.10    0.58   clock uncertainty
+                          0.00    0.58   clock reconvergence pessimism
+                         -0.02    0.56   library hold time
+                                  0.56   data required time
+-----------------------------------------------------------------------------
+                                  0.56   data required time
+                                 -0.64   data arrival time
+-----------------------------------------------------------------------------
+                                  0.09   slack (MET)
+
+
+
+==========================================================================
+12_cve2_core_metrics.final report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: rst_ni (input port)
+Endpoint: ANTENNA_1000/A (internal path endpoint)
+Path Group: path delay
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+     1    0.01    0.45    0.00    2.00 v rst_ni (in)
+                                         rst_ni (net)
+                  0.34    0.00    2.00 v fanout2465/A (sg13g2_buf_8)
+    41    0.23    0.09    0.20    2.20 v fanout2465/X (sg13g2_buf_8)
+                                         net2465 (net)
+                  0.20    0.09    2.29 v ANTENNA_1000/A (sg13g2_antennanp)
+                                  2.29   data arrival time
+
+                         12.50   12.50   max_delay
+                          0.00   12.50   output external delay
+                                 12.50   data required time
+-----------------------------------------------------------------------------
+                                 12.50   data required time
+                                 -2.29   data arrival time
+-----------------------------------------------------------------------------
+                                 10.21   slack (MET)
+
+
+Startpoint: crash_dump_o[46]_reg
+            (rising edge-triggered flip-flop clocked by clk_sys)
+Endpoint: if_stage_i.prefetch_buffer_i.stored_addr_q_17__reg
+          (rising edge-triggered flip-flop clocked by clk_sys)
+Path Group: clk_sys
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.07    0.31    0.02    0.02 ^ clk_i (in)
+                                         clk_i (net)
+                  0.23    0.00    0.02 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+     4    0.20    0.11    0.20    0.22 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.12    0.02    0.24 ^ clkbuf_2_2_0_clk_i/A (sg13g2_buf_16)
+    16    0.48    0.13    0.18    0.42 ^ clkbuf_2_2_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_2_2_0_clk_i (net)
+                  0.15    0.03    0.46 ^ clkbuf_6_47_0_clk_i/A (sg13g2_buf_16)
+     6    0.16    0.05    0.13    0.58 ^ clkbuf_6_47_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_6_47_0_clk_i (net)
+                  0.08    0.03    0.61 ^ clkbuf_leaf_242_clk_i/A (sg13g2_buf_16)
+     6    0.04    0.03    0.09    0.70 ^ clkbuf_leaf_242_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_242_clk_i (net)
+                  0.03    0.00    0.70 ^ crash_dump_o[46]_reg/CLK (sg13g2_dfrbp_2)
+     4   15.03   31.29   20.87   21.57 ^ crash_dump_o[46]_reg/Q (sg13g2_dfrbp_2)
+                                         crash_dump_o_46_ (net)
+                 31.31    0.60   22.17 ^ _09205_/A (sg13g2_nand3_1)
+     1    0.00    2.70    2.35   24.52 v _09205_/Y (sg13g2_nand3_1)
+                                         _01223_ (net)
+                  2.70    0.00   24.52 v _09206_/B (sg13g2_and2_2)
+     6    0.08    0.18    0.57   25.09 v _09206_/X (sg13g2_and2_2)
+                                         _01224_ (net)
+                  0.18    0.02   25.11 v _09207_/A (sg13g2_inv_2)
+     3    0.01    0.06    0.07   25.18 ^ _09207_/Y (sg13g2_inv_2)
+                                         alu_operand_a_ex_14_ (net)
+                  0.06    0.00   25.18 ^ fanout1283/A (sg13g2_buf_4)
+     8    0.07    0.09    0.14   25.33 ^ fanout1283/X (sg13g2_buf_4)
+                                         net1283 (net)
+                  0.09    0.01   25.34 ^ _10475_/A1 (sg13g2_a21o_1)
+     1    0.01    0.05    0.13   25.47 ^ _10475_/X (sg13g2_a21o_1)
+                                         _02458_ (net)
+                  0.05    0.00   25.47 ^ _10477_/A2 (sg13g2_a22oi_1)
+     1    0.01    0.09    0.10   25.56 v _10477_/Y (sg13g2_a22oi_1)
+                                         _02460_ (net)
+                  0.09    0.00   25.57 v _10478_/B (sg13g2_nand2_1)
+     1    0.01    0.05    0.07   25.63 ^ _10478_/Y (sg13g2_nand2_1)
+                                         _02461_ (net)
+                  0.05    0.00   25.63 ^ _10482_/B2 (sg13g2_a221oi_1)
+     4    0.03    0.21    0.17   25.80 v _10482_/Y (sg13g2_a221oi_1)
+                                         _02465_ (net)
+                  0.21    0.00   25.80 v _10483_/B (sg13g2_or2_1)
+     4    0.02    0.09    0.21   26.02 v _10483_/X (sg13g2_or2_1)
+                                         _02466_ (net)
+                  0.09    0.00   26.02 v _10930_/A (sg13g2_nor2_1)
+     1    0.01    0.08    0.09   26.12 ^ _10930_/Y (sg13g2_nor2_1)
+                                         _02911_ (net)
+                  0.08    0.00   26.12 ^ _10931_/C (sg13g2_nand3_1)
+     1    0.01    0.11    0.12   26.23 v _10931_/Y (sg13g2_nand3_1)
+                                         _02912_ (net)
+                  0.11    0.00   26.23 v _10932_/C (sg13g2_nand3_1)
+     6    0.04    0.20    0.18   26.41 ^ _10932_/Y (sg13g2_nand3_1)
+                                         _02913_ (net)
+                  0.20    0.00   26.42 ^ _11186_/A1 (sg13g2_o21ai_1)
+     3    0.01    0.12    0.16   26.58 v _11186_/Y (sg13g2_o21ai_1)
+                                         _03162_ (net)
+                  0.12    0.00   26.58 v _11349_/B (sg13g2_xnor2_1)
+     8   15.16  122.91   84.17  110.75 ^ _11349_/Y (sg13g2_xnor2_1)
+                                         data_addr_o_17_ (net)
+                122.99    2.71  113.46 ^ _11670_/A (sg13g2_nand2_1)
+     1    0.01   10.04    7.27  120.73 v _11670_/Y (sg13g2_nand2_1)
+                                         _03540_ (net)
+                 10.04    0.00  120.73 v _11671_/C (sg13g2_nand3_1)
+     2    0.01    1.10    0.82  121.55 ^ _11671_/Y (sg13g2_nand3_1)
+                                         _03541_ (net)
+                  1.10    0.00  121.55 ^ _16579_/A2 (sg13g2_o21ai_1)
+     4    0.05    0.46    0.58  122.14 v _16579_/Y (sg13g2_o21ai_1)
+                                         _08115_ (net)
+                  0.46    0.01  122.15 v _16925_/A2 (sg13g2_o21ai_1)
+     2   15.01  144.30  103.24  225.39 ^ _16925_/Y (sg13g2_o21ai_1)
+                                         instr_addr_o_17_ (net)
+                144.30    0.33  225.72 ^ _16926_/A1 (sg13g2_mux2_1)
+     1    0.00    3.02    8.66  234.38 ^ _16926_/X (sg13g2_mux2_1)
+                                         _00431_ (net)
+                  3.02    0.00  234.38 ^ if_stage_i.prefetch_buffer_i.stored_addr_q_17__reg/D (sg13g2_dfrbp_1)
+                                234.38   data arrival time
+
+                         12.50   12.50   clock clk_sys (rise edge)
+                          0.00   12.50   clock source latency
+     1    0.07    0.31    0.02   12.52 ^ clk_i (in)
+                                         clk_i (net)
+                  0.23    0.00   12.52 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+     4    0.20    0.11    0.20   12.72 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.12    0.02   12.74 ^ clkbuf_2_3_0_clk_i/A (sg13g2_buf_16)
+    16    0.49    0.12    0.14   12.89 ^ clkbuf_2_3_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_2_3_0_clk_i (net)
+                  0.18    0.07   12.96 ^ clkbuf_6_63_0_clk_i/A (sg13g2_buf_16)
+     6    0.14    0.05    0.15   13.10 ^ clkbuf_6_63_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_6_63_0_clk_i (net)
+                  0.05    0.01   13.11 ^ clkbuf_leaf_200_clk_i/A (sg13g2_buf_16)
+     5    0.03    0.02    0.08   13.19 ^ clkbuf_leaf_200_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_200_clk_i (net)
+                  0.02    0.00   13.19 ^ if_stage_i.prefetch_buffer_i.stored_addr_q_17__reg/CLK (sg13g2_dfrbp_1)
+                         -0.10   13.09   clock uncertainty
+                          0.00   13.09   clock reconvergence pessimism
+                         -0.56   12.53   library setup time
+                                 12.53   data required time
+-----------------------------------------------------------------------------
+                                 12.53   data required time
+                               -234.38   data arrival time
+-----------------------------------------------------------------------------
+                               -221.85   slack (VIOLATED)
+
+
+
+==========================================================================
+12_cve2_core_metrics.final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: rst_ni (input port)
+Endpoint: ANTENNA_1000/A (internal path endpoint)
+Path Group: path delay
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+     1    0.01    0.45    0.00    2.00 v rst_ni (in)
+                                         rst_ni (net)
+                  0.34    0.00    2.00 v fanout2465/A (sg13g2_buf_8)
+    41    0.23    0.09    0.20    2.20 v fanout2465/X (sg13g2_buf_8)
+                                         net2465 (net)
+                  0.20    0.09    2.29 v ANTENNA_1000/A (sg13g2_antennanp)
+                                  2.29   data arrival time
+
+                         12.50   12.50   max_delay
+                          0.00   12.50   output external delay
+                                 12.50   data required time
+-----------------------------------------------------------------------------
+                                 12.50   data required time
+                                 -2.29   data arrival time
+-----------------------------------------------------------------------------
+                                 10.21   slack (MET)
+
+
+Startpoint: crash_dump_o[46]_reg
+            (rising edge-triggered flip-flop clocked by clk_sys)
+Endpoint: if_stage_i.prefetch_buffer_i.stored_addr_q_17__reg
+          (rising edge-triggered flip-flop clocked by clk_sys)
+Path Group: clk_sys
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.07    0.31    0.02    0.02 ^ clk_i (in)
+                                         clk_i (net)
+                  0.23    0.00    0.02 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+     4    0.20    0.11    0.20    0.22 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.12    0.02    0.24 ^ clkbuf_2_2_0_clk_i/A (sg13g2_buf_16)
+    16    0.48    0.13    0.18    0.42 ^ clkbuf_2_2_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_2_2_0_clk_i (net)
+                  0.15    0.03    0.46 ^ clkbuf_6_47_0_clk_i/A (sg13g2_buf_16)
+     6    0.16    0.05    0.13    0.58 ^ clkbuf_6_47_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_6_47_0_clk_i (net)
+                  0.08    0.03    0.61 ^ clkbuf_leaf_242_clk_i/A (sg13g2_buf_16)
+     6    0.04    0.03    0.09    0.70 ^ clkbuf_leaf_242_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_242_clk_i (net)
+                  0.03    0.00    0.70 ^ crash_dump_o[46]_reg/CLK (sg13g2_dfrbp_2)
+     4   15.03   31.29   20.87   21.57 ^ crash_dump_o[46]_reg/Q (sg13g2_dfrbp_2)
+                                         crash_dump_o_46_ (net)
+                 31.31    0.60   22.17 ^ _09205_/A (sg13g2_nand3_1)
+     1    0.00    2.70    2.35   24.52 v _09205_/Y (sg13g2_nand3_1)
+                                         _01223_ (net)
+                  2.70    0.00   24.52 v _09206_/B (sg13g2_and2_2)
+     6    0.08    0.18    0.57   25.09 v _09206_/X (sg13g2_and2_2)
+                                         _01224_ (net)
+                  0.18    0.02   25.11 v _09207_/A (sg13g2_inv_2)
+     3    0.01    0.06    0.07   25.18 ^ _09207_/Y (sg13g2_inv_2)
+                                         alu_operand_a_ex_14_ (net)
+                  0.06    0.00   25.18 ^ fanout1283/A (sg13g2_buf_4)
+     8    0.07    0.09    0.14   25.33 ^ fanout1283/X (sg13g2_buf_4)
+                                         net1283 (net)
+                  0.09    0.01   25.34 ^ _10475_/A1 (sg13g2_a21o_1)
+     1    0.01    0.05    0.13   25.47 ^ _10475_/X (sg13g2_a21o_1)
+                                         _02458_ (net)
+                  0.05    0.00   25.47 ^ _10477_/A2 (sg13g2_a22oi_1)
+     1    0.01    0.09    0.10   25.56 v _10477_/Y (sg13g2_a22oi_1)
+                                         _02460_ (net)
+                  0.09    0.00   25.57 v _10478_/B (sg13g2_nand2_1)
+     1    0.01    0.05    0.07   25.63 ^ _10478_/Y (sg13g2_nand2_1)
+                                         _02461_ (net)
+                  0.05    0.00   25.63 ^ _10482_/B2 (sg13g2_a221oi_1)
+     4    0.03    0.21    0.17   25.80 v _10482_/Y (sg13g2_a221oi_1)
+                                         _02465_ (net)
+                  0.21    0.00   25.80 v _10483_/B (sg13g2_or2_1)
+     4    0.02    0.09    0.21   26.02 v _10483_/X (sg13g2_or2_1)
+                                         _02466_ (net)
+                  0.09    0.00   26.02 v _10930_/A (sg13g2_nor2_1)
+     1    0.01    0.08    0.09   26.12 ^ _10930_/Y (sg13g2_nor2_1)
+                                         _02911_ (net)
+                  0.08    0.00   26.12 ^ _10931_/C (sg13g2_nand3_1)
+     1    0.01    0.11    0.12   26.23 v _10931_/Y (sg13g2_nand3_1)
+                                         _02912_ (net)
+                  0.11    0.00   26.23 v _10932_/C (sg13g2_nand3_1)
+     6    0.04    0.20    0.18   26.41 ^ _10932_/Y (sg13g2_nand3_1)
+                                         _02913_ (net)
+                  0.20    0.00   26.42 ^ _11186_/A1 (sg13g2_o21ai_1)
+     3    0.01    0.12    0.16   26.58 v _11186_/Y (sg13g2_o21ai_1)
+                                         _03162_ (net)
+                  0.12    0.00   26.58 v _11349_/B (sg13g2_xnor2_1)
+     8   15.16  122.91   84.17  110.75 ^ _11349_/Y (sg13g2_xnor2_1)
+                                         data_addr_o_17_ (net)
+                122.99    2.71  113.46 ^ _11670_/A (sg13g2_nand2_1)
+     1    0.01   10.04    7.27  120.73 v _11670_/Y (sg13g2_nand2_1)
+                                         _03540_ (net)
+                 10.04    0.00  120.73 v _11671_/C (sg13g2_nand3_1)
+     2    0.01    1.10    0.82  121.55 ^ _11671_/Y (sg13g2_nand3_1)
+                                         _03541_ (net)
+                  1.10    0.00  121.55 ^ _16579_/A2 (sg13g2_o21ai_1)
+     4    0.05    0.46    0.58  122.14 v _16579_/Y (sg13g2_o21ai_1)
+                                         _08115_ (net)
+                  0.46    0.01  122.15 v _16925_/A2 (sg13g2_o21ai_1)
+     2   15.01  144.30  103.24  225.39 ^ _16925_/Y (sg13g2_o21ai_1)
+                                         instr_addr_o_17_ (net)
+                144.30    0.33  225.72 ^ _16926_/A1 (sg13g2_mux2_1)
+     1    0.00    3.02    8.66  234.38 ^ _16926_/X (sg13g2_mux2_1)
+                                         _00431_ (net)
+                  3.02    0.00  234.38 ^ if_stage_i.prefetch_buffer_i.stored_addr_q_17__reg/D (sg13g2_dfrbp_1)
+                                234.38   data arrival time
+
+                         12.50   12.50   clock clk_sys (rise edge)
+                          0.00   12.50   clock source latency
+     1    0.07    0.31    0.02   12.52 ^ clk_i (in)
+                                         clk_i (net)
+                  0.23    0.00   12.52 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+     4    0.20    0.11    0.20   12.72 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.12    0.02   12.74 ^ clkbuf_2_3_0_clk_i/A (sg13g2_buf_16)
+    16    0.49    0.12    0.14   12.89 ^ clkbuf_2_3_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_2_3_0_clk_i (net)
+                  0.18    0.07   12.96 ^ clkbuf_6_63_0_clk_i/A (sg13g2_buf_16)
+     6    0.14    0.05    0.15   13.10 ^ clkbuf_6_63_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_6_63_0_clk_i (net)
+                  0.05    0.01   13.11 ^ clkbuf_leaf_200_clk_i/A (sg13g2_buf_16)
+     5    0.03    0.02    0.08   13.19 ^ clkbuf_leaf_200_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_200_clk_i (net)
+                  0.02    0.00   13.19 ^ if_stage_i.prefetch_buffer_i.stored_addr_q_17__reg/CLK (sg13g2_dfrbp_1)
+                         -0.10   13.09   clock uncertainty
+                          0.00   13.09   clock reconvergence pessimism
+                         -0.56   12.53   library setup time
+                                 12.53   data required time
+-----------------------------------------------------------------------------
+                                 12.53   data required time
+                               -234.38   data arrival time
+-----------------------------------------------------------------------------
+                               -221.85   slack (VIOLATED)
+
+
+
+==========================================================================
+12_cve2_core_metrics.final report_check_types -max_slew -max_cap -max_fanout -violators
+--------------------------------------------------------------------------
+
+==========================================================================
+12_cve2_core_metrics.final max_slew_check_slack
+--------------------------------------------------------------------------
+-144.69496154785156
+
+==========================================================================
+12_cve2_core_metrics.final max_slew_check_limit
+--------------------------------------------------------------------------
+2.5074000358581543
+
+==========================================================================
+12_cve2_core_metrics.final max_slew_check_slack_limit
+--------------------------------------------------------------------------
+-57.7072
+
+==========================================================================
+12_cve2_core_metrics.final max_fanout_check_slack
+--------------------------------------------------------------------------
+-54.0
+
+==========================================================================
+12_cve2_core_metrics.final max_fanout_check_limit
+--------------------------------------------------------------------------
+8.0
+
+==========================================================================
+12_cve2_core_metrics.final max_fanout_check_slack_limit
+--------------------------------------------------------------------------
+-6.7500
+
+==========================================================================
+12_cve2_core_metrics.final max_capacitance_check_slack
+--------------------------------------------------------------------------
+-14.901776313781738
+
+==========================================================================
+12_cve2_core_metrics.final max_capacitance_check_limit
+--------------------------------------------------------------------------
+0.30000001192092896
+
+==========================================================================
+12_cve2_core_metrics.final max_capacitance_check_slack_limit
+--------------------------------------------------------------------------
+-49.6726
+
+==========================================================================
+12_cve2_core_metrics.final max_slew_violation_count
+--------------------------------------------------------------------------
+max slew violation count 1559
+
+==========================================================================
+12_cve2_core_metrics.final max_fanout_violation_count
+--------------------------------------------------------------------------
+max fanout violation count 102
+
+==========================================================================
+12_cve2_core_metrics.final max_cap_violation_count
+--------------------------------------------------------------------------
+max cap violation count 228
+
+==========================================================================
+12_cve2_core_metrics.final setup_violation_count
+--------------------------------------------------------------------------
+setup violation count 1883
+
+==========================================================================
+12_cve2_core_metrics.final hold_violation_count
+--------------------------------------------------------------------------
+hold violation count 0
+
+==========================================================================
+12_cve2_core_metrics.final critical path delay
+--------------------------------------------------------------------------
+234.3768
+
+==========================================================================
+12_cve2_core_metrics.final critical path slack
+--------------------------------------------------------------------------
+-221.8482
+
+==========================================================================
+12_cve2_core_metrics.final slack div critical path delay
+--------------------------------------------------------------------------
+-94.654505
+
+==========================================================================
+12_cve2_core_metrics.final report_power tt
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.15e-01   1.06e-01   1.01e-06   2.21e-01  34.6%
+Combinational          1.47e-02   3.95e-01   2.83e-06   4.10e-01  64.1%
+Clock                  5.79e-03   2.64e-03   7.05e-07   8.43e-03   1.3%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.36e-01   5.04e-01   4.55e-06   6.39e-01 100.0%
+                          21.3%      78.7%       0.0%
+
+==========================================================================
+12_cve2_core_metrics.final report_design_area
+--------------------------------------------------------------------------
+
+==========================================================================
+12_cve2_core_metrics.final area by hierarchy
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Design Area Summary
+--------------------------------------------------------------------------------
+Die Area:              745725.0 um2
+Core Area:             658583.6544 um2
+Total Area:            322807.1616 um2
+Total Active Area:     322807.1616 um2
+
+Core Utilization:      0.49015361897205323
+Std Cell Utilization:  0.49015361897205323
+
+--------------------------------------------------------------------------------
+Hierarchical Area Report
+--------------------------------------------------------------------------------
+                                                                                Global Area (um^2)                                                              Global Instances                                                                Local Area (um^2)                                                               Local Instances
+                                                                                ------------------------------------------------------------------------------- ------------------------------------------------------------------------------- ------------------------------------------------------------------------------- ----------------------------------------------------------------------------
+Hierarchy Name                                                                  Total           StdCell         Macro           Cover           Pad             Total           StdCell         Macro           Cover           Pad             Total           StdCell         Macro           Cover           Pad             Total           StdCell         Macro           Cover           Pad             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<top>                                                                           322807.162      322807.162      0.000           0.000           0.000           20404           20404           0               0               0               182033.309      182033.309      0.000           0.000           0.000           13972           13972           0               0               0               
+  cs_registers_i                                                                49253.702       49253.702       0.000           0.000           0.000           2757            2757            0               0               0               49253.702       49253.702       0.000           0.000           0.000           2757            2757            0               0               0               
+  register_file_i                                                               91520.150       91520.150       0.000           0.000           0.000           3675            3675            0               0               0               91520.150       91520.150       0.000           0.000           0.000           3675            3675            0               0               0               

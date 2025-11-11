@@ -1,0 +1,198 @@
+Warning: There are 77 input ports missing set_input_delay.
+  addr_i_0_
+  addr_i_10_
+  addr_i_11_
+  addr_i_12_
+  addr_i_13_
+  addr_i_14_
+  addr_i_15_
+  addr_i_16_
+  addr_i_17_
+  addr_i_18_
+  addr_i_19_
+  addr_i_1_
+  addr_i_20_
+  addr_i_21_
+  addr_i_22_
+  addr_i_23_
+  addr_i_24_
+  addr_i_25_
+  addr_i_26_
+  addr_i_27_
+  addr_i_28_
+  addr_i_29_
+  addr_i_2_
+  addr_i_30_
+  addr_i_31_
+  addr_i_3_
+  addr_i_4_
+  addr_i_5_
+  addr_i_6_
+  addr_i_7_
+  addr_i_8_
+  addr_i_9_
+  be_i_0_
+  be_i_1_
+  be_i_2_
+  be_i_3_
+  event_hi_i
+  event_lo_i
+  id_i_0_
+  id_i_1_
+  id_i_2_
+  id_i_3_
+  id_i_4_
+  req_i
+  wdata_i_0_
+  wdata_i_10_
+  wdata_i_11_
+  wdata_i_12_
+  wdata_i_13_
+  wdata_i_14_
+  wdata_i_15_
+  wdata_i_16_
+  wdata_i_17_
+  wdata_i_18_
+  wdata_i_19_
+  wdata_i_1_
+  wdata_i_20_
+  wdata_i_21_
+  wdata_i_22_
+  wdata_i_23_
+  wdata_i_24_
+  wdata_i_25_
+  wdata_i_26_
+  wdata_i_27_
+  wdata_i_28_
+  wdata_i_29_
+  wdata_i_2_
+  wdata_i_30_
+  wdata_i_31_
+  wdata_i_3_
+  wdata_i_4_
+  wdata_i_5_
+  wdata_i_6_
+  wdata_i_7_
+  wdata_i_8_
+  wdata_i_9_
+  wen_i
+Warning: There are 41 output ports missing set_output_delay.
+  busy_o
+  irq_hi_o
+  irq_lo_o
+  r_id_o_0_
+  r_id_o_1_
+  r_id_o_2_
+  r_id_o_3_
+  r_id_o_4_
+  r_rdata_o_0_
+  r_rdata_o_10_
+  r_rdata_o_11_
+  r_rdata_o_12_
+  r_rdata_o_13_
+  r_rdata_o_14_
+  r_rdata_o_15_
+  r_rdata_o_16_
+  r_rdata_o_17_
+  r_rdata_o_18_
+  r_rdata_o_19_
+  r_rdata_o_1_
+  r_rdata_o_20_
+  r_rdata_o_21_
+  r_rdata_o_22_
+  r_rdata_o_23_
+  r_rdata_o_24_
+  r_rdata_o_25_
+  r_rdata_o_26_
+  r_rdata_o_27_
+  r_rdata_o_28_
+  r_rdata_o_29_
+  r_rdata_o_2_
+  r_rdata_o_30_
+  r_rdata_o_31_
+  r_rdata_o_3_
+  r_rdata_o_4_
+  r_rdata_o_5_
+  r_rdata_o_6_
+  r_rdata_o_7_
+  r_rdata_o_8_
+  r_rdata_o_9_
+  r_valid_o
+Warning: There are 56 unconstrained endpoints.
+  busy_o
+  gnt_o
+  irq_hi_o
+  irq_lo_o
+  r_id_o_0_
+  r_id_o_1_
+  r_id_o_2_
+  r_id_o_3_
+  r_id_o_4_
+  r_opc_o
+  r_rdata_o_0_
+  r_rdata_o_10_
+  r_rdata_o_11_
+  r_rdata_o_12_
+  r_rdata_o_13_
+  r_rdata_o_14_
+  r_rdata_o_15_
+  r_rdata_o_16_
+  r_rdata_o_17_
+  r_rdata_o_18_
+  r_rdata_o_19_
+  r_rdata_o_1_
+  r_rdata_o_20_
+  r_rdata_o_21_
+  r_rdata_o_22_
+  r_rdata_o_23_
+  r_rdata_o_24_
+  r_rdata_o_25_
+  r_rdata_o_26_
+  r_rdata_o_27_
+  r_rdata_o_28_
+  r_rdata_o_29_
+  r_rdata_o_2_
+  r_rdata_o_30_
+  r_rdata_o_31_
+  r_rdata_o_3_
+  r_rdata_o_4_
+  r_rdata_o_5_
+  r_rdata_o_6_
+  r_rdata_o_7_
+  r_rdata_o_8_
+  r_rdata_o_9_
+  r_valid_o
+  r_id_o[0]_reg/D
+  r_id_o[1]_reg/D
+  r_id_o[2]_reg/D
+  r_id_o[3]_reg/D
+  r_id_o[4]_reg/D
+  r_valid_o_reg/D
+  s_addr_0__reg/D
+  s_addr_1__reg/D
+  s_addr_2__reg/D
+  s_addr_3__reg/D
+  s_addr_4__reg/D
+  s_addr_5__reg/D
+  s_wen_reg/D
+max_delay/setup group clk_sys
+
+                                     Required  Actual
+Endpoint                               Delay   Delay   Slack
+------------------------------------------------------------
+counter_hi_i.compare_value_i_0__reg/RESET_B (sg13g2_dfrbp_1)   12.16    2.27    9.89 (MET)
+
+max_delay/setup group clk_sys
+
+                                     Required  Actual
+Endpoint                               Delay   Delay   Slack
+------------------------------------------------------------
+counter_hi_i.compare_value_i_0__reg/RESET_B (sg13g2_dfrbp_1)   12.16    2.27    9.89 (MET)
+
+max_delay/setup group clk_sys
+
+                                     Required  Actual
+Endpoint                               Delay   Delay   Slack
+------------------------------------------------------------
+counter_hi_i.compare_value_i_0__reg/RESET_B (sg13g2_dfrbp_1)   12.16    2.27    9.89 (MET)
+

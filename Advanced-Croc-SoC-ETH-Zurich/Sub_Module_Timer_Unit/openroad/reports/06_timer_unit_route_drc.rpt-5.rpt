@@ -1,0 +1,15 @@
+  violation type: Short
+    srcs: net:counter_lo_i.counter_value_o_2_ net:net113 
+    bbox = ( 238.175, 160.34 ) - ( 238.18, 160.54 ) on Layer Metal2
+  violation type: Short
+    srcs: net:net92 net:net113 
+    bbox = ( 239.135, 152.78 ) - ( 239.14, 152.98 ) on Layer Metal2
+  violation type: Short
+    srcs: net:net92 net:net113 
+    bbox = ( 237.7, 160.34 ) - ( 237.825, 160.535 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:counter_hi_i.counter_value_o_17_ 
+    bbox = ( 154.895, 250.84 ) - ( 155.12, 250.85 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:counter_hi_i.counter_value_o_17_ 
+    bbox = ( 154.42, 251.05 ) - ( 154.705, 251.06 ) on Layer Metal2

@@ -1,0 +1,7 @@
+work
+compile_rtl.tcl
+compile_netlist.tcl
+transcript
+vsim.wlf
+modelsim.ini
+*.vcd

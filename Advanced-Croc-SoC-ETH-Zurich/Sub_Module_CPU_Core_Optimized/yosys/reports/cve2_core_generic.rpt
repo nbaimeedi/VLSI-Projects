@@ -1,0 +1,666 @@
+
+44. Printing statistics.
+
+=== cve2_alu$cve2_core.ex_block_i.alu_i ===
+
+   Number of wires:                291
+   Number of wire bits:           1753
+   Number of public wires:          34
+   Number of public wire bits:     709
+   Number of ports:                 15
+   Number of port bits:            369
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1264
+     $_AND_                        383
+     $_MUX_                        360
+     $_NOT_                         69
+     $_OR_                         350
+     $_XOR_                        102
+
+   Estimated number of transistors:      10080
+
+=== cve2_compressed_decoder$cve2_core.if_stage_i.compressed_decoder_i ===
+
+   Number of wires:                249
+   Number of wire bits:           1745
+   Number of public wires:           7
+   Number of public wire bits:      69
+   Number of ports:                  7
+   Number of port bits:             69
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1034
+     $_AND_                        366
+     $_MUX_                        256
+     $_NOT_                         34
+     $_OR_                         378
+
+   Estimated number of transistors:       7604
+
+=== cve2_controller$cve2_core.id_stage_i.controller_i ===
+
+   Number of wires:                364
+   Number of wire bits:           1244
+   Number of public wires:          94
+   Number of public wire bits:     272
+   Number of ports:                 56
+   Number of port bits:            225
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                845
+     $_AND_                        226
+     $_DFFE_PN0P_                    6
+     $_DFF_PN0_                      6
+     $_MUX_                        326
+     $_NOT_                         35
+     $_OR_                         216
+     $_XOR_                         30
+
+   Estimated number of transistors:       6994+
+
+=== cve2_core ===
+
+   Number of wires:                145
+   Number of wire bits:           1598
+   Number of public wires:         143
+   Number of public wire bits:    1596
+   Number of ports:                 30
+   Number of port bits:            392
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 24
+     $_AND_                          1
+     $_MUX_                         12
+     $_NOT_                          1
+     $_OR_                           3
+     cve2_cs_registers$cve2_core.cs_registers_i      1
+     cve2_ex_block$cve2_core.ex_block_i      1
+     cve2_id_stage$cve2_core.id_stage_i      1
+     cve2_if_stage$cve2_core.if_stage_i      1
+     cve2_load_store_unit$cve2_core.load_store_unit_i      1
+     cve2_register_file_ff$cve2_core.register_file_i      1
+     cve2_wb$cve2_core.wb_i          1
+
+   Estimated number of transistors:        170+
+
+=== cve2_counter$cve2_core.cs_registers_i.mcycle_counter_i ===
+
+   Number of wires:                 72
+   Number of wire bits:            481
+   Number of public wires:          12
+   Number of public wire bits:     358
+   Number of ports:                  8
+   Number of port bits:            165
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                378
+     $_AND_                        116
+     $_DFFE_PN0P_                   64
+     $_MUX_                        128
+     $_NOT_                          3
+     $_OR_                           4
+     $_XOR_                         63
+
+   Estimated number of transistors:       3018+
+
+=== cve2_counter$cve2_core.cs_registers_i.minstret_counter_i ===
+
+   Number of wires:                 71
+   Number of wire bits:            417
+   Number of public wires:          11
+   Number of public wire bits:     294
+   Number of ports:                  8
+   Number of port bits:            165
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                378
+     $_AND_                        116
+     $_DFFE_PN0P_                   64
+     $_MUX_                        128
+     $_NOT_                          3
+     $_OR_                           4
+     $_XOR_                         63
+
+   Estimated number of transistors:       3018+
+
+=== cve2_cs_registers$cve2_core.cs_registers_i ===
+
+   Number of wires:                717
+   Number of wire bits:           8666
+   Number of public wires:          99
+   Number of public wire bits:    3190
+   Number of ports:                 56
+   Number of port bits:            581
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2910
+     $_AND_                        641
+     $_DFFE_PN0P_                    2
+     $_DFFE_PN1P_                    2
+     $_MUX_                        958
+     $_NOT_                        202
+     $_OR_                        1087
+     $_XOR_                          2
+     cve2_counter$cve2_core.cs_registers_i.mcycle_counter_i      1
+     cve2_counter$cve2_core.cs_registers_i.minstret_counter_i      1
+     cve2_csr$cve2_core.cs_registers_i.u_dcsr_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_depc_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_dscratch0_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_dscratch1_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mcause_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mepc_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mie_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mscratch_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstack_cause_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstack_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstack_epc_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstatus_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mtval_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mtvec_csr      1
+
+   Estimated number of transistors:      22292+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_dcsr_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   29
+     $_DFFE_PN1P_                    3
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_depc_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   32
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_dscratch0_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   32
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_dscratch1_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   32
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mcause_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             18
+   Number of public wires:           6
+   Number of public wire bits:      18
+   Number of ports:                  6
+   Number of port bits:             18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $_DFFE_PN0P_                    7
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mepc_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   32
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mie_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             42
+   Number of public wires:           6
+   Number of public wire bits:      42
+   Number of ports:                  6
+   Number of port bits:             42
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $_DFFE_PN0P_                   19
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mscratch_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   32
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstack_cause_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             18
+   Number of public wires:           6
+   Number of public wire bits:      18
+   Number of ports:                  6
+   Number of port bits:             18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $_DFFE_PN0P_                    7
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstack_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             10
+   Number of public wires:           6
+   Number of public wire bits:      10
+   Number of ports:                  6
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $_DFFE_PN0P_                    2
+     $_DFFE_PN1P_                    1
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstack_epc_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   32
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstatus_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             16
+   Number of public wires:           6
+   Number of public wire bits:      16
+   Number of ports:                  6
+   Number of port bits:             16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $_DFFE_PN0P_                    4
+     $_DFFE_PN1P_                    2
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mtval_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   32
+
+   Estimated number of transistors:          0+
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mtvec_csr ===
+
+   Number of wires:                  6
+   Number of wire bits:             68
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $_DFFE_PN0P_                   31
+     $_DFFE_PN1P_                    1
+
+   Estimated number of transistors:          0+
+
+=== cve2_decoder$cve2_core.id_stage_i.decoder_i ===
+
+   Number of wires:                504
+   Number of wire bits:           1340
+   Number of public wires:          47
+   Number of public wire bits:     321
+   Number of ports:                 46
+   Number of port bits:            319
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                702
+     $_AND_                         59
+     $_MUX_                         87
+     $_NOT_                        129
+     $_OR_                         427
+
+   Estimated number of transistors:       4218
+
+=== cve2_ex_block$cve2_core.ex_block_i ===
+
+   Number of wires:                 36
+   Number of wire bits:            687
+   Number of public wires:          34
+   Number of public wire bits:     685
+   Number of ports:                 22
+   Number of port bits:            382
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                108
+     $_MUX_                        103
+     $_NOT_                          1
+     $_OR_                           2
+     cve2_alu$cve2_core.ex_block_i.alu_i      1
+     cve2_multdiv_fast$cve2_core.ex_block_i.gen_multdiv_fast.multdiv_i      1
+
+   Estimated number of transistors:       1250+
+
+=== cve2_fetch_fifo$cve2_core.if_stage_i.prefetch_buffer_i.fifo_i ===
+
+   Number of wires:                 96
+   Number of wire bits:            609
+   Number of public wires:          37
+   Number of public wire bits:     459
+   Number of ports:                 14
+   Number of port bits:            139
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                441
+     $_AND_                         76
+     $_DFFE_PN0P_                  130
+     $_DFF_PN0_                      3
+     $_MUX_                        171
+     $_NOT_                         14
+     $_OR_                          15
+     $_XOR_                         32
+
+   Estimated number of transistors:       3010+
+
+=== cve2_id_stage$cve2_core.id_stage_i ===
+
+   Number of wires:                397
+   Number of wire bits:           1983
+   Number of public wires:         146
+   Number of public wire bits:    1067
+   Number of ports:                 93
+   Number of port bits:            760
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                899
+     $_AND_                        304
+     $_DFFE_PN0P_                   69
+     $_DFF_PN0_                      2
+     $_MUX_                        183
+     $_NOT_                         53
+     $_OR_                         286
+     cve2_controller$cve2_core.id_stage_i.controller_i      1
+     cve2_decoder$cve2_core.id_stage_i.decoder_i      1
+
+   Estimated number of transistors:       5842+
+
+=== cve2_if_stage$cve2_core.if_stage_i ===
+
+   Number of wires:                119
+   Number of wire bits:            921
+   Number of public wires:          49
+   Number of public wire bits:     538
+   Number of ports:                 35
+   Number of port bits:            400
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                448
+     $_AND_                        161
+     $_DFFE_PN0P_                   84
+     $_DFF_PN0_                      2
+     $_MUX_                         61
+     $_NOT_                         18
+     $_OR_                         120
+     cve2_compressed_decoder$cve2_core.if_stage_i.compressed_decoder_i      1
+     cve2_prefetch_buffer$cve2_core.if_stage_i.prefetch_buffer_i      1
+
+   Estimated number of transistors:       2454+
+
+=== cve2_load_store_unit$cve2_core.load_store_unit_i ===
+
+   Number of wires:                286
+   Number of wire bits:           1231
+   Number of public wires:          50
+   Number of public wire bits:     424
+   Number of ports:                 28
+   Number of port bits:            249
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                871
+     $_AND_                        328
+     $_DFFE_PN0P_                   68
+     $_MUX_                        156
+     $_NOT_                         41
+     $_OR_                         278
+
+   Estimated number of transistors:       5590+
+
+=== cve2_multdiv_fast$cve2_core.ex_block_i.gen_multdiv_fast.multdiv_i ===
+
+   Number of wires:               1911
+   Number of wire bits:           4159
+   Number of public wires:          49
+   Number of public wire bits:     753
+   Number of ports:                 20
+   Number of port bits:            378
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3541
+     $_AND_                       1165
+     $_DFFE_PN0P_                   75
+     $_MUX_                        793
+     $_NOR_                          9
+     $_NOT_                        170
+     $_OR_                         699
+     $_XNOR_                         8
+     $_XOR_                        622
+
+   Estimated number of transistors:      28636+
+
+=== cve2_prefetch_buffer$cve2_core.if_stage_i.prefetch_buffer_i ===
+
+   Number of wires:                 79
+   Number of wire bits:            393
+   Number of public wires:          37
+   Number of public wire bits:     292
+   Number of ports:                 18
+   Number of port bits:            173
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                244
+     $_AND_                         64
+     $_DFFE_PN0P_                   60
+     $_DFF_PN0_                      6
+     $_MUX_                         64
+     $_NOT_                          5
+     $_OR_                          14
+     $_XOR_                         30
+     cve2_fetch_fifo$cve2_core.if_stage_i.prefetch_buffer_i.fifo_i      1
+
+   Estimated number of transistors:       1606+
+
+=== cve2_register_file_ff$cve2_core.register_file_i ===
+
+   Number of wires:                109
+   Number of wire bits:           3185
+   Number of public wires:          12
+   Number of public wire bits:    1170
+   Number of ports:                 10
+   Number of port bits:            115
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3098
+     $_AND_                         31
+     $_DFFE_PN0P_                  992
+     $_MUX_                       1984
+     $_NOT_                         36
+     $_OR_                          55
+
+   Estimated number of transistors:      24396+
+
+=== cve2_wb$cve2_core.wb_i ===
+
+   Number of wires:                 22
+   Number of wire bits:            185
+   Number of public wires:          17
+   Number of public wire bits:     118
+   Number of ports:                 17
+   Number of port bits:            118
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                102
+     $_AND_                         68
+     $_NOT_                          1
+     $_OR_                          33
+
+   Estimated number of transistors:        608
+
+=== design hierarchy ===
+
+   cve2_core                         1
+     cve2_cs_registers$cve2_core.cs_registers_i      1
+       cve2_counter$cve2_core.cs_registers_i.mcycle_counter_i      1
+       cve2_counter$cve2_core.cs_registers_i.minstret_counter_i      1
+       cve2_csr$cve2_core.cs_registers_i.u_dcsr_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_depc_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_dscratch0_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_dscratch1_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mcause_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mepc_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mie_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mscratch_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstack_cause_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstack_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstack_epc_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstatus_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mtval_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mtvec_csr      1
+     cve2_ex_block$cve2_core.ex_block_i      1
+       cve2_alu$cve2_core.ex_block_i.alu_i      1
+       cve2_multdiv_fast$cve2_core.ex_block_i.gen_multdiv_fast.multdiv_i      1
+     cve2_id_stage$cve2_core.id_stage_i      1
+       cve2_controller$cve2_core.id_stage_i.controller_i      1
+       cve2_decoder$cve2_core.id_stage_i.decoder_i      1
+     cve2_if_stage$cve2_core.if_stage_i      1
+       cve2_compressed_decoder$cve2_core.if_stage_i.compressed_decoder_i      1
+       cve2_prefetch_buffer$cve2_core.if_stage_i.prefetch_buffer_i      1
+         cve2_fetch_fifo$cve2_core.if_stage_i.prefetch_buffer_i.fifo_i      1
+     cve2_load_store_unit$cve2_core.load_store_unit_i      1
+     cve2_register_file_ff$cve2_core.register_file_i      1
+     cve2_wb$cve2_core.wb_i          1
+
+   Number of wires:               5552
+   Number of wire bits:          31313
+   Number of public wires:         962
+   Number of public wire bits:   13031
+   Number of ports:                567
+   Number of port bits:           5715
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              17587
+     $_AND_                       4105
+     $_DFFE_PN0P_                 1937
+     $_DFFE_PN1P_                    9
+     $_DFF_PN0_                     19
+     $_MUX_                       5770
+     $_NOR_                          9
+     $_NOT_                        815
+     $_OR_                        3971
+     $_XNOR_                         8
+     $_XOR_                        944
+
+   Estimated number of transistors:     130786+
+

@@ -1,0 +1,410 @@
+
+==========================================================================
+07_dm_top.final check_setup
+--------------------------------------------------------------------------
+0
+
+==========================================================================
+07_dm_top.final report_tns
+--------------------------------------------------------------------------
+tns -7456.65
+
+==========================================================================
+07_dm_top.final report_wns
+--------------------------------------------------------------------------
+wns -60.05
+
+==========================================================================
+07_dm_top.final report_worst_slack
+--------------------------------------------------------------------------
+worst slack -60.05
+
+==========================================================================
+07_dm_top.final report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: i_dm_mem.rdata_q_22__reg
+            (rising edge-triggered flip-flop clocked by clk_sys)
+Endpoint: i_dm_mem.rdata_q_22__reg
+          (rising edge-triggered flip-flop clocked by clk_sys)
+Path Group: clk_sys
+Path Type: min
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.11    0.24    0.04    0.04 ^ clk_i (in)
+                                         clk_i (net)
+                  0.18    0.00    0.04 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+    16    0.53    0.18    0.19    0.23 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.18    0.02    0.25 ^ clkbuf_4_10_0_clk_i/A (sg13g2_buf_16)
+     7    0.16    0.04    0.11    0.36 ^ clkbuf_4_10_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_4_10_0_clk_i (net)
+                  0.04    0.01    0.37 ^ clkbuf_leaf_78_clk_i/A (sg13g2_buf_16)
+     8    0.03    0.02    0.05    0.43 ^ clkbuf_leaf_78_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_78_clk_i (net)
+                  0.02    0.00    0.43 ^ i_dm_mem.rdata_q_22__reg/CLK (sg13g2_dfrbp_1)
+     2    0.00    0.02    0.13    0.56 v i_dm_mem.rdata_q_22__reg/Q (sg13g2_dfrbp_1)
+                                         i_dm_mem.rdata_q_22_ (net)
+                  0.02    0.00    0.56 v _8115_/A (sg13g2_nand2_1)
+     1    0.00    0.02    0.02    0.58 ^ _8115_/Y (sg13g2_nand2_1)
+                                         _3317_ (net)
+                  0.02    0.00    0.58 ^ _8116_/B1 (sg13g2_o21ai_1)
+     1    0.00    0.02    0.03    0.61 v _8116_/Y (sg13g2_o21ai_1)
+                                         _0536_ (net)
+                  0.02    0.00    0.61 v i_dm_mem.rdata_q_22__reg/D (sg13g2_dfrbp_1)
+                                  0.61   data arrival time
+
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.11    0.24    0.04    0.04 ^ clk_i (in)
+                                         clk_i (net)
+                  0.18    0.00    0.04 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+    16    0.53    0.18    0.19    0.23 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.18    0.02    0.25 ^ clkbuf_4_10_0_clk_i/A (sg13g2_buf_16)
+     7    0.16    0.04    0.11    0.36 ^ clkbuf_4_10_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_4_10_0_clk_i (net)
+                  0.04    0.01    0.37 ^ clkbuf_leaf_78_clk_i/A (sg13g2_buf_16)
+     8    0.03    0.02    0.05    0.43 ^ clkbuf_leaf_78_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_78_clk_i (net)
+                  0.02    0.00    0.43 ^ i_dm_mem.rdata_q_22__reg/CLK (sg13g2_dfrbp_1)
+                          0.10    0.53   clock uncertainty
+                          0.00    0.53   clock reconvergence pessimism
+                         -0.02    0.51   library hold time
+                                  0.51   data required time
+-----------------------------------------------------------------------------
+                                  0.51   data required time
+                                 -0.61   data arrival time
+-----------------------------------------------------------------------------
+                                  0.10   slack (MET)
+
+
+
+==========================================================================
+07_dm_top.final report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: rst_ni (input port)
+Endpoint: ANTENNA_66/A (internal path endpoint)
+Path Group: path delay
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 ^ input external delay
+     1    0.01    0.30    0.00    2.00 ^ rst_ni (in)
+                                         rst_ni (net)
+                  0.22    0.00    2.00 ^ fanout779/A (sg13g2_buf_4)
+     8    0.14    0.15    0.25    2.25 ^ fanout779/X (sg13g2_buf_4)
+                                         net779 (net)
+                  0.17    0.04    2.29 ^ ANTENNA_66/A (sg13g2_antennanp)
+                                  2.29   data arrival time
+
+                         12.50   12.50   max_delay
+                          0.00   12.50   output external delay
+                                 12.50   data required time
+-----------------------------------------------------------------------------
+                                 12.50   data required time
+                                 -2.29   data arrival time
+-----------------------------------------------------------------------------
+                                 10.21   slack (MET)
+
+
+Startpoint: i_dm_sba.state_q_2__reg
+            (rising edge-triggered flip-flop clocked by clk_sys)
+Endpoint: i_dm_sba.state_q_2__reg
+          (rising edge-triggered flip-flop clocked by clk_sys)
+Path Group: clk_sys
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.11    0.32    0.05    0.05 ^ clk_i (in)
+                                         clk_i (net)
+                  0.24    0.00    0.05 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+    16    0.53    0.28    0.30    0.35 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.29    0.04    0.39 ^ clkbuf_4_14_0_clk_i/A (sg13g2_buf_16)
+     7    0.17    0.06    0.17    0.56 ^ clkbuf_4_14_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_4_14_0_clk_i (net)
+                  0.07    0.02    0.58 ^ clkbuf_leaf_61_clk_i/A (sg13g2_buf_16)
+     5    0.04    0.02    0.09    0.66 ^ clkbuf_leaf_61_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_61_clk_i (net)
+                  0.03    0.00    0.67 ^ i_dm_sba.state_q_2__reg/CLK (sg13g2_dfrbp_2)
+     7    0.04    0.07    0.25    0.92 v i_dm_sba.state_q_2__reg/Q (sg13g2_dfrbp_2)
+                                         i_dm_sba.state_q_2_ (net)
+                  0.07    0.00    0.92 v _8546_/A (sg13g2_nor3_2)
+     2   15.03   93.66   65.36   66.29 ^ _8546_/Y (sg13g2_nor3_2)
+                                         master_we_o (net)
+                 93.66    0.31   66.60 ^ _8547_/B_N (sg13g2_nor2b_1)
+     1    0.01    1.05    6.05   72.65 ^ _8547_/Y (sg13g2_nor2b_1)
+                                         _3693_ (net)
+                  1.05    0.00   72.65 ^ _8548_/B (sg13g2_nand2b_1)
+     1    0.01    0.17    0.23   72.88 v _8548_/Y (sg13g2_nand2b_1)
+                                         _3694_ (net)
+                  0.17    0.00   72.88 v _8549_/A2 (sg13g2_a21oi_1)
+     1    0.00    0.07    0.11   72.98 ^ _8549_/Y (sg13g2_a21oi_1)
+                                         _0590_ (net)
+                  0.07    0.00   72.98 ^ i_dm_sba.state_q_2__reg/D (sg13g2_dfrbp_2)
+                                 72.98   data arrival time
+
+                         12.50   12.50   clock clk_sys (rise edge)
+                          0.00   12.50   clock source latency
+     1    0.11    0.32    0.05   12.55 ^ clk_i (in)
+                                         clk_i (net)
+                  0.24    0.00   12.55 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+    16    0.53    0.28    0.30   12.85 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.29    0.04   12.89 ^ clkbuf_4_14_0_clk_i/A (sg13g2_buf_16)
+     7    0.17    0.06    0.17   13.06 ^ clkbuf_4_14_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_4_14_0_clk_i (net)
+                  0.07    0.02   13.08 ^ clkbuf_leaf_61_clk_i/A (sg13g2_buf_16)
+     5    0.04    0.02    0.09   13.16 ^ clkbuf_leaf_61_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_61_clk_i (net)
+                  0.03    0.00   13.17 ^ i_dm_sba.state_q_2__reg/CLK (sg13g2_dfrbp_2)
+                         -0.10   13.07   clock uncertainty
+                          0.00   13.07   clock reconvergence pessimism
+                         -0.13   12.94   library setup time
+                                 12.94   data required time
+-----------------------------------------------------------------------------
+                                 12.94   data required time
+                                -72.98   data arrival time
+-----------------------------------------------------------------------------
+                                -60.05   slack (VIOLATED)
+
+
+
+==========================================================================
+07_dm_top.final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: rst_ni (input port)
+Endpoint: ANTENNA_66/A (internal path endpoint)
+Path Group: path delay
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 ^ input external delay
+     1    0.01    0.30    0.00    2.00 ^ rst_ni (in)
+                                         rst_ni (net)
+                  0.22    0.00    2.00 ^ fanout779/A (sg13g2_buf_4)
+     8    0.14    0.15    0.25    2.25 ^ fanout779/X (sg13g2_buf_4)
+                                         net779 (net)
+                  0.17    0.04    2.29 ^ ANTENNA_66/A (sg13g2_antennanp)
+                                  2.29   data arrival time
+
+                         12.50   12.50   max_delay
+                          0.00   12.50   output external delay
+                                 12.50   data required time
+-----------------------------------------------------------------------------
+                                 12.50   data required time
+                                 -2.29   data arrival time
+-----------------------------------------------------------------------------
+                                 10.21   slack (MET)
+
+
+Startpoint: i_dm_sba.state_q_2__reg
+            (rising edge-triggered flip-flop clocked by clk_sys)
+Endpoint: i_dm_sba.state_q_2__reg
+          (rising edge-triggered flip-flop clocked by clk_sys)
+Path Group: clk_sys
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.11    0.32    0.05    0.05 ^ clk_i (in)
+                                         clk_i (net)
+                  0.24    0.00    0.05 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+    16    0.53    0.28    0.30    0.35 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.29    0.04    0.39 ^ clkbuf_4_14_0_clk_i/A (sg13g2_buf_16)
+     7    0.17    0.06    0.17    0.56 ^ clkbuf_4_14_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_4_14_0_clk_i (net)
+                  0.07    0.02    0.58 ^ clkbuf_leaf_61_clk_i/A (sg13g2_buf_16)
+     5    0.04    0.02    0.09    0.66 ^ clkbuf_leaf_61_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_61_clk_i (net)
+                  0.03    0.00    0.67 ^ i_dm_sba.state_q_2__reg/CLK (sg13g2_dfrbp_2)
+     7    0.04    0.07    0.25    0.92 v i_dm_sba.state_q_2__reg/Q (sg13g2_dfrbp_2)
+                                         i_dm_sba.state_q_2_ (net)
+                  0.07    0.00    0.92 v _8546_/A (sg13g2_nor3_2)
+     2   15.03   93.66   65.36   66.29 ^ _8546_/Y (sg13g2_nor3_2)
+                                         master_we_o (net)
+                 93.66    0.31   66.60 ^ _8547_/B_N (sg13g2_nor2b_1)
+     1    0.01    1.05    6.05   72.65 ^ _8547_/Y (sg13g2_nor2b_1)
+                                         _3693_ (net)
+                  1.05    0.00   72.65 ^ _8548_/B (sg13g2_nand2b_1)
+     1    0.01    0.17    0.23   72.88 v _8548_/Y (sg13g2_nand2b_1)
+                                         _3694_ (net)
+                  0.17    0.00   72.88 v _8549_/A2 (sg13g2_a21oi_1)
+     1    0.00    0.07    0.11   72.98 ^ _8549_/Y (sg13g2_a21oi_1)
+                                         _0590_ (net)
+                  0.07    0.00   72.98 ^ i_dm_sba.state_q_2__reg/D (sg13g2_dfrbp_2)
+                                 72.98   data arrival time
+
+                         12.50   12.50   clock clk_sys (rise edge)
+                          0.00   12.50   clock source latency
+     1    0.11    0.32    0.05   12.55 ^ clk_i (in)
+                                         clk_i (net)
+                  0.24    0.00   12.55 ^ clkbuf_0_clk_i/A (sg13g2_buf_8)
+    16    0.53    0.28    0.30   12.85 ^ clkbuf_0_clk_i/X (sg13g2_buf_8)
+                                         clknet_0_clk_i (net)
+                  0.29    0.04   12.89 ^ clkbuf_4_14_0_clk_i/A (sg13g2_buf_16)
+     7    0.17    0.06    0.17   13.06 ^ clkbuf_4_14_0_clk_i/X (sg13g2_buf_16)
+                                         clknet_4_14_0_clk_i (net)
+                  0.07    0.02   13.08 ^ clkbuf_leaf_61_clk_i/A (sg13g2_buf_16)
+     5    0.04    0.02    0.09   13.16 ^ clkbuf_leaf_61_clk_i/X (sg13g2_buf_16)
+                                         clknet_leaf_61_clk_i (net)
+                  0.03    0.00   13.17 ^ i_dm_sba.state_q_2__reg/CLK (sg13g2_dfrbp_2)
+                         -0.10   13.07   clock uncertainty
+                          0.00   13.07   clock reconvergence pessimism
+                         -0.13   12.94   library setup time
+                                 12.94   data required time
+-----------------------------------------------------------------------------
+                                 12.94   data required time
+                                -72.98   data arrival time
+-----------------------------------------------------------------------------
+                                -60.05   slack (VIOLATED)
+
+
+
+==========================================================================
+07_dm_top.final report_check_types -max_slew -max_cap -max_fanout -violators
+--------------------------------------------------------------------------
+
+==========================================================================
+07_dm_top.final max_slew_check_slack
+--------------------------------------------------------------------------
+-145.77186584472656
+
+==========================================================================
+07_dm_top.final max_slew_check_limit
+--------------------------------------------------------------------------
+2.5074000358581543
+
+==========================================================================
+07_dm_top.final max_slew_check_slack_limit
+--------------------------------------------------------------------------
+-58.1367
+
+==========================================================================
+07_dm_top.final max_fanout_check_slack
+--------------------------------------------------------------------------
+-16.0
+
+==========================================================================
+07_dm_top.final max_fanout_check_limit
+--------------------------------------------------------------------------
+8.0
+
+==========================================================================
+07_dm_top.final max_fanout_check_slack_limit
+--------------------------------------------------------------------------
+-2.0000
+
+==========================================================================
+07_dm_top.final max_capacitance_check_slack
+--------------------------------------------------------------------------
+-14.757162094116211
+
+==========================================================================
+07_dm_top.final max_capacitance_check_limit
+--------------------------------------------------------------------------
+0.30000001192092896
+
+==========================================================================
+07_dm_top.final max_capacitance_check_slack_limit
+--------------------------------------------------------------------------
+-49.1905
+
+==========================================================================
+07_dm_top.final max_slew_violation_count
+--------------------------------------------------------------------------
+max slew violation count 395
+
+==========================================================================
+07_dm_top.final max_fanout_violation_count
+--------------------------------------------------------------------------
+max fanout violation count 16
+
+==========================================================================
+07_dm_top.final max_cap_violation_count
+--------------------------------------------------------------------------
+max cap violation count 141
+
+==========================================================================
+07_dm_top.final setup_violation_count
+--------------------------------------------------------------------------
+setup violation count 596
+
+==========================================================================
+07_dm_top.final hold_violation_count
+--------------------------------------------------------------------------
+hold violation count 0
+
+==========================================================================
+07_dm_top.final critical path delay
+--------------------------------------------------------------------------
+72.9838
+
+==========================================================================
+07_dm_top.final critical path slack
+--------------------------------------------------------------------------
+-60.0457
+
+==========================================================================
+07_dm_top.final slack div critical path delay
+--------------------------------------------------------------------------
+-82.272641
+
+==========================================================================
+07_dm_top.final report_power tt
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.04e-03   9.66e-05   3.34e-07   3.14e-03  13.7%
+Combinational          2.15e-04   1.72e-02   8.83e-07   1.74e-02  75.7%
+Clock                  1.63e-03   8.02e-04   1.96e-07   2.43e-03  10.6%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  4.89e-03   1.81e-02   1.41e-06   2.29e-02 100.0%
+                          21.3%      78.7%       0.0%
+
+==========================================================================
+07_dm_top.final report_design_area
+--------------------------------------------------------------------------
+
+==========================================================================
+07_dm_top.final area by hierarchy
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Design Area Summary
+--------------------------------------------------------------------------------
+Die Area:              360000.0 um2
+Core Area:             310991.7888 um2
+Total Area:            96201.3024 um2
+Total Active Area:     96201.3024 um2
+
+Core Utilization:      0.30933711391932417
+Std Cell Utilization:  0.30933711391932417
+
+--------------------------------------------------------------------------------
+Hierarchical Area Report
+--------------------------------------------------------------------------------
+                                                                                Global Area (um^2)                                                              Global Instances                                                                Local Area (um^2)                                                               Local Instances
+                                                                                ------------------------------------------------------------------------------- ------------------------------------------------------------------------------- ------------------------------------------------------------------------------- ----------------------------------------------------------------------------
+Hierarchy Name                                                                  Total           StdCell         Macro           Cover           Pad             Total           StdCell         Macro           Cover           Pad             Total           StdCell         Macro           Cover           Pad             Total           StdCell         Macro           Cover           Pad             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<top>                                                                           96201.302       96201.302       0.000           0.000           0.000           5694            5694            0               0               0               96201.302       96201.302       0.000           0.000           0.000           5694            5694            0               0               0               

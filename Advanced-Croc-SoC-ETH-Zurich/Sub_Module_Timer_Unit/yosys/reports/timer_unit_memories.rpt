@@ -1,0 +1,137 @@
+
+33. Printing statistics.
+
+=== timer_unit ===
+
+   Number of wires:                150
+   Number of wire bits:            689
+   Number of public wires:          56
+   Number of public wire bits:     440
+   Number of ports:                 19
+   Number of port bits:            123
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                138
+     $adff                          10
+     $adffe                          6
+     $and                           15
+     $eq                            15
+     $logic_and                     22
+     $logic_not                      2
+     $mux                           32
+     $ne                             2
+     $not                            8
+     $or                            13
+     $pmux                           1
+     $reduce_and                     6
+     $reduce_bool                    2
+     timer_unit_counter$timer_unit.counter_hi_i      1
+     timer_unit_counter$timer_unit.counter_lo_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_hi_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_lo_i      1
+
+=== timer_unit_counter$timer_unit.counter_hi_i ===
+
+   Number of wires:                 15
+   Number of wire bits:            263
+   Number of public wires:          11
+   Number of public wire bits:     166
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $adff                           2
+     $eq                             1
+     $mux                            3
+
+=== timer_unit_counter$timer_unit.counter_lo_i ===
+
+   Number of wires:                 15
+   Number of wire bits:            263
+   Number of public wires:          11
+   Number of public wire bits:     166
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $adff                           2
+     $eq                             1
+     $mux                            3
+
+=== timer_unit_counter_presc$timer_unit.prescaler_hi_i ===
+
+   Number of wires:                 16
+   Number of wire bits:            264
+   Number of public wires:          11
+   Number of public wire bits:     166
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            1
+     $adff                           2
+     $eq                             1
+     $logic_or                       1
+     $mux                            3
+
+=== timer_unit_counter_presc$timer_unit.prescaler_lo_i ===
+
+   Number of wires:                 16
+   Number of wire bits:            264
+   Number of public wires:          11
+   Number of public wire bits:     166
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            1
+     $adff                           2
+     $eq                             1
+     $logic_or                       1
+     $mux                            3
+
+=== design hierarchy ===
+
+   timer_unit                        1
+     timer_unit_counter$timer_unit.counter_hi_i      1
+     timer_unit_counter$timer_unit.counter_lo_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_hi_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_lo_i      1
+
+   Number of wires:                212
+   Number of wire bits:           1743
+   Number of public wires:         100
+   Number of public wire bits:    1104
+   Number of ports:                 55
+   Number of port bits:            531
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                164
+     $add                            4
+     $adff                          18
+     $adffe                          6
+     $and                           15
+     $eq                            19
+     $logic_and                     22
+     $logic_not                      2
+     $logic_or                       2
+     $mux                           44
+     $ne                             2
+     $not                            8
+     $or                            13
+     $pmux                           1
+     $reduce_and                     6
+     $reduce_bool                    2
+

@@ -1,0 +1,1370 @@
+OpenROAD v2.0-16235-gedf00dff9 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Init tech from Github PDK
+Init standard cells
+Init IO cells
+Init SRAM macros
+Init tech-lef
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 300 vias
+Init cell-lef
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 78 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0227] LEF file: ../ihp13/bondpad/lef/bondpad_70x70.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_4096x16_c3_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_4096x8_c3_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x16_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: ../ihp13/pdk/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef, created 1 library cells
+###############################################################################
+# Step 00: Initialization
+###############################################################################
+Read netlist
+Read constraints
+[WARNING STA-0361] net 'i_croc_soc/i_croc/i_dmi_jtag/i_dmi_cdc.i_cdc_req/*async_*' not found.
+[WARNING STA-0361] net 'i_croc_soc/i_croc/i_dmi_jtag/i_dmi_cdc.i_cdc_resp/*async_*' not found.
+Clocks...
+[WARNING STA-0366] port 'jtag_tck_i' not found.
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+CDC/Sync...
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING STA-0472] no valid objects specified for -through
+Input/Outputs...
+JTAG...
+[WARNING STA-0366] port 'jtag_tdi_i' not found.
+[WARNING STA-0366] port 'jtag_tms_i' not found.
+[WARNING STA-0366] port 'jtag_tdi_i' not found.
+[WARNING STA-0366] port 'jtag_tms_i' not found.
+[WARNING STA-0366] port 'jtag_tdo_o' not found.
+[WARNING STA-0366] port 'jtag_tdo_o' not found.
+[WARNING STA-0366] port 'jtag_trst_ni' not found.
+[WARNING STA-0366] port 'jtag_trst_ni' not found.
+[WARNING STA-0471] no valid objects specified for -from.
+[WARNING STA-0366] port 'jtag_trst_ni' not found.
+[WARNING STA-0471] no valid objects specified for -from.
+GPIO...
+[WARNING STA-0366] port 'gpio*' not found.
+[WARNING STA-0366] port 'fetch_en_i' not found.
+[WARNING STA-0366] port 'gpio*' not found.
+[WARNING STA-0366] port 'fetch_en_i' not found.
+[WARNING STA-0366] port 'status_o' not found.
+[WARNING STA-0366] port 'gpio*' not found.
+[WARNING STA-0366] port 'status_o' not found.
+[WARNING STA-0366] port 'gpio*' not found.
+UART...
+[WARNING STA-0366] port 'uart_rx_i' not found.
+[WARNING STA-0366] port 'uart_rx_i' not found.
+[WARNING STA-0366] port 'uart_tx_o' not found.
+[WARNING STA-0366] port 'uart_tx_o' not found.
+Check constraints
+Initialize Chip
+[WARNING IFP-0028] Core area lower left (20.000, 20.000) snapped to (20.160, 22.680).
+[INFO IFP-0001] Added 94 rows of 749 site CoreSite.
+Connect global nets (power)
+[WARNING STA-0235] report_net -connections is deprecated.
+Net VDD
+ Pin capacitance: 0.00
+ Wire capacitance: 0.00
+ Total capacitance: 0.00
+ Number of drivers: 0
+ Number of loads: 0
+ Number of pins: 0
+
+[WARNING STA-0235] report_net -connections is deprecated.
+Net VSS
+ Pin capacitance: 0.00
+ Wire capacitance: 0.00
+ Total capacitance: 0.00
+ Number of drivers: 0
+ Number of loads: 0
+ Number of pins: 0
+
+Create Floorplan
+Metal Tracks
+Create Power Grid
+Power Grid
+Pin Placement
+[INFO PPL-0049] Restrict input pins to region 0.0u-400.0u, in the left edge.
+[INFO PPL-0049] Restrict output pins to region 0.0u-400.0u, in the right edge.
+[INFO PPL-0049] Restrict inout pins to region 0.0u-400.0u, in the left edge.
+Found 0 macro blocks.
+[INFO PPL-0010] Tentative 0 to set up sections.
+[INFO PPL-0001] Number of slots           544
+[INFO PPL-0002] Number of I/O             123
+[INFO PPL-0003] Number of I/O w/sink      93
+[INFO PPL-0004] Number of I/O w/o sink    30
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0006] Slots increase factor     0.01
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 21339.74 um.
+###############################################################################
+# Step 01: Initial Repair Netlist
+###############################################################################
+Repair tie fanout
+[INFO RSZ-0042] Inserted 1 tie sg13g2_tielo instances.
+[INFO RSZ-0042] Inserted 1 tie sg13g2_tiehi instances.
+Remove buffers
+[INFO RSZ-0026] Removed 97 buffers.
+Repair design
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+[INFO RSZ-0058] Using max wire length 3224um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      1951
+      100 |       0 |       0 |             0 |      1851
+      200 |       0 |       0 |             0 |      1751
+      300 |       0 |       0 |             0 |      1651
+      400 |       0 |       0 |             0 |      1551
+      500 |       0 |       0 |             0 |      1451
+      600 |       0 |       0 |             0 |      1351
+      700 |       0 |       0 |             0 |      1251
+      800 |       0 |       0 |             0 |      1151
+      900 |       0 |       0 |             0 |      1051
+     1000 |       0 |       0 |             0 |       951
+     1100 |       0 |       0 |            10 |       851
+     1200 |       0 |       8 |            24 |       751
+     1300 |       0 |       8 |            24 |       651
+     1400 |       0 |       8 |            24 |       551
+     1500 |       0 |       8 |            24 |       451
+     1600 |       0 |       8 |            24 |       351
+     1700 |       0 |       8 |            24 |       251
+     1800 |       0 |       9 |            27 |       151
+     1900 |       0 |       9 |            28 |        51
+    final |       0 |       9 |            30 |         0
+---------------------------------------------------------
+[INFO RSZ-0035] Found 30 fanout violations.
+[INFO RSZ-0038] Inserted 9 buffers in 30 nets.
+###############################################################################
+# Step 02: GLOBAL PLACEMENT
+###############################################################################
+[INFO ORD-0030] Using 6 thread(s).
+Global Placement (1)
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.480  3.780 ) um
+[INFO GPL-0004] CoreBBox: ( 20.160 22.680 ) ( 379.680 378.000 ) um
+[INFO GPL-0006] NumInstances:              1603
+[INFO GPL-0007] NumPlaceInstances:         1603
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1960
+[INFO GPL-0011] NumPins:                   6335
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 400.000 400.000 ) um
+[INFO GPL-0013] CoreBBox: ( 20.160 22.680 ) ( 379.680 378.000 ) um
+[INFO GPL-0016] CoreArea:            127744.646 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       27281.318 um^2
+[INFO GPL-0019] Util:                    21.356 %
+[INFO GPL-0020] StdInstsArea:         27281.318 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00010604 HPWL: 55918900
+[InitialPlace]  Iter: 2 CG residual: 0.00000047 HPWL: 42322020
+[InitialPlace]  Iter: 3 CG residual: 0.00001485 HPWL: 42151186
+[InitialPlace]  Iter: 4 CG residual: 0.00000220 HPWL: 42055816
+[InitialPlace]  Iter: 5 CG residual: 0.00000444 HPWL: 41907679
+[INFO GPL-0031] FillerInit:NumGCells:      4700
+[INFO GPL-0032] FillerInit:NumGNets:       1960
+[INFO GPL-0033] FillerInit:NumGPins:       6335
+[INFO GPL-0023] TargetDensity:            0.600
+[INFO GPL-0024] AvrgPlaceInstArea:       17.019 um^2
+[INFO GPL-0025] IdealBinArea:            28.365 um^2
+[INFO GPL-0026] IdealBinCnt:               4503
+[INFO GPL-0027] TotalBinArea:        127744.646 um^2
+[INFO GPL-0028] BinCnt:        64     64
+[INFO GPL-0029] BinSize: (  5.618  5.552 )
+[INFO GPL-0030] NumBins: 4096
+[NesterovSolve] Iter:    1 overflow: 0.960 HPWL: 27399529
+[NesterovSolve] Iter:   10 overflow: 0.915 HPWL: 35282513
+[NesterovSolve] Iter:   20 overflow: 0.909 HPWL: 35441135
+[NesterovSolve] Iter:   30 overflow: 0.912 HPWL: 35441160
+[NesterovSolve] Iter:   40 overflow: 0.909 HPWL: 35413452
+[NesterovSolve] Iter:   50 overflow: 0.907 HPWL: 35277300
+[NesterovSolve] Iter:   60 overflow: 0.907 HPWL: 35141679
+[NesterovSolve] Iter:   70 overflow: 0.906 HPWL: 35021469
+[NesterovSolve] Iter:   80 overflow: 0.906 HPWL: 34951318
+[NesterovSolve] Iter:   90 overflow: 0.907 HPWL: 34929517
+[NesterovSolve] Iter:  100 overflow: 0.907 HPWL: 34940630
+[NesterovSolve] Iter:  110 overflow: 0.906 HPWL: 34985088
+[NesterovSolve] Iter:  120 overflow: 0.905 HPWL: 35057646
+[NesterovSolve] Iter:  130 overflow: 0.904 HPWL: 35196173
+[NesterovSolve] Iter:  140 overflow: 0.902 HPWL: 35442323
+[NesterovSolve] Iter:  150 overflow: 0.900 HPWL: 35834252
+[NesterovSolve] Iter:  160 overflow: 0.894 HPWL: 36394279
+[NesterovSolve] Iter:  170 overflow: 0.879 HPWL: 37014434
+[NesterovSolve] Iter:  180 overflow: 0.862 HPWL: 37581453
+[NesterovSolve] Iter:  190 overflow: 0.847 HPWL: 38092155
+[NesterovSolve] Iter:  200 overflow: 0.825 HPWL: 39077944
+[NesterovSolve] Iter:  210 overflow: 0.800 HPWL: 40162090
+[NesterovSolve] Iter:  220 overflow: 0.773 HPWL: 41123964
+[NesterovSolve] Iter:  230 overflow: 0.742 HPWL: 42250343
+[NesterovSolve] Iter:  240 overflow: 0.700 HPWL: 42788473
+[NesterovSolve] Iter:  250 overflow: 0.661 HPWL: 43909018
+[NesterovSolve] Iter:  260 overflow: 0.615 HPWL: 44584146
+[NesterovSolve] Iter:  270 overflow: 0.560 HPWL: 45607529
+[NesterovSolve] Iter:  280 overflow: 0.506 HPWL: 46852343
+[NesterovSolve] Iter:  290 overflow: 0.450 HPWL: 48184480
+[NesterovSolve] Iter:  300 overflow: 0.404 HPWL: 49487188
+[NesterovSolve] Iter:  310 overflow: 0.345 HPWL: 50239435
+[NesterovSolve] Iter:  320 overflow: 0.310 HPWL: 50704035
+[NesterovSolve] Iter:  330 overflow: 0.283 HPWL: 50982372
+[NesterovSolve] Iter:  340 overflow: 0.249 HPWL: 51257880
+[NesterovSolve] Iter:  350 overflow: 0.218 HPWL: 51495546
+[NesterovSolve] Iter:  360 overflow: 0.186 HPWL: 51706979
+[NesterovSolve] Iter:  370 overflow: 0.162 HPWL: 51852242
+[NesterovSolve] Iter:  380 overflow: 0.138 HPWL: 51984663
+[NesterovSolve] Iter:  390 overflow: 0.122 HPWL: 52076628
+[NesterovSolve] Iter:  400 overflow: 0.106 HPWL: 52144498
+[NesterovSolve] Finished with Overflow: 0.099699
+Estimate parasitics
+Repair design
+[INFO RSZ-0058] Using max wire length 3224um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      1960
+      100 |       1 |       0 |             0 |      1860
+      200 |       1 |       0 |             0 |      1760
+      300 |      31 |       0 |            30 |      1660
+      400 |      31 |       0 |            30 |      1560
+      500 |      36 |       0 |            32 |      1460
+      600 |      37 |       0 |            32 |      1360
+      700 |      37 |       0 |            32 |      1260
+      800 |      39 |       0 |            32 |      1160
+      900 |      44 |       0 |            32 |      1060
+     1000 |      46 |       0 |            32 |       960
+     1100 |     101 |      51 |            43 |       860
+     1200 |     168 |     103 |            56 |       760
+     1300 |     176 |     109 |            58 |       660
+     1400 |     183 |     109 |            59 |       560
+     1500 |     183 |     109 |            65 |       460
+     1600 |     183 |     109 |            65 |       360
+     1700 |     183 |     109 |            65 |       260
+     1800 |     185 |     111 |            67 |       160
+     1900 |     187 |     111 |            67 |        60
+    final |     238 |     162 |            70 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 42 slew violations.
+[INFO RSZ-0035] Found 28 fanout violations.
+[INFO RSZ-0036] Found 41 capacitance violations.
+[INFO RSZ-0038] Inserted 162 buffers in 70 nets.
+[INFO RSZ-0039] Resized 238 instances.
+Repair setup
+[INFO RSZ-0098] No setup violations found
+Global Placement (2)
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.480  3.780 ) um
+[INFO GPL-0004] CoreBBox: ( 20.160 22.680 ) ( 379.680 378.000 ) um
+[INFO GPL-0006] NumInstances:              1765
+[INFO GPL-0007] NumPlaceInstances:         1765
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   2122
+[INFO GPL-0011] NumPins:                   6659
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 400.000 400.000 ) um
+[INFO GPL-0013] CoreBBox: ( 20.160 22.680 ) ( 379.680 378.000 ) um
+[INFO GPL-0016] CoreArea:            127744.646 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       30108.154 um^2
+[INFO GPL-0019] Util:                    23.569 %
+[INFO GPL-0020] StdInstsArea:         30108.154 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00011081 HPWL: 85010768
+[InitialPlace]  Iter: 2 CG residual: 0.00000012 HPWL: 44698007
+[InitialPlace]  Iter: 3 CG residual: 0.00000014 HPWL: 44453200
+[InitialPlace]  Iter: 4 CG residual: 0.00000011 HPWL: 44326602
+[InitialPlace]  Iter: 5 CG residual: 0.00000012 HPWL: 44151613
+[INFO GPL-0031] FillerInit:NumGCells:      4748
+[INFO GPL-0032] FillerInit:NumGNets:       2122
+[INFO GPL-0033] FillerInit:NumGPins:       6659
+[INFO GPL-0023] TargetDensity:            0.600
+[INFO GPL-0024] AvrgPlaceInstArea:       17.058 um^2
+[INFO GPL-0025] IdealBinArea:            28.431 um^2
+[INFO GPL-0026] IdealBinCnt:               4493
+[INFO GPL-0027] TotalBinArea:        127744.646 um^2
+[INFO GPL-0028] BinCnt:        64     64
+[INFO GPL-0029] BinSize: (  5.618  5.552 )
+[INFO GPL-0030] NumBins: 4096
+[NesterovSolve] Iter:    1 overflow: 0.958 HPWL: 28768083
+[NesterovSolve] Iter:   10 overflow: 0.924 HPWL: 36790596
+[NesterovSolve] Iter:   20 overflow: 0.923 HPWL: 36834468
+[NesterovSolve] Iter:   30 overflow: 0.920 HPWL: 37040073
+[NesterovSolve] Iter:   40 overflow: 0.919 HPWL: 36923361
+[NesterovSolve] Iter:   50 overflow: 0.919 HPWL: 36754716
+[NesterovSolve] Iter:   60 overflow: 0.918 HPWL: 36558409
+[NesterovSolve] Iter:   70 overflow: 0.918 HPWL: 36448154
+[NesterovSolve] Iter:   80 overflow: 0.918 HPWL: 36402231
+[NesterovSolve] Iter:   90 overflow: 0.918 HPWL: 36398358
+[NesterovSolve] Iter:  100 overflow: 0.917 HPWL: 36429034
+[NesterovSolve] Iter:  110 overflow: 0.916 HPWL: 36467042
+[NesterovSolve] Iter:  120 overflow: 0.916 HPWL: 36564986
+[NesterovSolve] Iter:  130 overflow: 0.913 HPWL: 36783228
+[NesterovSolve] Iter:  140 overflow: 0.908 HPWL: 37169565
+[NesterovSolve] Iter:  150 overflow: 0.902 HPWL: 37721195
+[NesterovSolve] Iter:  160 overflow: 0.894 HPWL: 38436041
+[NesterovSolve] Iter:  170 overflow: 0.885 HPWL: 39303658
+[NesterovSolve] Iter:  180 overflow: 0.872 HPWL: 40302689
+[NesterovSolve] Iter:  190 overflow: 0.856 HPWL: 41252675
+[NesterovSolve] Iter:  200 overflow: 0.834 HPWL: 42578122
+[NesterovSolve] Iter:  210 overflow: 0.809 HPWL: 44400584
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 9.58e-09
+[INFO GPL-0103] Timing-driven: weighted 210 nets.
+[NesterovSolve] Iter:  220 overflow: 0.780 HPWL: 45649928
+[NesterovSolve] Iter:  230 overflow: 0.755 HPWL: 47236046
+[NesterovSolve] Iter:  240 overflow: 0.716 HPWL: 48181429
+[NesterovSolve] Iter:  250 overflow: 0.675 HPWL: 49539615
+[NesterovSolve] Iter:  260 overflow: 0.634 HPWL: 50951761
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 9.58e-09
+[INFO GPL-0103] Timing-driven: weighted 211 nets.
+[NesterovSolve] Snapshot saved at iter = 266
+[NesterovSolve] Iter:  270 overflow: 0.587 HPWL: 52475553
+[NesterovSolve] Iter:  280 overflow: 0.533 HPWL: 54046347
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 9.57e-09
+[INFO GPL-0103] Timing-driven: weighted 207 nets.
+[NesterovSolve] Iter:  290 overflow: 0.478 HPWL: 55547625
+[NesterovSolve] Iter:  300 overflow: 0.425 HPWL: 57677705
+[NesterovSolve] Iter:  310 overflow: 0.375 HPWL: 59183430
+[NesterovSolve] Iter:  320 overflow: 0.333 HPWL: 60150003
+[NesterovSolve] Iter:  330 overflow: 0.300 HPWL: 60840928
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileBBox: (    0    0 ) ( 7200 7200 ) DBU
+[INFO GPL-0038] TileCnt:      55   55
+[INFO GPL-0040] NumTiles: 3025
+[INFO GPL-0081] TotalRouteOverflow: 0.0
+[INFO GPL-0082] OverflowTileCnt: 0
+[INFO GPL-0083] 0.5%RC: 0.42420003563165665
+[INFO GPL-0084] 1.0%RC: 0.40236300902981914
+[INFO GPL-0085] 2.0%RC: 0.3799397412870751
+[INFO GPL-0086] 5.0%RC: 0.3409605026245117
+[INFO GPL-0087] FinalRC: 0.41328153
+[INFO GPL-0077] FinalRC lower than targetRC(1.01), routability not needed.
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 9.55e-09
+[INFO GPL-0103] Timing-driven: weighted 211 nets.
+[NesterovSolve] Iter:  340 overflow: 0.267 HPWL: 61419415
+[NesterovSolve] Iter:  350 overflow: 0.233 HPWL: 61826453
+[NesterovSolve] Iter:  360 overflow: 0.202 HPWL: 62161552
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 9.54e-09
+[INFO GPL-0103] Timing-driven: weighted 211 nets.
+[NesterovSolve] Iter:  370 overflow: 0.176 HPWL: 62398852
+[NesterovSolve] Iter:  380 overflow: 0.150 HPWL: 62640171
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 9.55e-09
+[INFO GPL-0103] Timing-driven: weighted 210 nets.
+[NesterovSolve] Iter:  390 overflow: 0.132 HPWL: 62798349
+[NesterovSolve] Iter:  400 overflow: 0.112 HPWL: 62900259
+[NesterovSolve] Finished with Overflow: 0.098137
+###############################################################################
+# Step 03: DETAILED PLACEMENT
+###############################################################################
+Detailed placement
+Placement Analysis
+---------------------------------
+total displacement       4160.7 u
+average displacement        2.4 u
+max displacement           10.3 u
+original HPWL           63020.9 u
+legalized HPWL          66272.0 u
+delta HPWL                    5 %
+
+Optimize mirroring
+[INFO DPL-0020] Mirrored 594 instances
+[INFO DPL-0021] HPWL before           66272.0 u
+[INFO DPL-0022] HPWL after            65387.1 u
+[INFO DPL-0023] HPWL delta               -1.3 %
+Estimate parasitics
+###############################################################################
+# Step 04: CLOCK TREE SYNTHESIS
+###############################################################################
+Repair clock inverters
+Clock Tree Synthesis
+[INFO CTS-0050] Root buffer is sg13g2_buf_8.
+[INFO CTS-0051] Sink buffer is sg13g2_buf_16.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sg13g2_buf_2
+                    sg13g2_buf_4
+                    sg13g2_buf_8
+                    sg13g2_buf_16
+[INFO CTS-0049] Characterization buffer is sg13g2_buf_16.
+[INFO CTS-0007] Net "clk_i" found for clock "clk_sys".
+[INFO CTS-0010]  Clock net "clk_i" has 277 sinks.
+[INFO CTS-0007] Net "ref_clk_i" found for clock "clk_rtc".
+[WARNING CTS-0041] Net "ref_clk_i" has 1 sinks. Skipping...
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 4 buffer(s) types.
+[INFO CTS-0200] 0 placement blockages have been identified.
+[INFO CTS-0201] 0 placed hard macros will be treated like blockages.
+[INFO CTS-0027] Generating H-Tree topology for net clk_i.
+[INFO CTS-0028]  Total number of sinks: 277.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 8 and with maximum cluster diameter of 50.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 18900  dbu (18 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 8 and clustering diameter of 50.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 39.
+[INFO CTS-0024]  Normalized sink region: [(2.4372, 7.34997), (17.3651, 16.1233)].
+[INFO CTS-0025]     Width:  14.9279.
+[INFO CTS-0026]     Height: 8.7733.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 20
+    Sub-region size: 7.4640 X 8.7733
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 10
+    Sub-region size: 7.4640 X 4.3867
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 5
+    Sub-region size: 3.7320 X 4.3867
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 8.
+[INFO CTS-0035]  Number of sinks covered: 39.
+[INFO CTS-0018]     Created 48 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 48 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:1, 3:2, 4:2, 5:9, 6:2, 7:5, 8:26..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0098] Clock net "clk_i"
+[INFO CTS-0099]  Sinks 305
+[INFO CTS-0100]  Leaf buffers 39
+[INFO CTS-0101]  Average sink wire length 381.81 um
+[INFO CTS-0102]  Path depth 2 - 3
+[INFO CTS-0207]  Leaf load cells 28
+Repair clock nets
+[INFO RSZ-0058] Using max wire length 3224um.
+Detailed placement
+Placement Analysis
+---------------------------------
+total displacement        834.2 u
+average displacement        0.5 u
+max displacement            8.6 u
+original HPWL           68993.0 u
+legalized HPWL          70475.1 u
+delta HPWL                    2 %
+
+Estimate parasitics
+[WARNING STA-0450] virtual clock clk_jtg can not be propagated.
+Repair setup
+[INFO RSZ-0098] No setup violations found
+Detailed placement
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           70475.1 u
+legalized HPWL          70475.1 u
+delta HPWL                    0 %
+
+Check placement
+Estimate parasitics
+###############################################################################
+# Step 05: GLOBAL ROUTE
+###############################################################################
+Global route
+Estimate parasitics
+Perform buffer insertion...
+[INFO RSZ-0058] Using max wire length 3224um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      2122
+      100 |       0 |       0 |             0 |      2022
+      200 |       0 |       0 |             0 |      1922
+      300 |       0 |       0 |            30 |      1822
+      400 |       0 |       0 |            30 |      1722
+      500 |       0 |       0 |            32 |      1622
+      600 |       0 |       0 |            32 |      1522
+      700 |       0 |       0 |            32 |      1422
+      800 |       0 |       0 |            32 |      1322
+      900 |       0 |       0 |            32 |      1222
+     1000 |       0 |       0 |            32 |      1122
+     1100 |       0 |       0 |            32 |      1022
+     1200 |       0 |       0 |            33 |       922
+     1300 |       0 |       0 |            34 |       822
+     1400 |       0 |       0 |            35 |       722
+     1500 |       0 |       0 |            36 |       622
+     1600 |       0 |       0 |            42 |       522
+     1700 |       0 |       0 |            42 |       422
+     1800 |       0 |       0 |            42 |       322
+     1900 |       0 |       0 |            42 |       222
+     2000 |       0 |       0 |            42 |       122
+     2100 |       0 |       0 |            42 |        22
+    final |       0 |       0 |            42 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 84 slew violations.
+[INFO RSZ-0036] Found 82 capacitance violations.
+Repair setup and hold violations...
+[INFO RSZ-0098] No setup violations found
+[INFO RSZ-0046] Found 3 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   WNS   |   TNS   | Endpoint
+---------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |   0.053 |   0.000 | s_ref_clk1_reg/D
+    final |       0 |       3 |            0 |   0.118 |   0.000 | s_cfg_hi_reg_16__reg/D
+---------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 3 hold buffers.
+GRT incremental...
+Placement Analysis
+---------------------------------
+total displacement         19.1 u
+average displacement        0.0 u
+max displacement            5.3 u
+original HPWL           70574.6 u
+legalized HPWL          70602.1 u
+delta HPWL                    0 %
+
+[INFO GRT-0009] rerouting 5 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 9
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1           38333          2738            7.14%             0 /  0 /  0
+Metal2           23966          4501           18.78%             0 /  0 /  0
+Metal3           44982          1570            3.49%             0 /  0 /  0
+Metal4           50976          2014            3.95%             0 /  0 /  0
+Metal5           35964             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           194221         10823            5.57%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 113990 um
+[INFO GRT-0014] Routed nets: 1910
+Saving checkpoint 10_timer_unit.g_route
+Time: 95.760652 sec deltaT: 95.48577499999999
+###############################################################################
+# Step 06: DETAILED ROUTE
+###############################################################################
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 15 antenna violations.
+[INFO GRT-0015] Inserted 16 diodes.
+[INFO GRT-0009] rerouting 30 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 9
+[INFO GRT-0006] Repairing antennas, iteration 2.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 14 antenna violations.
+[INFO GRT-0015] Inserted 14 diodes.
+[INFO GRT-0009] rerouting 14 nets.
+[INFO GRT-0001] Minimum degree: 4
+[INFO GRT-0002] Maximum degree: 5
+[INFO GRT-0006] Repairing antennas, iteration 3.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 13 antenna violations.
+[INFO GRT-0015] Inserted 13 diodes.
+[INFO GRT-0009] rerouting 15 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 9
+[INFO GRT-0006] Repairing antennas, iteration 4.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 12 antenna violations.
+[INFO GRT-0015] Inserted 12 diodes.
+[INFO GRT-0009] rerouting 12 nets.
+[INFO GRT-0001] Minimum degree: 6
+[INFO GRT-0002] Maximum degree: 7
+[INFO GRT-0006] Repairing antennas, iteration 5.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 12 antenna violations.
+[INFO GRT-0015] Inserted 12 diodes.
+[INFO GRT-0009] rerouting 12 nets.
+[INFO GRT-0001] Minimum degree: 7
+[INFO GRT-0002] Maximum degree: 8
+Detailed route
+[INFO ORD-0030] Using 6 thread(s).
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Cont
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+
+Units:                1000
+Number of layers:     15
+Number of macros:     111
+Number of vias:       300
+Number of viarulegen: 6
+
+[INFO DRT-0150] Reading design.
+
+Design:                   timer_unit
+Die area:                 ( 0 0 ) ( 400000 400000 )
+Number of track patterns: 14
+Number of DEF vias:       0
+Number of components:     1911
+Number of terminals:      123
+Number of snets:          4
+Number of nets:           2173
+
+[INFO DRT-0167] List of default vias:
+  Layer Via1
+    default via: Via1_YX_so
+  Layer Via2
+    default via: Via2_YX_so
+  Layer Via3
+    default via: Via3_YX_so
+  Layer Via4
+    default via: Via4_YX_so
+  Layer TopVia1
+    default via: TopVia1EWNS
+  Layer TopVia2
+    default via: TopVia2EWNS
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 90.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete GatPoly.
+[INFO DRT-0024]   Complete Cont.
+[INFO DRT-0024]   Complete Metal1.
+[INFO DRT-0024]   Complete Via1.
+[INFO DRT-0024]   Complete Metal2.
+[INFO DRT-0024]   Complete Via2.
+[INFO DRT-0024]   Complete Metal3.
+[INFO DRT-0024]   Complete Via3.
+[INFO DRT-0024]   Complete Metal4.
+[INFO DRT-0024]   Complete Via4.
+[INFO DRT-0024]   Complete Metal5.
+[INFO DRT-0024]   Complete TopVia1.
+[INFO DRT-0024]   Complete TopMetal1.
+[INFO DRT-0024]   Complete TopVia2.
+[INFO DRT-0024]   Complete TopMetal2.
+[INFO DRT-0033] GatPoly shape region query size = 0.
+[INFO DRT-0033] Cont shape region query size = 0.
+[INFO DRT-0033] Metal1 shape region query size = 61613.
+[INFO DRT-0033] Via1 shape region query size = 1586.
+[INFO DRT-0033] Metal2 shape region query size = 1398.
+[INFO DRT-0033] Via2 shape region query size = 0.
+[INFO DRT-0033] Metal3 shape region query size = 0.
+[INFO DRT-0033] Via3 shape region query size = 0.
+[INFO DRT-0033] Metal4 shape region query size = 0.
+[INFO DRT-0033] Via4 shape region query size = 0.
+[INFO DRT-0033] Metal5 shape region query size = 0.
+[INFO DRT-0033] TopVia1 shape region query size = 0.
+[INFO DRT-0033] TopMetal1 shape region query size = 0.
+[INFO DRT-0033] TopVia2 shape region query size = 0.
+[INFO DRT-0033] TopMetal2 shape region query size = 0.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 312 pins.
+[INFO DRT-0081]   Complete 90 unique inst patterns.
+[INFO DRT-0084]   Complete 995 groups.
+#scanned instances     = 1911
+#unique  instances     = 90
+#stdCellGenAp          = 3823
+#stdCellValidPlanarAp  = 106
+#stdCellValidViaAp     = 2584
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 6666
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:01:27, elapsed time = 00:00:18, memory = 1963.13 (MB), peak = 1963.13 (MB)
+
+[INFO DRT-0157] Number of guides:     11111
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 55 STEP 7200 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 55 STEP 7200 ;
+[INFO DRT-0028]   Complete GatPoly.
+[INFO DRT-0028]   Complete Cont.
+[INFO DRT-0028]   Complete Metal1.
+[INFO DRT-0028]   Complete Via1.
+[INFO DRT-0028]   Complete Metal2.
+[INFO DRT-0028]   Complete Via2.
+[INFO DRT-0028]   Complete Metal3.
+[INFO DRT-0028]   Complete Via3.
+[INFO DRT-0028]   Complete Metal4.
+[INFO DRT-0028]   Complete Via4.
+[INFO DRT-0028]   Complete Metal5.
+[INFO DRT-0028]   Complete TopVia1.
+[INFO DRT-0028]   Complete TopMetal1.
+[INFO DRT-0028]   Complete TopVia2.
+[INFO DRT-0028]   Complete TopMetal2.
+[WARNING DRT-0225] net52 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net45 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0326_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0327_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0334_ 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net42 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0344_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0356_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0368_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net41 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0378_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net40 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net38 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net37 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0428_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net35 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net34 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net32 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0547_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0549_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0562_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0567_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net29 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net28 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net27 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0665_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0666_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0667_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _0696_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net23 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net22 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net21 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net18 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net17 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net16 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net13 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net12 7 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net10 7 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net8 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net7 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net4 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net99 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net98 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net96 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net95 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net94 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net93 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net92 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net91 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net90 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net89 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net88 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net86 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net85 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net84 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net83 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net82 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net81 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1006_ 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net78 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net77 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1041_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1042_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1043_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1044_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net74 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net73 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net72 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net70 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net69 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net67 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1064_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1066_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1082_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1083_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net64 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1092_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net63 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1098_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1101_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net61 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net60 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1111_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net58 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1125_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net57 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1132_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1155_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1157_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1171_ 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1196_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1230_ 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] _1232_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net100 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] addr_i_0_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] addr_i_2_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] addr_i_5_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.compare_value_i_11_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.compare_value_i_16_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.compare_value_i_28_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.counter_value_o_14_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.counter_value_o_15_ 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.counter_value_o_17_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.counter_value_o_21_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.counter_value_o_22_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.counter_value_o_28_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_hi_i.counter_value_o_29_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.compare_value_i_31_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_13_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_17_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_18_ 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_19_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_20_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_26_ 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_27_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.counter_value_o_28_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] counter_lo_i.target_reached_o 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] prescaler_hi_i.counter_value_o_0_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] prescaler_hi_i.counter_value_o_16_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] prescaler_hi_i.target_reached_o 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] prescaler_lo_i.counter_value_o_7_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] s_cfg_hi_reg_19_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] s_cfg_hi_reg_1_ 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] s_cfg_hi_reg_2_ 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] s_cfg_lo_reg_6__$_NOT__A_Y 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net101 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net105 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net106 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net107 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net108 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net111 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net113 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net115 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net116 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net118 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net119 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net121 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net122 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net124 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net128 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net132 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net136 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net137 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net139 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net146 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net149 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net150 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net152 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net153 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net155 7 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net156 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net158 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net159 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net161 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net162 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net163 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net164 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net166 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net167 7 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] net169 4 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_1_clk_i 8 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_2_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_6_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_8_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_15_clk_i 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_16_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_17_clk_i 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_19_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_21_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_22_clk_i 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_29_clk_i 7 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_30_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_31_clk_i 5 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_32_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_36_clk_i 2 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_37_clk_i 1 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_leaf_38_clk_i 6 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_3_2__leaf_clk_i 3 pin not visited, fall back to feedthrough mode.
+[WARNING DRT-0225] clknet_3_6__leaf_clk_i 1 pin not visited, fall back to feedthrough mode.
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0035]   Complete GatPoly (guide).
+[INFO DRT-0035]   Complete Cont (guide).
+[INFO DRT-0035]   Complete Metal1 (guide).
+[INFO DRT-0035]   Complete Via1 (guide).
+[INFO DRT-0035]   Complete Metal2 (guide).
+[INFO DRT-0035]   Complete Via2 (guide).
+[INFO DRT-0035]   Complete Metal3 (guide).
+[INFO DRT-0035]   Complete Via3 (guide).
+[INFO DRT-0035]   Complete Metal4 (guide).
+[INFO DRT-0035]   Complete Via4 (guide).
+[INFO DRT-0035]   Complete Metal5 (guide).
+[INFO DRT-0035]   Complete TopVia1 (guide).
+[INFO DRT-0035]   Complete TopMetal1 (guide).
+[INFO DRT-0035]   Complete TopVia2 (guide).
+[INFO DRT-0035]   Complete TopMetal2 (guide).
+[INFO DRT-0036] GatPoly guide region query size = 0.
+[INFO DRT-0036] Cont guide region query size = 0.
+[INFO DRT-0036] Metal1 guide region query size = 4658.
+[INFO DRT-0036] Via1 guide region query size = 0.
+[INFO DRT-0036] Metal2 guide region query size = 2808.
+[INFO DRT-0036] Via2 guide region query size = 0.
+[INFO DRT-0036] Metal3 guide region query size = 616.
+[INFO DRT-0036] Via3 guide region query size = 0.
+[INFO DRT-0036] Metal4 guide region query size = 117.
+[INFO DRT-0036] Via4 guide region query size = 0.
+[INFO DRT-0036] Metal5 guide region query size = 0.
+[INFO DRT-0036] TopVia1 guide region query size = 0.
+[INFO DRT-0036] TopMetal1 guide region query size = 0.
+[INFO DRT-0036] TopVia2 guide region query size = 0.
+[INFO DRT-0036] TopMetal2 guide region query size = 0.
+[INFO DRT-0179] Init gr pin query.
+[INFO DRT-0185] Post process initialize RPin region query.
+[INFO DRT-0181] Start track assignment.
+[INFO DRT-0184] Done with 5274 vertical wires in 2 frboxes and 2925 horizontal wires in 2 frboxes.
+[INFO DRT-0186] Done with 2208 vertical wires in 2 frboxes and 976 horizontal wires in 2 frboxes.
+[INFO DRT-0182] Complete track assignment.
+[INFO DRT-0267] cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1968.69 (MB), peak = 1968.69 (MB)
+[INFO DRT-0187] Start routing data preparation.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1968.69 (MB), peak = 1968.69 (MB)
+[INFO DRT-0194] Start detail routing.
+[INFO DRT-0195] Start 0th optimization iteration.
+    Completing 10% with 0 violations.
+    elapsed time = 00:00:00, memory = 2079.82 (MB).
+    Completing 20% with 0 violations.
+    elapsed time = 00:00:04, memory = 2134.44 (MB).
+    Completing 30% with 539 violations.
+    elapsed time = 00:00:56, memory = 2077.17 (MB).
+    Completing 40% with 539 violations.
+    elapsed time = 00:01:12, memory = 2306.29 (MB).
+    Completing 50% with 539 violations.
+    elapsed time = 00:02:21, memory = 2147.26 (MB).
+    Completing 60% with 1022 violations.
+    elapsed time = 00:02:21, memory = 2221.76 (MB).
+    Completing 70% with 1022 violations.
+    elapsed time = 00:02:23, memory = 2226.51 (MB).
+    Completing 80% with 1566 violations.
+    elapsed time = 00:03:07, memory = 2182.98 (MB).
+    Completing 90% with 1566 violations.
+    elapsed time = 00:03:25, memory = 2392.48 (MB).
+    Completing 100% with 2168 violations.
+    elapsed time = 00:04:50, memory = 2242.79 (MB).
+[INFO DRT-0199]   Number of violations = 2904.
+Viol/Layer      Metal1   Via1 Metal2   Via2 Metal3   Via3 Metal4 Metal5
+Cut Spacing          0      8      0      0      0      0      0      0
+Metal Spacing      417      0    548      0      2      0      0      0
+NS Metal             3      0      0      0      0      0      0      0
+Recheck            340      0    282      0     71      0     40      3
+Short              679     47    446     16      1      1      0      0
+[INFO DRT-0267] cpu time = 00:12:25, elapsed time = 00:04:51, memory = 2619.17 (MB), peak = 2619.17 (MB)
+Total wire length = 81495 um.
+Total wire length on LAYER Metal1 = 3147 um.
+Total wire length on LAYER Metal2 = 38655 um.
+Total wire length on LAYER Metal3 = 25285 um.
+Total wire length on LAYER Metal4 = 14356 um.
+Total wire length on LAYER Metal5 = 50 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 13294.
+Up-via summary (total 13294):
+
+-------------------
+   GatPoly        0
+    Metal1     7545
+    Metal2     5312
+    Metal3      429
+    Metal4        8
+    Metal5        0
+ TopMetal1        0
+-------------------
+              13294
+
+
+[INFO DRT-0195] Start 1st optimization iteration.
+    Completing 10% with 2904 violations.
+    elapsed time = 00:00:00, memory = 2696.42 (MB).
+    Completing 20% with 2904 violations.
+    elapsed time = 00:00:01, memory = 2696.42 (MB).
+    Completing 30% with 2904 violations.
+    elapsed time = 00:00:31, memory = 2625.53 (MB).
+    Completing 40% with 2447 violations.
+    elapsed time = 00:00:31, memory = 2645.28 (MB).
+    Completing 50% with 2447 violations.
+    elapsed time = 00:00:48, memory = 2706.72 (MB).
+    Completing 60% with 1769 violations.
+    elapsed time = 00:01:16, memory = 2641.56 (MB).
+    Completing 70% with 1769 violations.
+    elapsed time = 00:01:17, memory = 2676.69 (MB).
+    Completing 80% with 1769 violations.
+    elapsed time = 00:02:13, memory = 2641.64 (MB).
+    Completing 90% with 1305 violations.
+    elapsed time = 00:02:22, memory = 2750.14 (MB).
+    Completing 100% with 556 violations.
+    elapsed time = 00:04:05, memory = 2641.72 (MB).
+[INFO DRT-0199]   Number of violations = 563.
+Viol/Layer      Metal2 Metal3 Metal4
+Metal Spacing      331      0      1
+Recheck              6      1      0
+Short              223      1      0
+[INFO DRT-0267] cpu time = 00:08:52, elapsed time = 00:04:06, memory = 2644.72 (MB), peak = 2750.14 (MB)
+Total wire length = 80644 um.
+Total wire length on LAYER Metal1 = 2177 um.
+Total wire length on LAYER Metal2 = 37711 um.
+Total wire length on LAYER Metal3 = 26332 um.
+Total wire length on LAYER Metal4 = 14408 um.
+Total wire length on LAYER Metal5 = 14 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12591.
+Up-via summary (total 12591):
+
+-------------------
+   GatPoly        0
+    Metal1     7033
+    Metal2     5176
+    Metal3      380
+    Metal4        2
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12591
+
+
+[INFO DRT-0195] Start 2nd optimization iteration.
+    Completing 10% with 563 violations.
+    elapsed time = 00:00:00, memory = 2644.72 (MB).
+    Completing 20% with 563 violations.
+    elapsed time = 00:00:07, memory = 2687.59 (MB).
+    Completing 30% with 563 violations.
+    elapsed time = 00:00:47, memory = 2651.75 (MB).
+    Completing 40% with 537 violations.
+    elapsed time = 00:00:47, memory = 2651.75 (MB).
+    Completing 50% with 537 violations.
+    elapsed time = 00:00:55, memory = 2701.50 (MB).
+    Completing 60% with 518 violations.
+    elapsed time = 00:01:28, memory = 2651.83 (MB).
+    Completing 70% with 518 violations.
+    elapsed time = 00:01:28, memory = 2651.83 (MB).
+    Completing 80% with 518 violations.
+    elapsed time = 00:02:42, memory = 2651.79 (MB).
+    Completing 90% with 472 violations.
+    elapsed time = 00:02:42, memory = 2743.91 (MB).
+    Completing 100% with 478 violations.
+    elapsed time = 00:03:39, memory = 2651.81 (MB).
+[INFO DRT-0199]   Number of violations = 478.
+Viol/Layer      Metal1 Metal2 Metal3
+Metal Spacing        0    323      0
+Short                1    146      8
+[INFO DRT-0267] cpu time = 00:08:54, elapsed time = 00:03:40, memory = 2651.81 (MB), peak = 2791.45 (MB)
+Total wire length = 80523 um.
+Total wire length on LAYER Metal1 = 2087 um.
+Total wire length on LAYER Metal2 = 37628 um.
+Total wire length on LAYER Metal3 = 26238 um.
+Total wire length on LAYER Metal4 = 14557 um.
+Total wire length on LAYER Metal5 = 12 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12525.
+Up-via summary (total 12525):
+
+-------------------
+   GatPoly        0
+    Metal1     6974
+    Metal2     5105
+    Metal3      444
+    Metal4        2
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12525
+
+
+[INFO DRT-0195] Start 3rd optimization iteration.
+    Completing 10% with 478 violations.
+    elapsed time = 00:00:00, memory = 2713.68 (MB).
+    Completing 20% with 478 violations.
+    elapsed time = 00:00:00, memory = 2751.06 (MB).
+    Completing 30% with 419 violations.
+    elapsed time = 00:00:28, memory = 2651.81 (MB).
+    Completing 40% with 419 violations.
+    elapsed time = 00:00:31, memory = 2753.06 (MB).
+    Completing 50% with 419 violations.
+    elapsed time = 00:01:14, memory = 2661.29 (MB).
+    Completing 60% with 312 violations.
+    elapsed time = 00:01:14, memory = 2707.79 (MB).
+    Completing 70% with 312 violations.
+    elapsed time = 00:01:14, memory = 2707.79 (MB).
+    Completing 80% with 260 violations.
+    elapsed time = 00:01:46, memory = 2661.32 (MB).
+    Completing 90% with 260 violations.
+    elapsed time = 00:01:49, memory = 2774.82 (MB).
+    Completing 100% with 127 violations.
+    elapsed time = 00:02:15, memory = 2662.14 (MB).
+[INFO DRT-0199]   Number of violations = 141.
+Viol/Layer      Metal2 Metal3 Metal4
+Metal Spacing       84      0      0
+Recheck              6      6      2
+Short               43      0      0
+[INFO DRT-0267] cpu time = 00:04:53, elapsed time = 00:02:16, memory = 2662.14 (MB), peak = 2798.44 (MB)
+Total wire length = 80316 um.
+Total wire length on LAYER Metal1 = 1777 um.
+Total wire length on LAYER Metal2 = 35119 um.
+Total wire length on LAYER Metal3 = 26727 um.
+Total wire length on LAYER Metal4 = 16515 um.
+Total wire length on LAYER Metal5 = 176 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12873.
+Up-via summary (total 12873):
+
+-------------------
+   GatPoly        0
+    Metal1     6810
+    Metal2     5267
+    Metal3      779
+    Metal4       17
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12873
+
+
+[INFO DRT-0195] Start 4th optimization iteration.
+    Completing 10% with 141 violations.
+    elapsed time = 00:00:00, memory = 2662.14 (MB).
+    Completing 20% with 141 violations.
+    elapsed time = 00:00:00, memory = 2662.14 (MB).
+    Completing 30% with 113 violations.
+    elapsed time = 00:00:04, memory = 2662.14 (MB).
+    Completing 40% with 113 violations.
+    elapsed time = 00:00:04, memory = 2662.14 (MB).
+    Completing 50% with 113 violations.
+    elapsed time = 00:00:37, memory = 2662.52 (MB).
+    Completing 60% with 98 violations.
+    elapsed time = 00:00:37, memory = 2662.52 (MB).
+    Completing 70% with 98 violations.
+    elapsed time = 00:00:37, memory = 2662.52 (MB).
+    Completing 80% with 76 violations.
+    elapsed time = 00:00:50, memory = 2662.52 (MB).
+    Completing 90% with 76 violations.
+    elapsed time = 00:00:50, memory = 2662.52 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:01:08, memory = 2662.53 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Metal Spacing        5
+Short                3
+[INFO DRT-0267] cpu time = 00:01:21, elapsed time = 00:01:09, memory = 2662.53 (MB), peak = 2798.44 (MB)
+Total wire length = 80286 um.
+Total wire length on LAYER Metal1 = 1762 um.
+Total wire length on LAYER Metal2 = 34785 um.
+Total wire length on LAYER Metal3 = 26804 um.
+Total wire length on LAYER Metal4 = 16799 um.
+Total wire length on LAYER Metal5 = 133 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12917.
+Up-via summary (total 12917):
+
+-------------------
+   GatPoly        0
+    Metal1     6801
+    Metal2     5275
+    Metal3      828
+    Metal4       13
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12917
+
+
+[INFO DRT-0195] Start 5th optimization iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:00, memory = 2662.53 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:00, memory = 2662.53 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:00, memory = 2662.53 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:00, memory = 2662.53 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 2662.53 (MB).
+    Completing 60% with 6 violations.
+    elapsed time = 00:00:01, memory = 2668.16 (MB).
+    Completing 70% with 6 violations.
+    elapsed time = 00:00:01, memory = 2668.16 (MB).
+    Completing 80% with 6 violations.
+    elapsed time = 00:00:01, memory = 2668.16 (MB).
+    Completing 90% with 6 violations.
+    elapsed time = 00:00:01, memory = 2668.16 (MB).
+    Completing 100% with 5 violations.
+    elapsed time = 00:00:29, memory = 2668.16 (MB).
+[INFO DRT-0199]   Number of violations = 5.
+Viol/Layer      Metal2
+Metal Spacing        2
+Short                3
+[INFO DRT-0267] cpu time = 00:00:43, elapsed time = 00:00:30, memory = 2668.16 (MB), peak = 2798.44 (MB)
+Total wire length = 80295 um.
+Total wire length on LAYER Metal1 = 1763 um.
+Total wire length on LAYER Metal2 = 34778 um.
+Total wire length on LAYER Metal3 = 26793 um.
+Total wire length on LAYER Metal4 = 16825 um.
+Total wire length on LAYER Metal5 = 133 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12915.
+Up-via summary (total 12915):
+
+-------------------
+   GatPoly        0
+    Metal1     6801
+    Metal2     5272
+    Metal3      829
+    Metal4       13
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12915
+
+
+[INFO DRT-0195] Start 6th optimization iteration.
+    Completing 10% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 20% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 30% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 40% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 50% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 60% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 70% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 80% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 90% with 5 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 100% with 3 violations.
+    elapsed time = 00:00:32, memory = 2668.16 (MB).
+[INFO DRT-0199]   Number of violations = 3.
+Viol/Layer      Metal2
+Short                3
+[INFO DRT-0267] cpu time = 00:00:36, elapsed time = 00:00:32, memory = 2668.16 (MB), peak = 2798.44 (MB)
+Total wire length = 80298 um.
+Total wire length on LAYER Metal1 = 1763 um.
+Total wire length on LAYER Metal2 = 34776 um.
+Total wire length on LAYER Metal3 = 26810 um.
+Total wire length on LAYER Metal4 = 16813 um.
+Total wire length on LAYER Metal5 = 133 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12915.
+Up-via summary (total 12915):
+
+-------------------
+   GatPoly        0
+    Metal1     6801
+    Metal2     5275
+    Metal3      826
+    Metal4       13
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12915
+
+
+[INFO DRT-0195] Start 7th optimization iteration.
+    Completing 10% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 20% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 30% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 40% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 50% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 60% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 70% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 80% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 90% with 3 violations.
+    elapsed time = 00:00:00, memory = 2668.16 (MB).
+    Completing 100% with 0 violations.
+    elapsed time = 00:00:06, memory = 2668.16 (MB).
+[INFO DRT-0199]   Number of violations = 0.
+[INFO DRT-0267] cpu time = 00:00:07, elapsed time = 00:00:07, memory = 2668.16 (MB), peak = 2798.44 (MB)
+Total wire length = 80295 um.
+Total wire length on LAYER Metal1 = 1763 um.
+Total wire length on LAYER Metal2 = 34760 um.
+Total wire length on LAYER Metal3 = 26808 um.
+Total wire length on LAYER Metal4 = 16828 um.
+Total wire length on LAYER Metal5 = 133 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12917.
+Up-via summary (total 12917):
+
+-------------------
+   GatPoly        0
+    Metal1     6801
+    Metal2     5275
+    Metal3      828
+    Metal4       13
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12917
+
+
+[INFO DRT-0198] Complete detail routing.
+Total wire length = 80295 um.
+Total wire length on LAYER Metal1 = 1763 um.
+Total wire length on LAYER Metal2 = 34760 um.
+Total wire length on LAYER Metal3 = 26808 um.
+Total wire length on LAYER Metal4 = 16828 um.
+Total wire length on LAYER Metal5 = 133 um.
+Total wire length on LAYER TopMetal1 = 0 um.
+Total wire length on LAYER TopMetal2 = 0 um.
+Total number of vias = 12917.
+Up-via summary (total 12917):
+
+-------------------
+   GatPoly        0
+    Metal1     6801
+    Metal2     5275
+    Metal3      828
+    Metal4       13
+    Metal5        0
+ TopMetal1        0
+-------------------
+              12917
+
+
+[INFO DRT-0267] cpu time = 00:37:55, elapsed time = 00:17:14, memory = 2668.16 (MB), peak = 2798.44 (MB)
+[INFO DRT-0180] Post processing.
+Saving detailed route
+Saving checkpoint 11_timer_unit.d_route
+Time: 1153.383468 sec deltaT: 1057.6227860000001
+###############################################################################
+# Step 07: FINISHING
+###############################################################################
+Filler placement
+[INFO DPL-0001] Placed 7683 filler instances.
+Saving checkpoint 07_timer_unit.final
+Time: 1154.528278 sec deltaT: 1.1447809999999663
+saving image to /fosic/designs/croc/openroad/reports/07_timer_unit.final.png
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation timer_unit (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 9568 rc segments
+[INFO RCX-0439] Coupling Cap extraction timer_unit ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 50% of 15255 wires extracted
+[INFO RCX-0442] 100% of 15255 wires extracted
+[INFO RCX-0045] Extract 2175 nets, 11471 rsegs, 11471 caps, 17307 ccs
+[INFO RCX-0443] 2173 nets finished
+Warning: There are 77 input ports missing set_input_delay.
+Warning: There are 41 output ports missing set_output_delay.
+Warning: There are 56 unconstrained endpoints.
+Write output

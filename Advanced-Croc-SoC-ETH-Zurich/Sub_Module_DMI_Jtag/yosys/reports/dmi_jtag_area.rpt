@@ -1,0 +1,1049 @@
+
+55. Printing statistics.
+
+=== cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req ===
+
+   Number of wires:                151
+   Number of wire bits:            151
+   Number of public wires:         147
+   Number of public wire bits:     147
+   Number of ports:                 94
+   Number of port bits:             94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst      1
+     cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src      1
+     cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr      1
+     sg13g2_dfrbp_1                  4
+     sg13g2_nor2b_1                  4
+
+   Area for cell type \cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src is unknown!
+   Area for cell type \cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst is unknown!
+   Area for cell type \cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr is unknown!
+
+   Chip area for module '\cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req': 224.985600
+     of which used for sequential elements: 188.697600 (83.87%)
+
+=== cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp ===
+
+   Number of wires:                130
+   Number of wire bits:            130
+   Number of public wires:         126
+   Number of public wire bits:     126
+   Number of ports:                 80
+   Number of port bits:             80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst      1
+     cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src      1
+     cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr      1
+     sg13g2_dfrbp_1                  4
+     sg13g2_nor2b_1                  4
+
+   Area for cell type \cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src is unknown!
+   Area for cell type \cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst is unknown!
+   Area for cell type \cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr is unknown!
+
+   Chip area for module '\cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp': 224.985600
+     of which used for sequential elements: 188.697600 (83.87%)
+
+=== cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst ===
+
+   Number of wires:                276
+   Number of wire bits:            276
+   Number of public wires:         176
+   Number of public wire bits:     176
+   Number of ports:                 89
+   Number of port bits:             89
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                145
+     sg13g2_a21o_1                   1
+     sg13g2_a22oi_1                  1
+     sg13g2_buf_8                    9
+     sg13g2_dfrbp_1                 43
+     sg13g2_mux2_1                  82
+     sg13g2_nand2b_1                 2
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   1
+     sg13g2_nor2b_1                  1
+     sg13g2_o21ai_1                  1
+     sg13g2_tiehi                    1
+     sg13g2_xor2_1                   1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync is unknown!
+
+   Chip area for module '\cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst': 3830.160600
+     of which used for sequential elements: 2028.499200 (52.96%)
+
+=== cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst ===
+
+   Number of wires:                233
+   Number of wire bits:            233
+   Number of public wires:         148
+   Number of public wire bits:     148
+   Number of ports:                 75
+   Number of port bits:             75
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                123
+     sg13g2_a21o_1                   1
+     sg13g2_a22oi_1                  1
+     sg13g2_buf_16                   3
+     sg13g2_buf_8                    5
+     sg13g2_dfrbp_1                 36
+     sg13g2_mux2_1                  68
+     sg13g2_nand2b_1                 2
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   1
+     sg13g2_nor2b_1                  1
+     sg13g2_o21ai_1                  1
+     sg13g2_tiehi                    1
+     sg13g2_xor2_1                   1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync is unknown!
+
+   Chip area for module '\cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst': 3287.655000
+     of which used for sequential elements: 1698.278400 (51.66%)
+
+=== cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src ===
+
+   Number of wires:                274
+   Number of wire bits:            274
+   Number of public wires:         175
+   Number of public wire bits:     175
+   Number of ports:                 89
+   Number of port bits:             89
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                144
+     sg13g2_a21oi_1                  2
+     sg13g2_and2_2                   1
+     sg13g2_buf_16                   1
+     sg13g2_buf_8                    8
+     sg13g2_dfrbp_1                 42
+     sg13g2_inv_1                    1
+     sg13g2_mux2_1                  82
+     sg13g2_nor2b_1                  2
+     sg13g2_o21ai_1                  1
+     sg13g2_or2_1                    1
+     sg13g2_tiehi                    1
+     sg13g2_xnor2_1                  1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync is unknown!
+
+   Chip area for module '\cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src': 3795.724800
+     of which used for sequential elements: 1981.324800 (52.20%)
+
+=== cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src ===
+
+   Number of wires:                231
+   Number of wire bits:            231
+   Number of public wires:         147
+   Number of public wire bits:     147
+   Number of ports:                 75
+   Number of port bits:             75
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                122
+     sg13g2_a21oi_1                  2
+     sg13g2_and2_1                   1
+     sg13g2_buf_16                   3
+     sg13g2_buf_8                    5
+     sg13g2_dfrbp_1                 35
+     sg13g2_inv_1                    1
+     sg13g2_mux2_1                  68
+     sg13g2_nor2b_1                  2
+     sg13g2_o21ai_1                  1
+     sg13g2_or2_1                    1
+     sg13g2_tiehi                    1
+     sg13g2_xnor2_1                  1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync is unknown!
+
+   Chip area for module '\cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src': 3229.632000
+     of which used for sequential elements: 1651.104000 (51.12%)
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ===
+
+   Number of wires:                 30
+   Number of wire bits:             30
+   Number of public wires:          17
+   Number of public wire bits:      17
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     sg13g2_a21oi_1                  2
+     sg13g2_and2_1                   1
+     sg13g2_dfrbp_1                  3
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_o21ai_1                  3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst': 273.974400
+     of which used for sequential elements: 141.523200 (51.66%)
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ===
+
+   Number of wires:                 30
+   Number of wire bits:             30
+   Number of public wires:          17
+   Number of public wire bits:      17
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     sg13g2_a21oi_1                  2
+     sg13g2_and2_1                   1
+     sg13g2_dfrbp_1                  3
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_o21ai_1                  3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst': 273.974400
+     of which used for sequential elements: 141.523200 (51.66%)
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst ===
+
+   Number of wires:                 30
+   Number of wire bits:             30
+   Number of public wires:          17
+   Number of public wire bits:      17
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     sg13g2_a21oi_1                  2
+     sg13g2_and2_1                   1
+     sg13g2_dfrbp_1                  3
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_o21ai_1                  3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst': 273.974400
+     of which used for sequential elements: 141.523200 (51.66%)
+
+=== cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst ===
+
+   Number of wires:                 30
+   Number of wire bits:             30
+   Number of public wires:          17
+   Number of public wire bits:      17
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     sg13g2_a21oi_1                  2
+     sg13g2_and2_1                   1
+     sg13g2_dfrbp_1                  3
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_o21ai_1                  3
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst': 273.974400
+     of which used for sequential elements: 141.523200 (51.66%)
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ===
+
+   Number of wires:                 42
+   Number of wire bits:             42
+   Number of public wires:          21
+   Number of public wire bits:      21
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     sg13g2_a21o_1                   2
+     sg13g2_a21oi_1                  1
+     sg13g2_a22oi_1                  1
+     sg13g2_dfrbp_1                  5
+     sg13g2_inv_1                    1
+     sg13g2_mux2_1                   4
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   2
+     sg13g2_nor2_2                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_nor3_1                   1
+     sg13g2_o21ai_1                  1
+     sg13g2_or2_2                    1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src': 484.407000
+     of which used for sequential elements: 235.872000 (48.69%)
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ===
+
+   Number of wires:                 42
+   Number of wire bits:             42
+   Number of public wires:          21
+   Number of public wire bits:      21
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     sg13g2_a21o_1                   2
+     sg13g2_a21oi_1                  1
+     sg13g2_a22oi_1                  1
+     sg13g2_dfrbp_1                  5
+     sg13g2_inv_1                    1
+     sg13g2_mux2_1                   4
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   2
+     sg13g2_nor2_2                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_nor3_1                   1
+     sg13g2_o21ai_1                  1
+     sg13g2_or2_2                    1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src': 484.407000
+     of which used for sequential elements: 235.872000 (48.69%)
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src ===
+
+   Number of wires:                 42
+   Number of wire bits:             42
+   Number of public wires:          21
+   Number of public wire bits:      21
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     sg13g2_a21o_1                   2
+     sg13g2_a21oi_1                  1
+     sg13g2_a22oi_1                  1
+     sg13g2_dfrbp_1                  5
+     sg13g2_inv_1                    1
+     sg13g2_mux2_1                   4
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   2
+     sg13g2_nor2_2                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_nor3_1                   1
+     sg13g2_o21ai_1                  1
+     sg13g2_or2_2                    1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src': 484.407000
+     of which used for sequential elements: 235.872000 (48.69%)
+
+=== cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src ===
+
+   Number of wires:                 42
+   Number of wire bits:             42
+   Number of public wires:          21
+   Number of public wire bits:      21
+   Number of ports:                 10
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     sg13g2_a21o_1                   2
+     sg13g2_a21oi_1                  1
+     sg13g2_a22oi_1                  1
+     sg13g2_dfrbp_1                  5
+     sg13g2_inv_1                    1
+     sg13g2_mux2_1                   4
+     sg13g2_nand2_1                  1
+     sg13g2_nand2b_1                 2
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                   2
+     sg13g2_nor2_2                   1
+     sg13g2_nor2b_1                  2
+     sg13g2_nor3_1                   1
+     sg13g2_o21ai_1                  1
+     sg13g2_or2_2                    1
+     sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+
+   Area for cell type \sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync is unknown!
+
+   Chip area for module '\cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src': 484.407000
+     of which used for sequential elements: 235.872000 (48.69%)
+
+=== cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr ===
+
+   Number of wires:                 22
+   Number of wire bits:             22
+   Number of public wires:          22
+   Number of public wire bits:      22
+   Number of ports:                 14
+   Number of port bits:             14
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+
+   Area for cell type \cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a is unknown!
+   Area for cell type \cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b is unknown!
+
+=== cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr ===
+
+   Number of wires:                 22
+   Number of wire bits:             22
+   Number of public wires:          22
+   Number of public wire bits:      22
+   Number of ports:                 14
+   Number of port bits:             14
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+     cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+
+   Area for cell type \cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a is unknown!
+   Area for cell type \cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b is unknown!
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ===
+
+   Number of wires:                114
+   Number of wire bits:            114
+   Number of public wires:          34
+   Number of public wire bits:      34
+   Number of ports:                 15
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 93
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+     sg13g2_a21o_1                   6
+     sg13g2_a21oi_1                 10
+     sg13g2_a21oi_2                  1
+     sg13g2_a221oi_1                 1
+     sg13g2_a22oi_1                  3
+     sg13g2_and2_1                   3
+     sg13g2_buf_2                    4
+     sg13g2_buf_4                    1
+     sg13g2_buf_8                    1
+     sg13g2_dfrbp_1                  6
+     sg13g2_inv_1                    3
+     sg13g2_mux2_1                   2
+     sg13g2_nand2_1                  7
+     sg13g2_nand2b_1                 4
+     sg13g2_nand3_1                  1
+     sg13g2_nand3b_1                 1
+     sg13g2_nor2_1                  11
+     sg13g2_nor2b_1                  1
+     sg13g2_nor3_1                   2
+     sg13g2_nor3_2                   1
+     sg13g2_nor4_1                   3
+     sg13g2_o21ai_1                 13
+     sg13g2_or2_1                    4
+     sg13g2_or3_1                    1
+     sg13g2_or4_1                    1
+
+   Area for cell type \cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src is unknown!
+   Area for cell type \cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst is unknown!
+
+   Chip area for module '\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a': 1112.113800
+     of which used for sequential elements: 283.046400 (25.45%)
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ===
+
+   Number of wires:                106
+   Number of wire bits:            106
+   Number of public wires:          34
+   Number of public wire bits:      34
+   Number of ports:                 15
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 85
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+     sg13g2_a21o_1                   2
+     sg13g2_a21oi_1                  7
+     sg13g2_a21oi_2                  1
+     sg13g2_a221oi_1                 3
+     sg13g2_a22oi_1                  1
+     sg13g2_and2_1                   1
+     sg13g2_and4_1                   1
+     sg13g2_buf_2                    1
+     sg13g2_buf_4                    1
+     sg13g2_buf_8                    2
+     sg13g2_dfrbp_1                  6
+     sg13g2_inv_1                    6
+     sg13g2_mux2_1                   7
+     sg13g2_nand2_1                  4
+     sg13g2_nand2b_1                 3
+     sg13g2_nand3_1                  2
+     sg13g2_nand4_1                  1
+     sg13g2_nor2_1                  12
+     sg13g2_nor2_2                   3
+     sg13g2_nor2b_1                  2
+     sg13g2_nor3_1                   4
+     sg13g2_nor3_2                   1
+     sg13g2_nor4_1                   1
+     sg13g2_o21ai_1                  8
+     sg13g2_or2_1                    3
+
+   Area for cell type \cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src is unknown!
+   Area for cell type \cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst is unknown!
+
+   Chip area for module '\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b': 1081.344600
+     of which used for sequential elements: 283.046400 (26.18%)
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a ===
+
+   Number of wires:                106
+   Number of wire bits:            106
+   Number of public wires:          34
+   Number of public wire bits:      34
+   Number of ports:                 15
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 85
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+     sg13g2_a21o_1                   2
+     sg13g2_a21oi_1                  7
+     sg13g2_a21oi_2                  1
+     sg13g2_a221oi_1                 3
+     sg13g2_a22oi_1                  1
+     sg13g2_and2_1                   1
+     sg13g2_and4_1                   1
+     sg13g2_buf_2                    1
+     sg13g2_buf_4                    1
+     sg13g2_buf_8                    2
+     sg13g2_dfrbp_1                  6
+     sg13g2_inv_1                    6
+     sg13g2_mux2_1                   7
+     sg13g2_nand2_1                  4
+     sg13g2_nand2b_1                 3
+     sg13g2_nand3_1                  2
+     sg13g2_nand4_1                  1
+     sg13g2_nor2_1                  12
+     sg13g2_nor2_2                   3
+     sg13g2_nor2b_1                  2
+     sg13g2_nor3_1                   4
+     sg13g2_nor3_2                   1
+     sg13g2_nor4_1                   1
+     sg13g2_o21ai_1                  8
+     sg13g2_or2_1                    3
+
+   Area for cell type \cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src is unknown!
+   Area for cell type \cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst is unknown!
+
+   Chip area for module '\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a': 1081.344600
+     of which used for sequential elements: 283.046400 (26.18%)
+
+=== cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b ===
+
+   Number of wires:                106
+   Number of wire bits:            106
+   Number of public wires:          34
+   Number of public wire bits:      34
+   Number of ports:                 15
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 85
+     cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+     cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+     sg13g2_a21o_1                   2
+     sg13g2_a21oi_1                  7
+     sg13g2_a21oi_2                  1
+     sg13g2_a221oi_1                 3
+     sg13g2_a22oi_1                  1
+     sg13g2_and2_1                   1
+     sg13g2_and4_1                   1
+     sg13g2_buf_2                    1
+     sg13g2_buf_4                    1
+     sg13g2_buf_8                    2
+     sg13g2_dfrbp_1                  6
+     sg13g2_inv_1                    6
+     sg13g2_mux2_1                   7
+     sg13g2_nand2_1                  4
+     sg13g2_nand2b_1                 3
+     sg13g2_nand3_1                  2
+     sg13g2_nand4_1                  1
+     sg13g2_nor2_1                  12
+     sg13g2_nor2_2                   3
+     sg13g2_nor2b_1                  2
+     sg13g2_nor3_1                   4
+     sg13g2_nor3_2                   1
+     sg13g2_nor4_1                   1
+     sg13g2_o21ai_1                  8
+     sg13g2_or2_1                    3
+
+   Area for cell type \cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src is unknown!
+   Area for cell type \cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst is unknown!
+
+   Chip area for module '\cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b': 1081.344600
+     of which used for sequential elements: 283.046400 (26.18%)
+
+=== dmi_jtag ===
+
+   Number of wires:               1307
+   Number of wire bits:           1307
+   Number of public wires:         412
+   Number of public wire bits:     412
+   Number of ports:                 89
+   Number of port bits:             89
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1020
+     $scopeinfo                      2
+     cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req      1
+     cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp      1
+     sg13g2_a21o_1                   4
+     sg13g2_a21o_2                   1
+     sg13g2_a21oi_1                 60
+     sg13g2_a21oi_2                  2
+     sg13g2_a221oi_1                 5
+     sg13g2_a22oi_1                 59
+     sg13g2_and2_1                  14
+     sg13g2_and2_2                   1
+     sg13g2_and3_1                   4
+     sg13g2_buf_1                   61
+     sg13g2_buf_16                   1
+     sg13g2_buf_2                    6
+     sg13g2_buf_4                    5
+     sg13g2_buf_8                    4
+     sg13g2_dfrbp_1                168
+     sg13g2_inv_1                   37
+     sg13g2_mux2_1                  47
+     sg13g2_nand2_1                126
+     sg13g2_nand2b_1                28
+     sg13g2_nand2b_2                 1
+     sg13g2_nand3_1                 53
+     sg13g2_nand3b_1                 4
+     sg13g2_nand4_1                  3
+     sg13g2_nor2_1                 149
+     sg13g2_nor2b_1                 17
+     sg13g2_nor3_1                  39
+     sg13g2_nor3_2                   3
+     sg13g2_nor4_1                   1
+     sg13g2_nor4_2                   2
+     sg13g2_o21ai_1                 85
+     sg13g2_or2_1                    9
+     sg13g2_or2_2                    4
+     sg13g2_or3_1                    8
+     sg13g2_or4_2                    1
+     sg13g2_tiehi                    1
+     sg13g2_tielo                    1
+     tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv      1
+     tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux      1
+
+   Area for cell type $scopeinfo is unknown!
+   Area for cell type \tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv is unknown!
+   Area for cell type \tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux is unknown!
+   Area for cell type \cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req is unknown!
+   Area for cell type \cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp is unknown!
+
+   Chip area for module '\dmi_jtag': 15697.773000
+     of which used for sequential elements: 7925.299200 (50.49%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     sg13g2_dfrbp_1                  3
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync': 141.523200
+     of which used for sequential elements: 141.523200 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     sg13g2_dfrbp_1                  3
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync': 141.523200
+     of which used for sequential elements: 141.523200 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sg13g2_dfrbp_1                  2
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync': 94.348800
+     of which used for sequential elements: 94.348800 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     sg13g2_dfrbp_1                  3
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync': 141.523200
+     of which used for sequential elements: 141.523200 (100.00%)
+
+=== sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync ===
+
+   Number of wires:                 10
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     sg13g2_dfrbp_1                  3
+
+   Chip area for module '\sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync': 141.523200
+     of which used for sequential elements: 141.523200 (100.00%)
+
+=== tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sg13g2_inv_1                    1
+
+   Chip area for module '\tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv': 5.443200
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sg13g2_mux2_1                   1
+
+   Chip area for module '\tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux': 18.144000
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== design hierarchy ===
+
+   dmi_jtag                          1
+     cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req      1
+       cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst      1
+         sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync      1
+       cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src      1
+         sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync      1
+       cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr      1
+         cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+           cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+           cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+         cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+           cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+           cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+     cdc_2phase_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp      1
+       cdc_2phase_dst_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst      1
+         sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync      1
+       cdc_2phase_src_clearable$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src      1
+         sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync      1
+       cdc_reset_ctrlr$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr      1
+         cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a      1
+           cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync      1
+           cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync      1
+         cdc_reset_ctrlr_half$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b      1
+           cdc_4phase_dst$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync      1
+           cdc_4phase_src$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src      1
+             sync$dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync      1
+     tc_clk_inverter$dmi_jtag.i_dmi_jtag_tap.i_tck_inv      1
+     tc_clk_mux2$dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux      1
+
+   Number of wires:               3476
+   Number of wire bits:           3476
+   Number of public wires:        1745
+   Number of public wire bits:    1745
+   Number of ports:                813
+   Number of port bits:            813
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2108
+     $scopeinfo                      2
+     sg13g2_a21o_1                  26
+     sg13g2_a21o_2                   1
+     sg13g2_a21oi_1                107
+     sg13g2_a21oi_2                  6
+     sg13g2_a221oi_1                15
+     sg13g2_a22oi_1                 71
+     sg13g2_and2_1                  25
+     sg13g2_and2_2                   2
+     sg13g2_and3_1                   4
+     sg13g2_and4_1                   3
+     sg13g2_buf_1                   61
+     sg13g2_buf_16                   8
+     sg13g2_buf_2                   13
+     sg13g2_buf_4                    9
+     sg13g2_buf_8                   38
+     sg13g2_dfrbp_1                416
+     sg13g2_inv_1                   65
+     sg13g2_mux2_1                 387
+     sg13g2_nand2_1                153
+     sg13g2_nand2b_1                61
+     sg13g2_nand2b_2                 9
+     sg13g2_nand3_1                 60
+     sg13g2_nand3b_1                15
+     sg13g2_nand4_1                  6
+     sg13g2_nor2_1                 210
+     sg13g2_nor2_2                  13
+     sg13g2_nor2b_1                 54
+     sg13g2_nor3_1                  57
+     sg13g2_nor3_2                   7
+     sg13g2_nor4_1                   7
+     sg13g2_nor4_2                   2
+     sg13g2_o21ai_1                142
+     sg13g2_or2_1                   24
+     sg13g2_or2_2                    8
+     sg13g2_or3_1                    9
+     sg13g2_or4_1                    1
+     sg13g2_or4_2                    1
+     sg13g2_tiehi                    5
+     sg13g2_tielo                    1
+     sg13g2_xnor2_1                  2
+     sg13g2_xor2_1                   2
+
+   Chip area for top module '\dmi_jtag': 39025.060200
+     of which used for sequential elements: 0.000000 (0.00%)
+

@@ -1,0 +1,695 @@
+
+33. Printing statistics.
+
+=== cve2_alu$cve2_core.ex_block_i.alu_i ===
+
+   Number of wires:                 92
+   Number of wire bits:           1522
+   Number of public wires:          70
+   Number of public wire bits:    1472
+   Number of ports:                 15
+   Number of port bits:            369
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 61
+     $add                            1
+     $and                            2
+     $eq                            27
+     $logic_not                      2
+     $mux                            5
+     $not                            4
+     $or                             3
+     $pmux                           4
+     $reduce_or                      8
+     $sshr                           1
+     $sub                            1
+     $xor                            3
+
+=== cve2_compressed_decoder$cve2_core.if_stage_i.compressed_decoder_i ===
+
+   Number of wires:                 49
+   Number of wire bits:            402
+   Number of public wires:           8
+   Number of public wire bits:      70
+   Number of ports:                  7
+   Number of port bits:             69
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 50
+     $eq                            20
+     $logic_not                      3
+     $mux                            7
+     $ne                             1
+     $not                            1
+     $pmux                          11
+     $reduce_bool                    1
+     $reduce_or                      6
+
+=== cve2_controller$cve2_core.id_stage_i.controller_i ===
+
+   Number of wires:                251
+   Number of wire bits:            697
+   Number of public wires:         102
+   Number of public wire bits:     280
+   Number of ports:                 56
+   Number of port bits:            225
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                209
+     $add                            1
+     $adff                           6
+     $adffe                          3
+     $and                           30
+     $eq                            10
+     $logic_and                      7
+     $logic_not                      8
+     $logic_or                       9
+     $mux                           67
+     $ne                            10
+     $not                            9
+     $or                            22
+     $pmux                          13
+     $reduce_and                     3
+     $reduce_bool                    3
+     $reduce_or                      8
+
+=== cve2_core ===
+
+   Number of wires:                156
+   Number of wire bits:           1803
+   Number of public wires:         154
+   Number of public wire bits:    1801
+   Number of ports:                 30
+   Number of port bits:            392
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $mux                            1
+     $not                            1
+     $or                             3
+     cve2_cs_registers$cve2_core.cs_registers_i      1
+     cve2_ex_block$cve2_core.ex_block_i      1
+     cve2_id_stage$cve2_core.id_stage_i      1
+     cve2_if_stage$cve2_core.if_stage_i      1
+     cve2_load_store_unit$cve2_core.load_store_unit_i      1
+     cve2_register_file_ff$cve2_core.register_file_i      1
+     cve2_wb$cve2_core.wb_i          1
+
+=== cve2_counter$cve2_core.cs_registers_i.mcycle_counter_i ===
+
+   Number of wires:                 19
+   Number of wire bits:            491
+   Number of public wires:          14
+   Number of public wire bits:     486
+   Number of ports:                  8
+   Number of port bits:            165
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add                            1
+     $adffe                          2
+     $mux                            2
+     $ne                             2
+     $or                             1
+     $reduce_and                     2
+     $reduce_bool                    1
+
+=== cve2_counter$cve2_core.cs_registers_i.minstret_counter_i ===
+
+   Number of wires:                 19
+   Number of wire bits:            491
+   Number of public wires:          14
+   Number of public wire bits:     486
+   Number of ports:                  8
+   Number of port bits:            165
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add                            1
+     $adffe                          2
+     $mux                            2
+     $ne                             2
+     $or                             1
+     $reduce_and                     2
+     $reduce_bool                    1
+
+=== cve2_cs_registers$cve2_core.cs_registers_i ===
+
+   Number of wires:                254
+   Number of wire bits:           6039
+   Number of public wires:         128
+   Number of public wire bits:    5278
+   Number of ports:                 56
+   Number of port bits:            581
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                269
+     $adffe                          2
+     $and                           18
+     $bmux                           1
+     $demux                          1
+     $eq                           139
+     $gt                             1
+     $logic_and                      3
+     $logic_not                      1
+     $mem_v2                         1
+     $mux                           46
+     $ne                             3
+     $not                            6
+     $or                             9
+     $pmux                          10
+     $reduce_bool                    5
+     $reduce_or                      7
+     cve2_counter$cve2_core.cs_registers_i.mcycle_counter_i      1
+     cve2_counter$cve2_core.cs_registers_i.minstret_counter_i      1
+     cve2_csr$cve2_core.cs_registers_i.u_dcsr_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_depc_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_dscratch0_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_dscratch1_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mcause_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mepc_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mie_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mscratch_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstack_cause_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstack_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstack_epc_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mstatus_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mtval_csr      1
+     cve2_csr$cve2_core.cs_registers_i.u_mtvec_csr      1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_dcsr_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_depc_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_dscratch0_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_dscratch1_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mcause_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:             25
+   Number of public wires:           7
+   Number of public wire bits:      25
+   Number of ports:                  6
+   Number of port bits:             18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mepc_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mie_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:             61
+   Number of public wires:           7
+   Number of public wire bits:      61
+   Number of ports:                  6
+   Number of port bits:             42
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mscratch_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstack_cause_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:             25
+   Number of public wires:           7
+   Number of public wire bits:      25
+   Number of ports:                  6
+   Number of port bits:             18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstack_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:             13
+   Number of public wires:           7
+   Number of public wire bits:      13
+   Number of ports:                  6
+   Number of port bits:             10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstack_epc_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mstatus_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:             22
+   Number of public wires:           7
+   Number of public wire bits:      22
+   Number of ports:                  6
+   Number of port bits:             16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mtval_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_csr$cve2_core.cs_registers_i.u_mtvec_csr ===
+
+   Number of wires:                  7
+   Number of wire bits:            100
+   Number of public wires:           7
+   Number of public wire bits:     100
+   Number of ports:                  6
+   Number of port bits:             68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adffe                          1
+
+=== cve2_decoder$cve2_core.id_stage_i.decoder_i ===
+
+   Number of wires:                223
+   Number of wire bits:            665
+   Number of public wires:          63
+   Number of public wire bits:     436
+   Number of ports:                 46
+   Number of port bits:            319
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                203
+     $and                           15
+     $eq                            80
+     $logic_and                      1
+     $logic_not                     10
+     $logic_or                       2
+     $mux                           29
+     $not                           12
+     $or                             4
+     $pmux                          20
+     $reduce_bool                    3
+     $reduce_or                     27
+
+=== cve2_ex_block$cve2_core.ex_block_i ===
+
+   Number of wires:                 38
+   Number of wire bits:            752
+   Number of public wires:          36
+   Number of public wire bits:     750
+   Number of ports:                 22
+   Number of port bits:            382
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $mux                            5
+     $not                            1
+     $or                             1
+     $reduce_or                      1
+     cve2_alu$cve2_core.ex_block_i.alu_i      1
+     cve2_multdiv_fast$cve2_core.ex_block_i.gen_multdiv_fast.multdiv_i      1
+
+=== cve2_fetch_fifo$cve2_core.if_stage_i.prefetch_buffer_i.fifo_i ===
+
+   Number of wires:                 69
+   Number of wire bits:            552
+   Number of public wires:          40
+   Number of public wire bits:     523
+   Number of ports:                 14
+   Number of port bits:            139
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 74
+     $add                            1
+     $adff                           1
+     $adffe                          7
+     $and                           23
+     $mux                           18
+     $ne                             2
+     $not                           10
+     $or                            12
+
+=== cve2_id_stage$cve2_core.id_stage_i ===
+
+   Number of wires:                254
+   Number of wire bits:           1377
+   Number of public wires:         168
+   Number of public wire bits:    1289
+   Number of ports:                 93
+   Number of port bits:            760
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                132
+     $adff                           2
+     $adffe                          3
+     $and                           43
+     $eq                            18
+     $logic_and                      2
+     $logic_not                      1
+     $logic_or                       7
+     $mux                           22
+     $not                           16
+     $or                            10
+     $pmux                           4
+     $reduce_bool                    1
+     $reduce_or                      1
+     cve2_controller$cve2_core.id_stage_i.controller_i      1
+     cve2_decoder$cve2_core.id_stage_i.decoder_i      1
+
+=== cve2_if_stage$cve2_core.if_stage_i ===
+
+   Number of wires:                 81
+   Number of wire bits:            623
+   Number of public wires:          62
+   Number of public wire bits:     604
+   Number of ports:                 35
+   Number of port bits:            400
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 38
+     $adff                           2
+     $adffe                          7
+     $and                            8
+     $eq                             7
+     $logic_not                      1
+     $not                            5
+     $or                             4
+     $pmux                           2
+     cve2_compressed_decoder$cve2_core.if_stage_i.compressed_decoder_i      1
+     cve2_prefetch_buffer$cve2_core.if_stage_i.prefetch_buffer_i      1
+
+=== cve2_load_store_unit$cve2_core.load_store_unit_i ===
+
+   Number of wires:                135
+   Number of wire bits:            817
+   Number of public wires:          57
+   Number of public wire bits:     590
+   Number of ports:                 28
+   Number of port bits:            249
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                115
+     $adffe                         10
+     $and                           25
+     $eq                            16
+     $logic_and                      2
+     $logic_not                      2
+     $logic_or                       3
+     $mux                            7
+     $ne                             7
+     $not                            8
+     $or                             5
+     $pmux                          17
+     $reduce_and                     4
+     $reduce_bool                    4
+     $reduce_or                      5
+
+=== cve2_multdiv_fast$cve2_core.ex_block_i.gen_multdiv_fast.multdiv_i ===
+
+   Number of wires:                810
+   Number of wire bits:           2788
+   Number of public wires:          63
+   Number of public wire bits:     930
+   Number of ports:                 20
+   Number of port bits:            378
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1009
+     $_AND_                        315
+     $_NOR_                          9
+     $_NOT_                          9
+     $_OR_                         162
+     $_XNOR_                         8
+     $_XOR_                        179
+     $add                            2
+     $adffe                          6
+     $and                            6
+     $bmux                           1
+     $eq                            11
+     $fa                           245
+     $logic_not                      3
+     $mux                           23
+     $not                            7
+     $or                             3
+     $pmux                           6
+     $reduce_and                     3
+     $reduce_bool                    2
+     $reduce_or                      5
+     $shl                            1
+     $sub                            1
+     $xor                            2
+
+=== cve2_prefetch_buffer$cve2_core.if_stage_i.prefetch_buffer_i ===
+
+   Number of wires:                 67
+   Number of wire bits:            510
+   Number of public wires:          45
+   Number of public wire bits:     425
+   Number of ports:                 18
+   Number of port bits:            173
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     $add                            1
+     $adff                           4
+     $adffe                          3
+     $and                           13
+     $logic_not                      1
+     $mux                            5
+     $not                            4
+     $or                            12
+     $reduce_and                     2
+     $reduce_or                      1
+     cve2_fetch_fifo$cve2_core.if_stage_i.prefetch_buffer_i.fifo_i      1
+
+=== cve2_register_file_ff$cve2_core.register_file_i ===
+
+   Number of wires:                 45
+   Number of wire bits:           2194
+   Number of public wires:          14
+   Number of public wire bits:    2163
+   Number of ports:                 10
+   Number of port bits:            115
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 95
+     $adffe                         31
+     $and                           31
+     $bmux                           2
+     $eq                            31
+
+=== cve2_wb$cve2_core.wb_i ===
+
+   Number of wires:                 24
+   Number of wire bits:            251
+   Number of public wires:          19
+   Number of public wire bits:     184
+   Number of ports:                 17
+   Number of port bits:            118
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            6
+     $not                            1
+     $or                             1
+     $reduce_or                      1
+
+=== design hierarchy ===
+
+   cve2_core                         1
+     cve2_cs_registers$cve2_core.cs_registers_i      1
+       cve2_counter$cve2_core.cs_registers_i.mcycle_counter_i      1
+       cve2_counter$cve2_core.cs_registers_i.minstret_counter_i      1
+       cve2_csr$cve2_core.cs_registers_i.u_dcsr_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_depc_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_dscratch0_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_dscratch1_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mcause_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mepc_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mie_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mscratch_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstack_cause_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstack_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstack_epc_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mstatus_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mtval_csr      1
+       cve2_csr$cve2_core.cs_registers_i.u_mtvec_csr      1
+     cve2_ex_block$cve2_core.ex_block_i      1
+       cve2_alu$cve2_core.ex_block_i.alu_i      1
+       cve2_multdiv_fast$cve2_core.ex_block_i.gen_multdiv_fast.multdiv_i      1
+     cve2_id_stage$cve2_core.id_stage_i      1
+       cve2_controller$cve2_core.id_stage_i.controller_i      1
+       cve2_decoder$cve2_core.id_stage_i.decoder_i      1
+     cve2_if_stage$cve2_core.if_stage_i      1
+       cve2_compressed_decoder$cve2_core.if_stage_i.compressed_decoder_i      1
+       cve2_prefetch_buffer$cve2_core.if_stage_i.prefetch_buffer_i      1
+         cve2_fetch_fifo$cve2_core.if_stage_i.prefetch_buffer_i.fifo_i      1
+     cve2_load_store_unit$cve2_core.load_store_unit_i      1
+     cve2_register_file_ff$cve2_core.register_file_i      1
+     cve2_wb$cve2_core.wb_i          1
+
+   Number of wires:               2684
+   Number of wire bits:          23020
+   Number of public wires:        1155
+   Number of public wire bits:   18813
+   Number of ports:                567
+   Number of port bits:           5715
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2340
+     $_AND_                        315
+     $_NOR_                          9
+     $_NOT_                          9
+     $_OR_                         162
+     $_XNOR_                         8
+     $_XOR_                        179
+     $add                            8
+     $adff                          15
+     $adffe                         90
+     $and                          221
+     $bmux                           4
+     $demux                          1
+     $eq                           359
+     $fa                           245
+     $gt                             1
+     $logic_and                     15
+     $logic_not                     32
+     $logic_or                      21
+     $mem_v2                         1
+     $mux                          239
+     $ne                            27
+     $not                           85
+     $or                            91
+     $pmux                          87
+     $reduce_and                    16
+     $reduce_bool                   21
+     $reduce_or                     70
+     $shl                            1
+     $sshr                           1
+     $sub                            2
+     $xor                            5
+

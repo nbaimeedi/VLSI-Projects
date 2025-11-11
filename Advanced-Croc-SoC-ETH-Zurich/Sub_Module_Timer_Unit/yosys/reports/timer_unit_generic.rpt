@@ -1,0 +1,140 @@
+
+44. Printing statistics.
+
+=== timer_unit ===
+
+   Number of wires:                292
+   Number of wire bits:           1173
+   Number of public wires:          53
+   Number of public wire bits:     436
+   Number of ports:                 19
+   Number of port bits:            123
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                810
+     $_AND_                        235
+     $_DFFE_PN0P_                  122
+     $_DFF_PN0_                     23
+     $_MUX_                        107
+     $_NOT_                         65
+     $_OR_                         254
+     timer_unit_counter$timer_unit.counter_hi_i      1
+     timer_unit_counter$timer_unit.counter_lo_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_hi_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_lo_i      1
+
+   Estimated number of transistors:       4348+
+
+=== timer_unit_counter$timer_unit.counter_hi_i ===
+
+   Number of wires:                 44
+   Number of wire bits:            380
+   Number of public wires:          10
+   Number of public wire bits:     134
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                277
+     $_AND_                         52
+     $_DFF_PN0_                     33
+     $_MUX_                         96
+     $_NOT_                          2
+     $_OR_                          31
+     $_XOR_                         63
+
+   Estimated number of transistors:       2410+
+
+=== timer_unit_counter$timer_unit.counter_lo_i ===
+
+   Number of wires:                 44
+   Number of wire bits:            380
+   Number of public wires:          10
+   Number of public wire bits:     134
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                277
+     $_AND_                         52
+     $_DFF_PN0_                     33
+     $_MUX_                         96
+     $_NOT_                          2
+     $_OR_                          31
+     $_XOR_                         63
+
+   Estimated number of transistors:       2410+
+
+=== timer_unit_counter_presc$timer_unit.prescaler_hi_i ===
+
+   Number of wires:                 45
+   Number of wire bits:            381
+   Number of public wires:          10
+   Number of public wire bits:     134
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                278
+     $_AND_                         52
+     $_DFF_PN0_                     33
+     $_MUX_                         96
+     $_NOT_                          2
+     $_OR_                          32
+     $_XOR_                         63
+
+   Estimated number of transistors:       2416+
+
+=== timer_unit_counter_presc$timer_unit.prescaler_lo_i ===
+
+   Number of wires:                 45
+   Number of wire bits:            381
+   Number of public wires:          10
+   Number of public wire bits:     134
+   Number of ports:                  9
+   Number of port bits:            102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                278
+     $_AND_                         52
+     $_DFF_PN0_                     33
+     $_MUX_                         96
+     $_NOT_                          2
+     $_OR_                          32
+     $_XOR_                         63
+
+   Estimated number of transistors:       2416+
+
+=== design hierarchy ===
+
+   timer_unit                        1
+     timer_unit_counter$timer_unit.counter_hi_i      1
+     timer_unit_counter$timer_unit.counter_lo_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_hi_i      1
+     timer_unit_counter_presc$timer_unit.prescaler_lo_i      1
+
+   Number of wires:                470
+   Number of wire bits:           2695
+   Number of public wires:          93
+   Number of public wire bits:     972
+   Number of ports:                 55
+   Number of port bits:            531
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1916
+     $_AND_                        443
+     $_DFFE_PN0P_                  122
+     $_DFF_PN0_                    155
+     $_MUX_                        491
+     $_NOT_                         73
+     $_OR_                         380
+     $_XOR_                        252
+
+   Estimated number of transistors:      14000+
+

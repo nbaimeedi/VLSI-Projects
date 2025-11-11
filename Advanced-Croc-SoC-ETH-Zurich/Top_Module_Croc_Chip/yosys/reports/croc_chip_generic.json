@@ -1,0 +1,3713 @@
+{
+   "creator": "Yosys 0.51 (git sha1 c4b519022, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json -tech cmos ",
+   "modules": {
+      "\\addr_decode$croc_chip.i_croc_soc.i_croc.i_addr_decode_periphs": {
+         "num_wires":         7,
+         "num_wire_bits":     521,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 521,
+         "num_ports":         7,
+         "num_port_bits":     521,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_addr_decode_periphs.i_addr_decode_dync": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_addr_decode": {
+         "num_wires":         7,
+         "num_wire_bits":     425,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 425,
+         "num_ports":         7,
+         "num_port_bits":     425,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_addr_decode.i_addr_decode_dync": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_addr_decode": {
+         "num_wires":         7,
+         "num_wire_bits":     425,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 425,
+         "num_ports":         7,
+         "num_port_bits":     425,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_addr_decode.i_addr_decode_dync": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_addr_decode": {
+         "num_wires":         7,
+         "num_wire_bits":     425,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 425,
+         "num_ports":         7,
+         "num_port_bits":     425,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_addr_decode.i_addr_decode_dync": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_addr_decode": {
+         "num_wires":         7,
+         "num_wire_bits":     425,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 425,
+         "num_ports":         7,
+         "num_port_bits":     425,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_addr_decode.i_addr_decode_dync": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\addr_decode$croc_chip.i_croc_soc.i_user.i_addr_decode_periphs": {
+         "num_wires":         7,
+         "num_wire_bits":     229,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 229,
+         "num_ports":         7,
+         "num_port_bits":     229,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "addr_decode_dync$croc_chip.i_croc_soc.i_user.i_addr_decode_periphs.i_addr_decode_dync": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_addr_decode_periphs.i_addr_decode_dync": {
+         "num_wires":         858,
+         "num_wire_bits":     2892,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 522,
+         "num_ports":         8,
+         "num_port_bits":     522,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2115,
+         "num_cells_by_type": {
+            "$_AND_": 921,
+            "$_MUX_": 42,
+            "$_NOT_": 342,
+            "$_OR_": 490,
+            "$_XOR_": 320
+         },
+         "estimated_num_transistors": "13494"
+      },
+      "\\addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_addr_decode.i_addr_decode_dync": {
+         "num_wires":         688,
+         "num_wire_bits":     2322,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 426,
+         "num_ports":         8,
+         "num_port_bits":     426,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1693,
+         "num_cells_by_type": {
+            "$_AND_": 737,
+            "$_MUX_": 34,
+            "$_NOT_": 274,
+            "$_OR_": 392,
+            "$_XOR_": 256
+         },
+         "estimated_num_transistors": "10802"
+      },
+      "\\addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_addr_decode.i_addr_decode_dync": {
+         "num_wires":         688,
+         "num_wire_bits":     2322,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 426,
+         "num_ports":         8,
+         "num_port_bits":     426,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1693,
+         "num_cells_by_type": {
+            "$_AND_": 737,
+            "$_MUX_": 34,
+            "$_NOT_": 274,
+            "$_OR_": 392,
+            "$_XOR_": 256
+         },
+         "estimated_num_transistors": "10802"
+      },
+      "\\addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_addr_decode.i_addr_decode_dync": {
+         "num_wires":         688,
+         "num_wire_bits":     2322,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 426,
+         "num_ports":         8,
+         "num_port_bits":     426,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1693,
+         "num_cells_by_type": {
+            "$_AND_": 737,
+            "$_MUX_": 34,
+            "$_NOT_": 274,
+            "$_OR_": 392,
+            "$_XOR_": 256
+         },
+         "estimated_num_transistors": "10802"
+      },
+      "\\addr_decode_dync$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_addr_decode.i_addr_decode_dync": {
+         "num_wires":         688,
+         "num_wire_bits":     2322,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 426,
+         "num_ports":         8,
+         "num_port_bits":     426,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1693,
+         "num_cells_by_type": {
+            "$_AND_": 737,
+            "$_MUX_": 34,
+            "$_NOT_": 274,
+            "$_OR_": 392,
+            "$_XOR_": 256
+         },
+         "estimated_num_transistors": "10802"
+      },
+      "\\addr_decode_dync$croc_chip.i_croc_soc.i_user.i_addr_decode_periphs.i_addr_decode_dync": {
+         "num_wires":         8,
+         "num_wire_bits":     230,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 230,
+         "num_ports":         8,
+         "num_port_bits":     230,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_NOT_": 1
+         },
+         "estimated_num_transistors": "8"
+      },
+      "\\apb_uart$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart": {
+         "num_wires":         370,
+         "num_wire_bits":     779,
+         "num_pub_wires":     133,
+         "num_pub_wire_bits": 317,
+         "num_ports":         21,
+         "num_port_bits":     85,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         558,
+         "num_cells_by_type": {
+            "$_AND_": 146,
+            "$_DFFE_PN0N_": 8,
+            "$_DFFE_PN0P_": 69,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN0_": 22,
+            "$_DFF_PN1_": 6,
+            "$_MUX_": 61,
+            "$_NOT_": 54,
+            "$_OR_": 149,
+            "$_XOR_": 17,
+            "slib_clock_div$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_BG2": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_BIDET": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_CTS": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_DCD": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_DSR": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_RI": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_FEDET": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IIC_THRE_ED": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_PEDET": 1,
+            "slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RCLK": 1,
+            "slib_fifo$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RXFF": 1,
+            "slib_fifo$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_TXFF": 1,
+            "slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_CTS": 1,
+            "slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_DCD": 1,
+            "slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_DSR": 1,
+            "slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_RI": 1,
+            "slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_CTS": 1,
+            "slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_DCD": 1,
+            "slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_DSR": 1,
+            "slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_RI": 1,
+            "slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_SIN": 1,
+            "uart_baudgen$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_BG16": 1,
+            "uart_interrupt$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IIC": 1,
+            "uart_receiver$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX": 1,
+            "uart_transmitter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_TX": 1
+         },
+         "estimated_num_transistors": "2814+"
+      },
+      "\\cdc_2phase_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req": {
+         "num_wires":         29,
+         "num_wire_bits":     149,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 145,
+         "num_ports":         14,
+         "num_port_bits":     94,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13,
+         "num_cells_by_type": {
+            "$_AND_": 4,
+            "$_DFF_PN0_": 4,
+            "$_NOT_": 2,
+            "cdc_2phase_dst_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst": 1,
+            "cdc_2phase_src_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_src": 1,
+            "cdc_reset_ctrlr$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr": 1
+         },
+         "estimated_num_transistors": "28+"
+      },
+      "\\cdc_2phase_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp": {
+         "num_wires":         29,
+         "num_wire_bits":     128,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 124,
+         "num_ports":         14,
+         "num_port_bits":     80,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13,
+         "num_cells_by_type": {
+            "$_AND_": 4,
+            "$_DFF_PN0_": 4,
+            "$_NOT_": 2,
+            "cdc_2phase_dst_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst": 1,
+            "cdc_2phase_src_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src": 1,
+            "cdc_reset_ctrlr$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr": 1
+         },
+         "estimated_num_transistors": "28+"
+      },
+      "\\cdc_2phase_dst_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst": {
+         "num_wires":         21,
+         "num_wire_bits":     181,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 175,
+         "num_ports":         9,
+         "num_port_bits":     89,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         93,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 41,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 42,
+            "$_NOT_": 2,
+            "$_OR_": 1,
+            "$_XOR_": 2,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "550+"
+      },
+      "\\cdc_2phase_dst_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst": {
+         "num_wires":         21,
+         "num_wire_bits":     153,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 147,
+         "num_ports":         9,
+         "num_port_bits":     75,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         79,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 34,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 35,
+            "$_NOT_": 2,
+            "$_OR_": 1,
+            "$_XOR_": 2,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "466+"
+      },
+      "\\cdc_2phase_src_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_src": {
+         "num_wires":         21,
+         "num_wire_bits":     221,
+         "num_pub_wires":     14,
+         "num_pub_wire_bits": 174,
+         "num_ports":         9,
+         "num_port_bits":     89,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         133,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 41,
+            "$_MUX_": 83,
+            "$_NOT_": 3,
+            "$_OR_": 1,
+            "$_XOR_": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync": 1
+         },
+         "estimated_num_transistors": "1032+"
+      },
+      "\\cdc_2phase_src_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src": {
+         "num_wires":         21,
+         "num_wire_bits":     186,
+         "num_pub_wires":     14,
+         "num_pub_wire_bits": 146,
+         "num_ports":         9,
+         "num_port_bits":     75,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         112,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PN0P_": 1,
+            "$_DFFE_PP_": 34,
+            "$_MUX_": 69,
+            "$_NOT_": 3,
+            "$_OR_": 1,
+            "$_XOR_": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync": 1
+         },
+         "estimated_num_transistors": "864+"
+      },
+      "\\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": {
+         "num_wires":         35,
+         "num_wire_bits":     50,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 17,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_AND_": 7,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 4,
+            "$_NOT_": 7,
+            "$_OR_": 11,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": 1
+         },
+         "estimated_num_transistors": "170+"
+      },
+      "\\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": {
+         "num_wires":         32,
+         "num_wire_bits":     42,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 21,
+         "num_ports":         8,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         32,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PN0P_": 3,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 7,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": 1
+         },
+         "estimated_num_transistors": "174+"
+      },
+      "\\cdc_reset_ctrlr$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr": {
+         "num_wires":         20,
+         "num_wire_bits":     22,
+         "num_pub_wires":     20,
+         "num_pub_wire_bits": 22,
+         "num_ports":         14,
+         "num_port_bits":     14,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": 1,
+            "cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\cdc_reset_ctrlr$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr": {
+         "num_wires":         20,
+         "num_wire_bits":     22,
+         "num_pub_wires":     20,
+         "num_pub_wire_bits": 22,
+         "num_ports":         14,
+         "num_port_bits":     14,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": 1,
+            "cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\cdc_reset_ctrlr_half$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b": {
+         "num_wires":         116,
+         "num_wire_bits":     215,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 37,
+         "num_ports":         13,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         141,
+         "num_cells_by_type": {
+            "$_AND_": 18,
+            "$_DFFE_PN0P_": 5,
+            "$_DFFE_PN1P_": 1,
+            "$_MUX_": 12,
+            "$_NOT_": 28,
+            "$_OR_": 75,
+            "cdc_4phase_dst$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst": 1,
+            "cdc_4phase_src$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src": 1
+         },
+         "estimated_num_transistors": "758+"
+      },
+      "\\core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap": {
+         "num_wires":         25,
+         "num_wire_bits":     229,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 229,
+         "num_ports":         25,
+         "num_port_bits":     229,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "cve2_core$croc_chip.i_croc_soc.i_croc.i_core_wrap.i_ibex": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\croc_chip": {
+         "num_wires":         63,
+         "num_wire_bits":     156,
+         "num_pub_wires":     63,
+         "num_pub_wire_bits": 156,
+         "num_ports":         48,
+         "num_port_bits":     48,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         65,
+         "num_cells_by_type": {
+            "croc_soc$croc_chip.i_croc_soc": 1,
+            "sg13g2_IOPadIOVdd": 4,
+            "sg13g2_IOPadIOVss": 4,
+            "sg13g2_IOPadIn": 9,
+            "sg13g2_IOPadInOut30mA": 32,
+            "sg13g2_IOPadOut16mA": 7,
+            "sg13g2_IOPadVdd": 4,
+            "sg13g2_IOPadVss": 4
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\croc_domain$croc_chip.i_croc_soc.i_croc": {
+         "num_wires":         70,
+         "num_wire_bits":     2664,
+         "num_pub_wires":     67,
+         "num_pub_wire_bits": 2661,
+         "num_ports":         22,
+         "num_port_bits":     367,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         22,
+         "num_cells_by_type": {
+            "$_NOT_": 3,
+            "$_OR_": 1,
+            "addr_decode$croc_chip.i_croc_soc.i_croc.i_addr_decode_periphs": 1,
+            "core_wrap$croc_chip.i_croc_soc.i_croc.i_core_wrap": 1,
+            "dm_obi_top$croc_chip.i_croc_soc.i_croc.i_dm_top": 1,
+            "dmi_jtag$croc_chip.i_croc_soc.i_croc.i_dmi_jtag": 1,
+            "gpio$croc_chip.i_croc_soc.i_croc.i_gpio": 1,
+            "obi_demux$croc_chip.i_croc_soc.i_croc.i_obi_demux": 1,
+            "obi_err_sbr$croc_chip.i_croc_soc.i_croc.i_periph_err": 1,
+            "obi_err_sbr$croc_chip.i_croc_soc.i_croc.i_xbar_err": 1,
+            "obi_sram_shim$croc_chip.i_croc_soc.i_croc.gen_sram_bank[0].i_sram_shim": 1,
+            "obi_sram_shim$croc_chip.i_croc_soc.i_croc.gen_sram_bank[1].i_sram_shim": 1,
+            "obi_xbar$croc_chip.i_croc_soc.i_croc.i_main_xbar": 1,
+            "periph_to_reg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl_translate": 1,
+            "periph_to_reg$croc_chip.i_croc_soc.i_croc.i_uart_translate": 1,
+            "reg_uart_wrap$croc_chip.i_croc_soc.i_croc.i_uart": 1,
+            "soc_ctrl_reg_top$croc_chip.i_croc_soc.i_croc.i_soc_ctrl": 1,
+            "tc_sram_impl$croc_chip.i_croc_soc.i_croc.gen_sram_bank[0].i_sram": 1,
+            "tc_sram_impl$croc_chip.i_croc_soc.i_croc.gen_sram_bank[1].i_sram": 1,
+            "timer_unit$croc_chip.i_croc_soc.i_croc.i_timer": 1
+         },
+         "estimated_num_transistors": "12+"
+      },
+      "\\croc_soc$croc_chip.i_croc_soc": {
+         "num_wires":         24,
+         "num_wire_bits":     369,
+         "num_pub_wires":     24,
+         "num_pub_wire_bits": 369,
+         "num_ports":         16,
+         "num_port_bits":     109,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "croc_domain$croc_chip.i_croc_soc.i_croc": 1,
+            "rstgen$croc_chip.i_croc_soc.i_rstgen": 1,
+            "sync$croc_chip.i_croc_soc.i_ext_intr_sync": 1,
+            "user_domain$croc_chip.i_croc_soc.i_user": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\cve2_core$croc_chip.i_croc_soc.i_croc.i_core_wrap.i_ibex": {
+         "num_wires":         30,
+         "num_wire_bits":     392,
+         "num_pub_wires":     30,
+         "num_pub_wire_bits": 392,
+         "num_ports":         30,
+         "num_port_bits":     392,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         0,
+         "num_cells_by_type": {
+
+         },
+         "estimated_num_transistors": "0"
+      },
+      "\\delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_demux.i_counter": {
+         "num_wires":         20,
+         "num_wire_bits":     28,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 12,
+         "num_ports":         10,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 2,
+            "$_MUX_": 5,
+            "$_NOT_": 3,
+            "$_OR_": 3,
+            "$_XOR_": 3
+         },
+         "estimated_num_transistors": "126+"
+      },
+      "\\delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_demux.i_counter": {
+         "num_wires":         20,
+         "num_wire_bits":     28,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 12,
+         "num_ports":         10,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 2,
+            "$_MUX_": 5,
+            "$_NOT_": 3,
+            "$_OR_": 3,
+            "$_XOR_": 3
+         },
+         "estimated_num_transistors": "126+"
+      },
+      "\\delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_demux.i_counter": {
+         "num_wires":         20,
+         "num_wire_bits":     28,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 12,
+         "num_ports":         10,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 2,
+            "$_MUX_": 5,
+            "$_NOT_": 3,
+            "$_OR_": 3,
+            "$_XOR_": 3
+         },
+         "estimated_num_transistors": "126+"
+      },
+      "\\delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_demux.i_counter": {
+         "num_wires":         20,
+         "num_wire_bits":     28,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 12,
+         "num_ports":         10,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 2,
+            "$_MUX_": 5,
+            "$_NOT_": 3,
+            "$_OR_": 3,
+            "$_XOR_": 3
+         },
+         "estimated_num_transistors": "126+"
+      },
+      "\\delta_counter$croc_chip.i_croc_soc.i_croc.i_obi_demux.i_counter": {
+         "num_wires":         20,
+         "num_wire_bits":     28,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 12,
+         "num_ports":         10,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 2,
+            "$_MUX_": 5,
+            "$_NOT_": 3,
+            "$_OR_": 3,
+            "$_XOR_": 3
+         },
+         "estimated_num_transistors": "126+"
+      },
+      "\\delta_counter$croc_chip.i_croc_soc.i_user.i_obi_demux.i_counter": {
+         "num_wires":         20,
+         "num_wire_bits":     28,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 12,
+         "num_ports":         10,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 2,
+            "$_MUX_": 5,
+            "$_NOT_": 3,
+            "$_OR_": 3,
+            "$_XOR_": 3
+         },
+         "estimated_num_transistors": "126+"
+      },
+      "\\dm_obi_top$croc_chip.i_croc_soc.i_croc.i_dm_top": {
+         "num_wires":         35,
+         "num_wire_bits":     335,
+         "num_pub_wires":     35,
+         "num_pub_wire_bits": 335,
+         "num_ports":         35,
+         "num_port_bits":     335,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_DFFE_PN0P_": 3,
+            "$_DFF_PN0_": 1,
+            "dm_top$croc_chip.i_croc_soc.i_croc.i_dm_top.i_dm_top": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\dm_top$croc_chip.i_croc_soc.i_croc.i_dm_top.i_dm_top": {
+         "num_wires":         33,
+         "num_wire_bits":     360,
+         "num_pub_wires":     33,
+         "num_pub_wire_bits": 360,
+         "num_ports":         33,
+         "num_port_bits":     360,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         0,
+         "num_cells_by_type": {
+
+         },
+         "estimated_num_transistors": "0"
+      },
+      "\\dmi_cdc$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc": {
+         "num_wires":         23,
+         "num_wire_bits":     169,
+         "num_pub_wires":     21,
+         "num_pub_wire_bits": 167,
+         "num_ports":         18,
+         "num_port_bits":     164,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFF_PN0_": 1,
+            "$_DFF_PN1_": 1,
+            "$_NOT_": 2,
+            "cdc_2phase_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req": 1,
+            "cdc_2phase_clearable$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp": 1
+         },
+         "estimated_num_transistors": "10+"
+      },
+      "\\dmi_jtag$croc_chip.i_croc_soc.i_croc.i_dmi_jtag": {
+         "num_wires":         141,
+         "num_wire_bits":     1057,
+         "num_pub_wires":     43,
+         "num_pub_wire_bits": 411,
+         "num_ports":         16,
+         "num_port_bits":     89,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         802,
+         "num_cells_by_type": {
+            "$_AND_": 55,
+            "$_DFFE_PN0P_": 44,
+            "$_DFF_PN0_": 73,
+            "$_MUX_": 529,
+            "$_NOT_": 25,
+            "$_OR_": 74,
+            "dmi_cdc$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc": 1,
+            "dmi_jtag_tap$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap": 1
+         },
+         "estimated_num_transistors": "7172+"
+      },
+      "\\dmi_jtag_tap$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap": {
+         "num_wires":         114,
+         "num_wire_bits":     436,
+         "num_pub_wires":     34,
+         "num_pub_wire_bits": 118,
+         "num_ports":         17,
+         "num_port_bits":     17,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         376,
+         "num_cells_by_type": {
+            "$_AND_": 22,
+            "$_DFFE_PN0P_": 9,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN0_": 24,
+            "$_DFF_PN1_": 15,
+            "$_MUX_": 184,
+            "$_NOT_": 26,
+            "$_OR_": 93,
+            "tc_clk_inverter$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap.i_tck_inv": 1,
+            "tc_clk_mux2$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux": 1
+         },
+         "estimated_num_transistors": "2950+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.gen_no_id_assign.i_fifo": {
+         "num_wires":         39,
+         "num_wire_bits":     50,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 25,
+         "num_ports":         11,
+         "num_port_bits":     13,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         38,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 8,
+            "$_MUX_": 6,
+            "$_NOT_": 7,
+            "$_OR_": 7,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "200+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.gen_no_id_assign.i_fifo": {
+         "num_wires":         39,
+         "num_wire_bits":     50,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 25,
+         "num_ports":         11,
+         "num_port_bits":     13,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         38,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 8,
+            "$_MUX_": 6,
+            "$_NOT_": 7,
+            "$_OR_": 7,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "200+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.gen_no_id_assign.i_fifo": {
+         "num_wires":         39,
+         "num_wire_bits":     50,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 25,
+         "num_ports":         11,
+         "num_port_bits":     13,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         38,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 8,
+            "$_MUX_": 6,
+            "$_NOT_": 7,
+            "$_OR_": 7,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "200+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.gen_no_id_assign.i_fifo": {
+         "num_wires":         39,
+         "num_wire_bits":     50,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 25,
+         "num_ports":         11,
+         "num_port_bits":     13,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         38,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 8,
+            "$_MUX_": 6,
+            "$_NOT_": 7,
+            "$_OR_": 7,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "200+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.gen_no_id_assign.i_fifo": {
+         "num_wires":         39,
+         "num_wire_bits":     50,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 25,
+         "num_ports":         11,
+         "num_port_bits":     13,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         38,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 8,
+            "$_MUX_": 6,
+            "$_NOT_": 7,
+            "$_OR_": 7,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "200+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_croc.i_periph_err.i_id_fifo": {
+         "num_wires":         27,
+         "num_wire_bits":     37,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 19,
+         "num_ports":         11,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_AND_": 6,
+            "$_DFFE_PN0P_": 5,
+            "$_MUX_": 2,
+            "$_NOT_": 4,
+            "$_OR_": 6,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "128+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_croc.i_xbar_err.i_id_fifo": {
+         "num_wires":         27,
+         "num_wire_bits":     37,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 19,
+         "num_ports":         11,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_AND_": 6,
+            "$_DFFE_PN0P_": 5,
+            "$_MUX_": 2,
+            "$_NOT_": 4,
+            "$_OR_": 6,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "128+"
+      },
+      "\\fifo_v3$croc_chip.i_croc_soc.i_user.i_user_err.i_id_fifo": {
+         "num_wires":         27,
+         "num_wire_bits":     37,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 19,
+         "num_ports":         11,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_AND_": 6,
+            "$_DFFE_PN0P_": 5,
+            "$_MUX_": 2,
+            "$_NOT_": 4,
+            "$_OR_": 6,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "128+"
+      },
+      "\\gpio$croc_chip.i_croc_soc.i_croc.i_gpio": {
+         "num_wires":         395,
+         "num_wire_bits":     1074,
+         "num_pub_wires":     205,
+         "num_pub_wire_bits": 884,
+         "num_ports":         9,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         576,
+         "num_cells_by_type": {
+            "$_AND_": 288,
+            "$_DFF_PN0_": 32,
+            "$_MUX_": 64,
+            "$_NOT_": 128,
+            "$_OR_": 31,
+            "gpio_reg_top$croc_chip.i_croc_soc.i_croc.i_gpio.i_reg_file": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[0].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[10].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[11].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[12].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[13].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[14].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[15].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[16].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[17].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[18].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[19].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[1].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[20].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[21].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[22].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[23].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[24].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[25].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[26].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[27].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[28].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[29].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[2].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[30].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[31].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[3].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[4].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[5].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[6].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[7].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[8].i_sync": 1,
+            "sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[9].i_sync": 1
+         },
+         "estimated_num_transistors": "2938+"
+      },
+      "\\gpio_reg_top$croc_chip.i_croc_soc.i_croc.i_gpio.i_reg_file": {
+         "num_wires":         179,
+         "num_wire_bits":     2452,
+         "num_pub_wires":     19,
+         "num_pub_wire_bits": 1319,
+         "num_ports":         6,
+         "num_port_bits":     499,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1468,
+         "num_cells_by_type": {
+            "$_AND_": 455,
+            "$_DFFE_PN0P_": 128,
+            "$_DFF_PN0_": 110,
+            "$_MUX_": 322,
+            "$_NOT_": 27,
+            "$_OR_": 426
+         },
+         "estimated_num_transistors": "9204+"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": {
+         "num_wires":         5,
+         "num_wire_bits":     15,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 15,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_NOT_": 4,
+            "$_OR_": 3
+         },
+         "estimated_num_transistors": "38"
+      },
+      "\\obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_demux": {
+         "num_wires":         46,
+         "num_wire_bits":     2976,
+         "num_pub_wires":     12,
+         "num_pub_wire_bits": 666,
+         "num_ports":         7,
+         "num_port_bits":     659,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1343,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 3,
+            "$_MUX_": 1304,
+            "$_NOT_": 10,
+            "$_OR_": 13,
+            "$_XOR_": 4,
+            "delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_demux.i_counter": 1
+         },
+         "estimated_num_transistors": "15842+"
+      },
+      "\\obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_demux": {
+         "num_wires":         46,
+         "num_wire_bits":     2976,
+         "num_pub_wires":     12,
+         "num_pub_wire_bits": 666,
+         "num_ports":         7,
+         "num_port_bits":     659,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1343,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 3,
+            "$_MUX_": 1304,
+            "$_NOT_": 10,
+            "$_OR_": 13,
+            "$_XOR_": 4,
+            "delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_demux.i_counter": 1
+         },
+         "estimated_num_transistors": "15842+"
+      },
+      "\\obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_demux": {
+         "num_wires":         46,
+         "num_wire_bits":     2976,
+         "num_pub_wires":     12,
+         "num_pub_wire_bits": 666,
+         "num_ports":         7,
+         "num_port_bits":     659,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1343,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 3,
+            "$_MUX_": 1304,
+            "$_NOT_": 10,
+            "$_OR_": 13,
+            "$_XOR_": 4,
+            "delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_demux.i_counter": 1
+         },
+         "estimated_num_transistors": "15842+"
+      },
+      "\\obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_demux": {
+         "num_wires":         46,
+         "num_wire_bits":     2976,
+         "num_pub_wires":     12,
+         "num_pub_wire_bits": 666,
+         "num_ports":         7,
+         "num_port_bits":     659,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1343,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 3,
+            "$_MUX_": 1304,
+            "$_NOT_": 10,
+            "$_OR_": 13,
+            "$_XOR_": 4,
+            "delta_counter$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_demux.i_counter": 1
+         },
+         "estimated_num_transistors": "15842+"
+      },
+      "\\obi_demux$croc_chip.i_croc_soc.i_croc.i_obi_demux": {
+         "num_wires":         47,
+         "num_wire_bits":     3339,
+         "num_pub_wires":     12,
+         "num_pub_wire_bits": 803,
+         "num_ports":         7,
+         "num_port_bits":     796,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1609,
+         "num_cells_by_type": {
+            "$_AND_": 9,
+            "$_DFFE_PN0P_": 3,
+            "$_MUX_": 1567,
+            "$_NOT_": 11,
+            "$_OR_": 14,
+            "$_XOR_": 4,
+            "delta_counter$croc_chip.i_croc_soc.i_croc.i_obi_demux.i_counter": 1
+         },
+         "estimated_num_transistors": "19012+"
+      },
+      "\\obi_demux$croc_chip.i_croc_soc.i_user.i_obi_demux": {
+         "num_wires":         24,
+         "num_wire_bits":     392,
+         "num_pub_wires":     12,
+         "num_pub_wire_bits": 234,
+         "num_ports":         7,
+         "num_port_bits":     229,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         235,
+         "num_cells_by_type": {
+            "$_AND_": 4,
+            "$_DFFE_PN0P_": 1,
+            "$_MUX_": 222,
+            "$_NOT_": 3,
+            "$_OR_": 2,
+            "$_XOR_": 2,
+            "delta_counter$croc_chip.i_croc_soc.i_user.i_obi_demux.i_counter": 1
+         },
+         "estimated_num_transistors": "2730+"
+      },
+      "\\obi_err_sbr$croc_chip.i_croc_soc.i_croc.i_periph_err": {
+         "num_wires":         10,
+         "num_wire_bits":     123,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 122,
+         "num_ports":         5,
+         "num_port_bits":     116,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_NOT_": 2,
+            "fifo_v3$croc_chip.i_croc_soc.i_croc.i_periph_err.i_id_fifo": 1
+         },
+         "estimated_num_transistors": "10+"
+      },
+      "\\obi_err_sbr$croc_chip.i_croc_soc.i_croc.i_xbar_err": {
+         "num_wires":         10,
+         "num_wire_bits":     123,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 122,
+         "num_ports":         5,
+         "num_port_bits":     116,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_NOT_": 2,
+            "fifo_v3$croc_chip.i_croc_soc.i_croc.i_xbar_err.i_id_fifo": 1
+         },
+         "estimated_num_transistors": "10+"
+      },
+      "\\obi_err_sbr$croc_chip.i_croc_soc.i_user.i_user_err": {
+         "num_wires":         10,
+         "num_wire_bits":     123,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 122,
+         "num_ports":         5,
+         "num_port_bits":     116,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_NOT_": 2,
+            "fifo_v3$croc_chip.i_croc_soc.i_user.i_user_err.i_id_fifo": 1
+         },
+         "estimated_num_transistors": "10+"
+      },
+      "\\obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux": {
+         "num_wires":         23,
+         "num_wire_bits":     782,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 633,
+         "num_ports":         7,
+         "num_port_bits":     552,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         160,
+         "num_cells_by_type": {
+            "$_AND_": 135,
+            "$_MUX_": 12,
+            "$_NOT_": 7,
+            "$_OR_": 4,
+            "fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.gen_no_id_assign.i_fifo": 1,
+            "rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.i_rr_arb": 1
+         },
+         "estimated_num_transistors": "992+"
+      },
+      "\\obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux": {
+         "num_wires":         23,
+         "num_wire_bits":     782,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 633,
+         "num_ports":         7,
+         "num_port_bits":     552,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         160,
+         "num_cells_by_type": {
+            "$_AND_": 135,
+            "$_MUX_": 12,
+            "$_NOT_": 7,
+            "$_OR_": 4,
+            "fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.gen_no_id_assign.i_fifo": 1,
+            "rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.i_rr_arb": 1
+         },
+         "estimated_num_transistors": "992+"
+      },
+      "\\obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux": {
+         "num_wires":         23,
+         "num_wire_bits":     782,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 633,
+         "num_ports":         7,
+         "num_port_bits":     552,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         160,
+         "num_cells_by_type": {
+            "$_AND_": 135,
+            "$_MUX_": 12,
+            "$_NOT_": 7,
+            "$_OR_": 4,
+            "fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.gen_no_id_assign.i_fifo": 1,
+            "rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.i_rr_arb": 1
+         },
+         "estimated_num_transistors": "992+"
+      },
+      "\\obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux": {
+         "num_wires":         23,
+         "num_wire_bits":     782,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 633,
+         "num_ports":         7,
+         "num_port_bits":     552,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         160,
+         "num_cells_by_type": {
+            "$_AND_": 135,
+            "$_MUX_": 12,
+            "$_NOT_": 7,
+            "$_OR_": 4,
+            "fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.gen_no_id_assign.i_fifo": 1,
+            "rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.i_rr_arb": 1
+         },
+         "estimated_num_transistors": "992+"
+      },
+      "\\obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux": {
+         "num_wires":         23,
+         "num_wire_bits":     782,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 633,
+         "num_ports":         7,
+         "num_port_bits":     552,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         160,
+         "num_cells_by_type": {
+            "$_AND_": 135,
+            "$_MUX_": 12,
+            "$_NOT_": 7,
+            "$_OR_": 4,
+            "fifo_v3$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.gen_no_id_assign.i_fifo": 1,
+            "rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.i_rr_arb": 1
+         },
+         "estimated_num_transistors": "992+"
+      },
+      "\\obi_sram_shim$croc_chip.i_croc_soc.i_croc.gen_sram_bank[0].i_sram_shim": {
+         "num_wires":         13,
+         "num_wire_bits":     220,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 220,
+         "num_ports":         11,
+         "num_port_bits":     218,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFF_PN0_": 4
+         },
+         "estimated_num_transistors": "6+"
+      },
+      "\\obi_sram_shim$croc_chip.i_croc_soc.i_croc.gen_sram_bank[1].i_sram_shim": {
+         "num_wires":         13,
+         "num_wire_bits":     220,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 220,
+         "num_ports":         11,
+         "num_port_bits":     218,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFF_PN0_": 4
+         },
+         "estimated_num_transistors": "6+"
+      },
+      "\\obi_xbar$croc_chip.i_croc_soc.i_croc.i_main_xbar": {
+         "num_wires":         13,
+         "num_wire_bits":     3596,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 3596,
+         "num_ports":         10,
+         "num_port_bits":     1404,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13,
+         "num_cells_by_type": {
+            "addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_addr_decode": 1,
+            "addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_addr_decode": 1,
+            "addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_addr_decode": 1,
+            "addr_decode$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_addr_decode": 1,
+            "obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[0].i_demux": 1,
+            "obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[1].i_demux": 1,
+            "obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[2].i_demux": 1,
+            "obi_demux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_demux[3].i_demux": 1,
+            "obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux": 1,
+            "obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux": 1,
+            "obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux": 1,
+            "obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux": 1,
+            "obi_mux$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\periph_to_reg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl_translate": {
+         "num_wires":         15,
+         "num_wire_bits":     217,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 217,
+         "num_ports":         15,
+         "num_port_bits":     217,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         39,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFF_PN0_": 37,
+            "$_NOT_": 1
+         },
+         "estimated_num_transistors": "8+"
+      },
+      "\\periph_to_reg$croc_chip.i_croc_soc.i_croc.i_uart_translate": {
+         "num_wires":         15,
+         "num_wire_bits":     217,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 217,
+         "num_ports":         15,
+         "num_port_bits":     217,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         39,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFF_PN0_": 37,
+            "$_NOT_": 1
+         },
+         "estimated_num_transistors": "8+"
+      },
+      "\\prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootaddr": {
+         "num_wires":         11,
+         "num_wire_bits":     166,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 166,
+         "num_ports":         9,
+         "num_port_bits":     133,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         34,
+         "num_cells_by_type": {
+            "$_DFFE_PN0P_": 31,
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN0_": 1,
+            "prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootaddr.wr_en_data_arb": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootmode": {
+         "num_wires":         11,
+         "num_wire_bits":     11,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 11,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFFE_PN0P_": 1,
+            "$_DFF_PN0_": 1,
+            "prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootmode.wr_en_data_arb": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_corestatus": {
+         "num_wires":         11,
+         "num_wire_bits":     166,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 166,
+         "num_ports":         9,
+         "num_port_bits":     133,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         34,
+         "num_cells_by_type": {
+            "$_DFFE_PN0P_": 32,
+            "$_DFF_PN0_": 1,
+            "prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_corestatus.wr_en_data_arb": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_fetchen": {
+         "num_wires":         11,
+         "num_wire_bits":     11,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 11,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFFE_PN0P_": 1,
+            "$_DFF_PN0_": 1,
+            "prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_fetchen.wr_en_data_arb": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_sram_dly": {
+         "num_wires":         11,
+         "num_wire_bits":     11,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 11,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFFE_PN1P_": 1,
+            "$_DFF_PN0_": 1,
+            "prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_sram_dly.wr_en_data_arb": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootaddr.wr_en_data_arb": {
+         "num_wires":         7,
+         "num_wire_bits":     131,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 131,
+         "num_ports":         7,
+         "num_port_bits":     131,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_MUX_": 32,
+            "$_OR_": 1
+         },
+         "estimated_num_transistors": "390"
+      },
+      "\\prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootmode.wr_en_data_arb": {
+         "num_wires":         7,
+         "num_wire_bits":     7,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 7,
+         "num_ports":         7,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_OR_": 1
+         },
+         "estimated_num_transistors": "18"
+      },
+      "\\prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_corestatus.wr_en_data_arb": {
+         "num_wires":         7,
+         "num_wire_bits":     131,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 131,
+         "num_ports":         7,
+         "num_port_bits":     131,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33,
+         "num_cells_by_type": {
+            "$_MUX_": 32,
+            "$_OR_": 1
+         },
+         "estimated_num_transistors": "390"
+      },
+      "\\prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_fetchen.wr_en_data_arb": {
+         "num_wires":         7,
+         "num_wire_bits":     7,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 7,
+         "num_ports":         7,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_OR_": 1
+         },
+         "estimated_num_transistors": "18"
+      },
+      "\\prim_subreg_arb$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_sram_dly.wr_en_data_arb": {
+         "num_wires":         7,
+         "num_wire_bits":     7,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 7,
+         "num_ports":         7,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_MUX_": 1,
+            "$_OR_": 1
+         },
+         "estimated_num_transistors": "18"
+      },
+      "\\reg_to_apb$croc_chip.i_croc_soc.i_croc.i_uart.i_reg_uart_reg_to_apb": {
+         "num_wires":         9,
+         "num_wire_bits":     217,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 216,
+         "num_ports":         6,
+         "num_port_bits":     214,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFF_PN0_": 1,
+            "$_MUX_": 1,
+            "$_NOT_": 1
+         },
+         "estimated_num_transistors": "20+"
+      },
+      "\\reg_uart_wrap$croc_chip.i_croc_soc.i_croc.i_uart": {
+         "num_wires":         17,
+         "num_wire_bits":     225,
+         "num_pub_wires":     17,
+         "num_pub_wire_bits": 225,
+         "num_ports":         15,
+         "num_port_bits":     117,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "apb_uart$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart": 1,
+            "reg_to_apb$croc_chip.i_croc_soc.i_croc.i_uart.i_reg_uart_reg_to_apb": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.i_rr_arb": {
+         "num_wires":         47,
+         "num_wire_bits":     644,
+         "num_pub_wires":     28,
+         "num_pub_wire_bits": 621,
+         "num_ports":         11,
+         "num_port_bits":     372,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         271,
+         "num_cells_by_type": {
+            "$_AND_": 17,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 5,
+            "$_MUX_": 228,
+            "$_NOT_": 9,
+            "$_OR_": 8,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": 1,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[0].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": 1
+         },
+         "estimated_num_transistors": "2904+"
+      },
+      "\\rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.i_rr_arb": {
+         "num_wires":         47,
+         "num_wire_bits":     644,
+         "num_pub_wires":     28,
+         "num_pub_wire_bits": 621,
+         "num_ports":         11,
+         "num_port_bits":     372,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         271,
+         "num_cells_by_type": {
+            "$_AND_": 17,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 5,
+            "$_MUX_": 228,
+            "$_NOT_": 9,
+            "$_OR_": 8,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": 1,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[1].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": 1
+         },
+         "estimated_num_transistors": "2904+"
+      },
+      "\\rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.i_rr_arb": {
+         "num_wires":         47,
+         "num_wire_bits":     644,
+         "num_pub_wires":     28,
+         "num_pub_wire_bits": 621,
+         "num_ports":         11,
+         "num_port_bits":     372,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         271,
+         "num_cells_by_type": {
+            "$_AND_": 17,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 5,
+            "$_MUX_": 228,
+            "$_NOT_": 9,
+            "$_OR_": 8,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": 1,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[2].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": 1
+         },
+         "estimated_num_transistors": "2904+"
+      },
+      "\\rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.i_rr_arb": {
+         "num_wires":         47,
+         "num_wire_bits":     644,
+         "num_pub_wires":     28,
+         "num_pub_wire_bits": 621,
+         "num_ports":         11,
+         "num_port_bits":     372,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         271,
+         "num_cells_by_type": {
+            "$_AND_": 17,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 5,
+            "$_MUX_": 228,
+            "$_NOT_": 9,
+            "$_OR_": 8,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": 1,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[3].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": 1
+         },
+         "estimated_num_transistors": "2904+"
+      },
+      "\\rr_arb_tree$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.i_rr_arb": {
+         "num_wires":         47,
+         "num_wire_bits":     644,
+         "num_pub_wires":     28,
+         "num_pub_wire_bits": 621,
+         "num_ports":         11,
+         "num_port_bits":     372,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         271,
+         "num_cells_by_type": {
+            "$_AND_": 17,
+            "$_DFFE_PN0P_": 2,
+            "$_DFF_PN0_": 5,
+            "$_MUX_": 228,
+            "$_NOT_": 9,
+            "$_OR_": 8,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower": 1,
+            "lzc$croc_chip.i_croc_soc.i_croc.i_main_xbar.gen_mux[4].i_mux.i_rr_arb.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper": 1
+         },
+         "estimated_num_transistors": "2904+"
+      },
+      "\\rstgen$croc_chip.i_croc_soc.i_rstgen": {
+         "num_wires":         5,
+         "num_wire_bits":     5,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 5,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "rstgen_bypass$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\rstgen_bypass$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass": {
+         "num_wires":         8,
+         "num_wire_bits":     11,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 11,
+         "num_ports":         6,
+         "num_port_bits":     6,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 4,
+            "tc_clk_mux2$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass.i_tc_clk_mux2_init_no": 1,
+            "tc_clk_mux2$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass.i_tc_clk_mux2_rst_n": 1,
+            "tc_clk_mux2$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass.i_tc_clk_mux2_rst_no": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\slib_clock_div$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_BG2": {
+         "num_wires":         15,
+         "num_wire_bits":     25,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFFE_PP0P_": 3,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 3,
+            "$_NOT_": 4,
+            "$_OR_": 2,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "92+"
+      },
+      "\\slib_counter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX.RX_BRC": {
+         "num_wires":         26,
+         "num_wire_bits":     57,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 15,
+         "num_ports":         9,
+         "num_port_bits":     15,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         42,
+         "num_cells_by_type": {
+            "$_AND_": 8,
+            "$_DFFE_PP0P_": 5,
+            "$_MUX_": 11,
+            "$_NOT_": 1,
+            "$_OR_": 9,
+            "$_XOR_": 8
+         },
+         "estimated_num_transistors": "332+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_BIDET": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_CTS": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_DCD": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_DSR": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_ED_RI": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_FEDET": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IIC_THRE_ED": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_PEDET": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_edge_detect$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RCLK": {
+         "num_wires":         8,
+         "num_wire_bits":     8,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 6,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_AND_": 2,
+            "$_DFF_PP0_": 1,
+            "$_NOT_": 2
+         },
+         "estimated_num_transistors": "16+"
+      },
+      "\\slib_fifo$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RXFF": {
+         "num_wires":         229,
+         "num_wire_bits":     2481,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 753,
+         "num_ports":         10,
+         "num_port_bits":     35,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1770,
+         "num_cells_by_type": {
+            "$_AND_": 98,
+            "$_DFFE_PP0P_": 724,
+            "$_DFF_PP0_": 11,
+            "$_DFF_PP1_": 1,
+            "$_MUX_": 777,
+            "$_NOT_": 16,
+            "$_OR_": 114,
+            "$_XOR_": 29
+         },
+         "estimated_num_transistors": "10976+"
+      },
+      "\\slib_fifo$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_TXFF": {
+         "num_wires":         229,
+         "num_wire_bits":     1902,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 555,
+         "num_ports":         10,
+         "num_port_bits":     29,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1386,
+         "num_cells_by_type": {
+            "$_AND_": 98,
+            "$_DFFE_PP0P_": 532,
+            "$_DFF_PP0_": 8,
+            "$_DFF_PP1_": 1,
+            "$_MUX_": 588,
+            "$_NOT_": 16,
+            "$_OR_": 114,
+            "$_XOR_": 29
+         },
+         "estimated_num_transistors": "8708+"
+      },
+      "\\slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_CTS": {
+         "num_wires":         20,
+         "num_wire_bits":     24,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 7,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         18,
+         "num_cells_by_type": {
+            "$_AND_": 3,
+            "$_DFFE_PP0P_": 2,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 1,
+            "$_NOT_": 5,
+            "$_OR_": 4,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "88+"
+      },
+      "\\slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_DCD": {
+         "num_wires":         20,
+         "num_wire_bits":     24,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 7,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         18,
+         "num_cells_by_type": {
+            "$_AND_": 3,
+            "$_DFFE_PP0P_": 2,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 1,
+            "$_NOT_": 5,
+            "$_OR_": 4,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "88+"
+      },
+      "\\slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_DSR": {
+         "num_wires":         20,
+         "num_wire_bits":     24,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 7,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         18,
+         "num_cells_by_type": {
+            "$_AND_": 3,
+            "$_DFFE_PP0P_": 2,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 1,
+            "$_NOT_": 5,
+            "$_OR_": 4,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "88+"
+      },
+      "\\slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IF_RI": {
+         "num_wires":         20,
+         "num_wire_bits":     24,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 7,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         18,
+         "num_cells_by_type": {
+            "$_AND_": 3,
+            "$_DFFE_PP0P_": 2,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 1,
+            "$_NOT_": 5,
+            "$_OR_": 4,
+            "$_XOR_": 2
+         },
+         "estimated_num_transistors": "88+"
+      },
+      "\\slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX.RX_IFSB": {
+         "num_wires":         24,
+         "num_wire_bits":     36,
+         "num_pub_wires":     6,
+         "num_pub_wire_bits": 8,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_AND_": 5,
+            "$_DFFE_PP0P_": 3,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 1,
+            "$_NOT_": 5,
+            "$_OR_": 6,
+            "$_XOR_": 4
+         },
+         "estimated_num_transistors": "136+"
+      },
+      "\\slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_CTS": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PP0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_DCD": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PP0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_DSR": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PP0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_RI": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PP0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\slib_input_sync$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IS_SIN": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PP0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\slib_mv_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX.RX_MVF": {
+         "num_wires":         30,
+         "num_wire_bits":     55,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 11,
+         "num_ports":         6,
+         "num_port_bits":     6,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         42,
+         "num_cells_by_type": {
+            "$_AND_": 12,
+            "$_DFFE_PP0P_": 5,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 6,
+            "$_NOT_": 6,
+            "$_OR_": 8,
+            "$_XOR_": 4
+         },
+         "estimated_num_transistors": "252+"
+      },
+      "\\soc_ctrl_reg_top$croc_chip.i_croc_soc.i_croc.i_soc_ctrl": {
+         "num_wires":         71,
+         "num_wire_bits":     509,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 260,
+         "num_ports":         7,
+         "num_port_bits":     178,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         205,
+         "num_cells_by_type": {
+            "$_AND_": 87,
+            "$_MUX_": 32,
+            "$_NOT_": 15,
+            "$_OR_": 66,
+            "prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootaddr": 1,
+            "prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_bootmode": 1,
+            "prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_corestatus": 1,
+            "prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_fetchen": 1,
+            "prim_subreg$croc_chip.i_croc_soc.i_croc.i_soc_ctrl.u_sram_dly": 1
+         },
+         "estimated_num_transistors": "1332+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_req.i_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_a.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_cdc_reset_ctrlr.i_cdc_reset_ctrlr_half_b.i_state_transition_cdc_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_dst.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_cdc.i_cdc_resp.i_src.i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     7,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 7,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 3
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[0].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[10].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[11].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[12].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[13].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[14].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[15].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[16].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[17].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[18].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[19].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[1].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[20].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[21].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[22].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[23].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[24].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[25].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[26].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[27].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[28].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[29].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[2].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[30].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[31].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[3].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[4].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[5].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[6].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[7].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[8].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_croc.i_gpio.gen_gpios[9].i_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\sync$croc_chip.i_croc_soc.i_ext_intr_sync": {
+         "num_wires":         5,
+         "num_wire_bits":     6,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 6,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2,
+         "num_cells_by_type": {
+            "$_DFF_PN0_": 2
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_clk_inverter$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap.i_tck_inv": {
+         "num_wires":         2,
+         "num_wire_bits":     2,
+         "num_pub_wires":     2,
+         "num_pub_wire_bits": 2,
+         "num_ports":         2,
+         "num_port_bits":     2,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "sg13g2_inv_1": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_clk_mux2$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap.i_dft_tck_mux": {
+         "num_wires":         4,
+         "num_wire_bits":     4,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 4,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "sg13g2_mux2_1": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_clk_mux2$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass.i_tc_clk_mux2_init_no": {
+         "num_wires":         4,
+         "num_wire_bits":     4,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 4,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "sg13g2_mux2_1": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_clk_mux2$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass.i_tc_clk_mux2_rst_n": {
+         "num_wires":         4,
+         "num_wire_bits":     4,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 4,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "sg13g2_mux2_1": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_clk_mux2$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass.i_tc_clk_mux2_rst_no": {
+         "num_wires":         4,
+         "num_wire_bits":     4,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 4,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1,
+         "num_cells_by_type": {
+            "sg13g2_mux2_1": 1
+         },
+         "estimated_num_transistors": "0+"
+      },
+      "\\tc_sram_impl$croc_chip.i_croc_soc.i_croc.gen_sram_bank[0].i_sram": {
+         "num_wires":         16,
+         "num_wire_bits":     215,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 212,
+         "num_ports":         10,
+         "num_port_bits":     83,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         45,
+         "num_cells_by_type": {
+            "$_AND_": 9,
+            "$_DFFE_PN0P_": 1,
+            "$_MUX_": 32,
+            "$_NOT_": 2,
+            "RM_IHPSG13_1P_256x64_c2_bm_bist": 1
+         },
+         "estimated_num_transistors": "442+"
+      },
+      "\\tc_sram_impl$croc_chip.i_croc_soc.i_croc.gen_sram_bank[1].i_sram": {
+         "num_wires":         16,
+         "num_wire_bits":     215,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 212,
+         "num_ports":         10,
+         "num_port_bits":     83,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         45,
+         "num_cells_by_type": {
+            "$_AND_": 9,
+            "$_DFFE_PN0P_": 1,
+            "$_MUX_": 32,
+            "$_NOT_": 2,
+            "RM_IHPSG13_1P_256x64_c2_bm_bist": 1
+         },
+         "estimated_num_transistors": "442+"
+      },
+      "\\timer_unit$croc_chip.i_croc_soc.i_croc.i_timer": {
+         "num_wires":         19,
+         "num_wire_bits":     119,
+         "num_pub_wires":     19,
+         "num_pub_wire_bits": 119,
+         "num_ports":         19,
+         "num_port_bits":     119,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         0,
+         "num_cells_by_type": {
+
+         },
+         "estimated_num_transistors": "0"
+      },
+      "\\uart_baudgen$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_BG16": {
+         "num_wires":         98,
+         "num_wire_bits":     259,
+         "num_pub_wires":     7,
+         "num_pub_wire_bits": 37,
+         "num_ports":         6,
+         "num_port_bits":     21,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         233,
+         "num_cells_by_type": {
+            "$_AND_": 60,
+            "$_DFFE_PP0P_": 16,
+            "$_DFF_PP0_": 1,
+            "$_MUX_": 32,
+            "$_NOT_": 33,
+            "$_OR_": 61,
+            "$_XOR_": 30
+         },
+         "estimated_num_transistors": "1536+"
+      },
+      "\\uart_interrupt$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_IIC": {
+         "num_wires":         29,
+         "num_wire_bits":     51,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 29,
+         "num_ports":         11,
+         "num_port_bits":     24,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         29,
+         "num_cells_by_type": {
+            "$_AND_": 6,
+            "$_DFF_PP0_": 3,
+            "$_DFF_PP1_": 1,
+            "$_MUX_": 10,
+            "$_NOT_": 3,
+            "$_OR_": 6
+         },
+         "estimated_num_transistors": "198+"
+      },
+      "\\uart_receiver$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX": {
+         "num_wires":         144,
+         "num_wire_bits":     255,
+         "num_pub_wires":     29,
+         "num_pub_wire_bits": 47,
+         "num_ports":         15,
+         "num_port_bits":     23,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         205,
+         "num_cells_by_type": {
+            "$_AND_": 32,
+            "$_DFFE_PP0P_": 12,
+            "$_DFF_PP0_": 6,
+            "$_MUX_": 39,
+            "$_NOT_": 33,
+            "$_OR_": 67,
+            "$_XOR_": 13,
+            "slib_counter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX.RX_BRC": 1,
+            "slib_input_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX.RX_IFSB": 1,
+            "slib_mv_filter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_RX.RX_MVF": 1
+         },
+         "estimated_num_transistors": "1284+"
+      },
+      "\\uart_transmitter$croc_chip.i_croc_soc.i_croc.i_uart.i_apb_uart.UART_TX": {
+         "num_wires":         100,
+         "num_wire_bits":     288,
+         "num_pub_wires":     24,
+         "num_pub_wire_bits": 38,
+         "num_ports":         14,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         153,
+         "num_cells_by_type": {
+            "$_AND_": 27,
+            "$_DFFE_PP0P_": 5,
+            "$_DFF_PP0_": 2,
+            "$_MUX_": 14,
+            "$_NOT_": 27,
+            "$_OR_": 71,
+            "$_XOR_": 7
+         },
+         "estimated_num_transistors": "894+"
+      },
+      "\\user_domain$croc_chip.i_croc_soc.i_user": {
+         "num_wires":         13,
+         "num_wire_bits":     376,
+         "num_pub_wires":     13,
+         "num_pub_wire_bits": 376,
+         "num_ports":         10,
+         "num_port_bits":     262,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3,
+         "num_cells_by_type": {
+            "addr_decode$croc_chip.i_croc_soc.i_user.i_addr_decode_periphs": 1,
+            "obi_demux$croc_chip.i_croc_soc.i_user.i_obi_demux": 1,
+            "obi_err_sbr$croc_chip.i_croc_soc.i_user.i_user_err": 1
+         },
+         "estimated_num_transistors": "0+"
+      }
+   },
+      "design": {
+         "num_wires":         8834,
+         "num_wire_bits":     64344,
+         "num_pub_wires":     2488,
+         "num_pub_wire_bits": 33278,
+         "num_ports":         1522,
+         "num_port_bits":     21767,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         28381,
+         "num_cells_by_type": {
+            "$_AND_": 6333,
+            "$_DFFE_PN0N_": 8,
+            "$_DFFE_PN0P_": 457,
+            "$_DFFE_PN1P_": 12,
+            "$_DFFE_PP0P_": 1313,
+            "$_DFFE_PP_": 150,
+            "$_DFF_PN0_": 488,
+            "$_DFF_PN1_": 26,
+            "$_DFF_PP0_": 57,
+            "$_DFF_PP1_": 3,
+            "$_MUX_": 11589,
+            "$_NOT_": 2331,
+            "$_OR_": 3986,
+            "$_XOR_": 1557,
+            "RM_IHPSG13_1P_256x64_c2_bm_bist": 2,
+            "sg13g2_IOPadIOVdd": 4,
+            "sg13g2_IOPadIOVss": 4,
+            "sg13g2_IOPadIn": 9,
+            "sg13g2_IOPadInOut30mA": 32,
+            "sg13g2_IOPadOut16mA": 7,
+            "sg13g2_IOPadVdd": 4,
+            "sg13g2_IOPadVss": 4,
+            "sg13g2_inv_1": 1,
+            "sg13g2_mux2_1": 4
+         },
+         "estimated_num_transistors": "224328+"
+      }
+}
+

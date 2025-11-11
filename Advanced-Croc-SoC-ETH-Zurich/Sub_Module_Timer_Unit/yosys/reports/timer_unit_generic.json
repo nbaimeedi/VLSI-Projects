@@ -1,0 +1,138 @@
+{
+   "creator": "Yosys 0.51 (git sha1 c4b519022, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json -tech cmos ",
+   "modules": {
+      "\\timer_unit": {
+         "num_wires":         292,
+         "num_wire_bits":     1173,
+         "num_pub_wires":     53,
+         "num_pub_wire_bits": 436,
+         "num_ports":         19,
+         "num_port_bits":     123,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         810,
+         "num_cells_by_type": {
+            "$_AND_": 235,
+            "$_DFFE_PN0P_": 122,
+            "$_DFF_PN0_": 23,
+            "$_MUX_": 107,
+            "$_NOT_": 65,
+            "$_OR_": 254,
+            "timer_unit_counter$timer_unit.counter_hi_i": 1,
+            "timer_unit_counter$timer_unit.counter_lo_i": 1,
+            "timer_unit_counter_presc$timer_unit.prescaler_hi_i": 1,
+            "timer_unit_counter_presc$timer_unit.prescaler_lo_i": 1
+         },
+         "estimated_num_transistors": "4348+"
+      },
+      "\\timer_unit_counter$timer_unit.counter_hi_i": {
+         "num_wires":         44,
+         "num_wire_bits":     380,
+         "num_pub_wires":     10,
+         "num_pub_wire_bits": 134,
+         "num_ports":         9,
+         "num_port_bits":     102,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         277,
+         "num_cells_by_type": {
+            "$_AND_": 52,
+            "$_DFF_PN0_": 33,
+            "$_MUX_": 96,
+            "$_NOT_": 2,
+            "$_OR_": 31,
+            "$_XOR_": 63
+         },
+         "estimated_num_transistors": "2410+"
+      },
+      "\\timer_unit_counter$timer_unit.counter_lo_i": {
+         "num_wires":         44,
+         "num_wire_bits":     380,
+         "num_pub_wires":     10,
+         "num_pub_wire_bits": 134,
+         "num_ports":         9,
+         "num_port_bits":     102,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         277,
+         "num_cells_by_type": {
+            "$_AND_": 52,
+            "$_DFF_PN0_": 33,
+            "$_MUX_": 96,
+            "$_NOT_": 2,
+            "$_OR_": 31,
+            "$_XOR_": 63
+         },
+         "estimated_num_transistors": "2410+"
+      },
+      "\\timer_unit_counter_presc$timer_unit.prescaler_hi_i": {
+         "num_wires":         45,
+         "num_wire_bits":     381,
+         "num_pub_wires":     10,
+         "num_pub_wire_bits": 134,
+         "num_ports":         9,
+         "num_port_bits":     102,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         278,
+         "num_cells_by_type": {
+            "$_AND_": 52,
+            "$_DFF_PN0_": 33,
+            "$_MUX_": 96,
+            "$_NOT_": 2,
+            "$_OR_": 32,
+            "$_XOR_": 63
+         },
+         "estimated_num_transistors": "2416+"
+      },
+      "\\timer_unit_counter_presc$timer_unit.prescaler_lo_i": {
+         "num_wires":         45,
+         "num_wire_bits":     381,
+         "num_pub_wires":     10,
+         "num_pub_wire_bits": 134,
+         "num_ports":         9,
+         "num_port_bits":     102,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         278,
+         "num_cells_by_type": {
+            "$_AND_": 52,
+            "$_DFF_PN0_": 33,
+            "$_MUX_": 96,
+            "$_NOT_": 2,
+            "$_OR_": 32,
+            "$_XOR_": 63
+         },
+         "estimated_num_transistors": "2416+"
+      }
+   },
+      "design": {
+         "num_wires":         470,
+         "num_wire_bits":     2695,
+         "num_pub_wires":     93,
+         "num_pub_wire_bits": 972,
+         "num_ports":         55,
+         "num_port_bits":     531,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1916,
+         "num_cells_by_type": {
+            "$_AND_": 443,
+            "$_DFFE_PN0P_": 122,
+            "$_DFF_PN0_": 155,
+            "$_MUX_": 491,
+            "$_NOT_": 73,
+            "$_OR_": 380,
+            "$_XOR_": 252
+         },
+         "estimated_num_transistors": "14000+"
+      }
+}
+

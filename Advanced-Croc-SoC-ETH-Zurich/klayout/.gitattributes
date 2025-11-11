@@ -1,0 +1,8 @@
+timer_unit.gds filter=lfs diff=lfs merge=lfs -text
+croc_chip.gds filter=lfs diff=lfs merge=lfs -text
+cve2_core.gds filter=lfs diff=lfs merge=lfs -text
+def2gds.sh filter=lfs diff=lfs merge=lfs -text
+def2stream.py filter=lfs diff=lfs merge=lfs -text
+dmi_jtag.gds filter=lfs diff=lfs merge=lfs -text
+dm_top.gds filter=lfs diff=lfs merge=lfs -text
+sg13g2.map filter=lfs diff=lfs merge=lfs -text

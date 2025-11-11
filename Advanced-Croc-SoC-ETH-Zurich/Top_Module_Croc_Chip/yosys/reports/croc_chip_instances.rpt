@@ -1,0 +1,7 @@
+tc_sram_impl$croc_chip.i_croc_soc.i_croc.gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut
+tc_sram_impl$croc_chip.i_croc_soc.i_croc.gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut
+dmi_jtag_tap$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap/i_dft_tck_mux
+dmi_jtag_tap$croc_chip.i_croc_soc.i_croc.i_dmi_jtag.i_dmi_jtag_tap/i_tck_inv
+rstgen_bypass$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass/i_tc_clk_mux2_init_no
+rstgen_bypass$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass/i_tc_clk_mux2_rst_n
+rstgen_bypass$croc_chip.i_croc_soc.i_rstgen.i_rstgen_bypass/i_tc_clk_mux2_rst_no

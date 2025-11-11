@@ -1,0 +1,162 @@
+
+44. Printing statistics.
+
+=== debug_rom$dm_top.i_dm_mem.gen_rom_snd_scratch.i_debug_rom ===
+
+   Number of wires:                 16
+   Number of wire bits:            466
+   Number of public wires:           6
+   Number of public wire bits:     136
+   Number of ports:                  5
+   Number of port bits:            131
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                210
+     $_AND_                          2
+     $_DFFE_PN0P_                    5
+     $_MUX_                        197
+     $_NOT_                          5
+     $_OR_                           1
+
+   Estimated number of transistors:       2392+
+
+=== dm_csrs$dm_top.i_dm_csrs ===
+
+   Number of wires:                467
+   Number of wire bits:           4616
+   Number of public wires:          68
+   Number of public wire bits:    1514
+   Number of ports:                 46
+   Number of port bits:            742
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3078
+     $_AND_                        400
+     $_DFFE_PN0P_                  443
+     $_DFFE_PN1P_                    1
+     $_DFF_PN0_                     72
+     $_DFF_PN1_                      1
+     $_MUX_                       1634
+     $_NOT_                         56
+     $_OR_                         469
+     $_XOR_                          1
+     fifo_v3$dm_top.i_dm_csrs.i_fifo      1
+
+   Estimated number of transistors:      24946+
+
+=== dm_mem$dm_top.i_dm_mem ===
+
+   Number of wires:                360
+   Number of wire bits:           4263
+   Number of public wires:          41
+   Number of public wire bits:    1081
+   Number of ports:                 25
+   Number of port bits:            554
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1753
+     $_AND_                        282
+     $_DFFE_PN0P_                   67
+     $_DFF_PN0_                      3
+     $_MUX_                       1081
+     $_NOT_                         58
+     $_OR_                         254
+     $_XOR_                          7
+     debug_rom$dm_top.i_dm_mem.gen_rom_snd_scratch.i_debug_rom      1
+
+   Estimated number of transistors:      16388+
+
+=== dm_sba$dm_top.i_dm_sba ===
+
+   Number of wires:                168
+   Number of wire bits:            904
+   Number of public wires:          35
+   Number of public wire bits:     329
+   Number of ports:                 28
+   Number of port bits:            252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                424
+     $_AND_                         95
+     $_DFFE_PN0P_                    3
+     $_MUX_                        187
+     $_NOT_                         31
+     $_OR_                          69
+     $_XOR_                         39
+
+   Estimated number of transistors:       3758+
+
+=== dm_top ===
+
+   Number of wires:                 63
+   Number of wire bits:            951
+   Number of public wires:          63
+   Number of public wire bits:     951
+   Number of ports:                 33
+   Number of port bits:            360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     dm_csrs$dm_top.i_dm_csrs        1
+     dm_mem$dm_top.i_dm_mem          1
+     dm_sba$dm_top.i_dm_sba          1
+
+   Estimated number of transistors:          0+
+
+=== fifo_v3$dm_top.i_dm_csrs.i_fifo ===
+
+   Number of wires:                 39
+   Number of wire bits:            178
+   Number of public wires:          18
+   Number of public wire bits:     153
+   Number of ports:                 11
+   Number of port bits:             77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                134
+     $_AND_                          8
+     $_DFFE_PN0P_                   72
+     $_MUX_                         38
+     $_NOT_                          7
+     $_OR_                           7
+     $_XOR_                          2
+
+   Estimated number of transistors:        584+
+
+=== design hierarchy ===
+
+   dm_top                            1
+     dm_csrs$dm_top.i_dm_csrs        1
+       fifo_v3$dm_top.i_dm_csrs.i_fifo      1
+     dm_mem$dm_top.i_dm_mem          1
+       debug_rom$dm_top.i_dm_mem.gen_rom_snd_scratch.i_debug_rom      1
+     dm_sba$dm_top.i_dm_sba          1
+
+   Number of wires:               1113
+   Number of wire bits:          11378
+   Number of public wires:         231
+   Number of public wire bits:    4164
+   Number of ports:                148
+   Number of port bits:           2116
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               5597
+     $_AND_                        787
+     $_DFFE_PN0P_                  590
+     $_DFFE_PN1P_                    1
+     $_DFF_PN0_                     75
+     $_DFF_PN1_                      1
+     $_MUX_                       3137
+     $_NOT_                        157
+     $_OR_                         800
+     $_XOR_                         49
+
+   Estimated number of transistors:      48068+
+
