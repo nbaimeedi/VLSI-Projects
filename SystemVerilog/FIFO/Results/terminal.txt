@@ -1,0 +1,109 @@
+//Latest Update Date: 9th Aug, 2025
+//Owner: B Nithin Reddy
+
+
+#KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 90
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 90
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 7, rd_data = 0, full = 0, empty = 1 at time = 130
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 7, rd_data = 0, full = 0, empty = 1 at time = 130
+# KERNEL: [SCO]: Fifo is Empty
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 4, rd_data = 0, full = 0, empty = 0 at time = 130
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 4, rd_data = 0, full = 0, empty = 0 at time = 130
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 4, rd_data = 0, full = 0, empty = 1 at time = 170
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 4, rd_data = 0, full = 0, empty = 1 at time = 170
+# KERNEL: [SCO]: Fifo is Empty
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 170
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 170
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 3, rd_data = 0, full = 0, empty = 1 at time = 210
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 3, rd_data = 0, full = 0, empty = 1 at time = 210
+# KERNEL: [SCO]: Fifo is Empty
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 210
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 210
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 250
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 250
+# KERNEL: [SCO]: Data write to queue: 7
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 250
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 250
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 6, rd_data = 7, full = 0, empty = 0 at time = 290
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 6, rd_data = 7, full = 0, empty = 0 at time = 290
+# KERNEL: [SCO]: Data Match: 7
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 9, rd_data = 0, full = 0, empty = 0 at time = 290
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 9, rd_data = 0, full = 0, empty = 0 at time = 290
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 9, rd_data = 7, full = 0, empty = 0 at time = 330
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 9, rd_data = 7, full = 0, empty = 0 at time = 330
+# KERNEL: [SCO]: Data write to queue: 9
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 2, rd_data = 0, full = 0, empty = 0 at time = 330
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 2, rd_data = 0, full = 0, empty = 0 at time = 330
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 2, rd_data = 7, full = 0, empty = 0 at time = 370
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 2, rd_data = 7, full = 0, empty = 0 at time = 370
+# KERNEL: [SCO]: Data write to queue: 2
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 2, rd_data = 0, full = 0, empty = 0 at time = 370
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 2, rd_data = 0, full = 0, empty = 0 at time = 370
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 2, rd_data = 9, full = 0, empty = 0 at time = 410
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 2, rd_data = 9, full = 0, empty = 0 at time = 410
+# KERNEL: [SCO]: Data Match: 9
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 4, rd_data = 0, full = 0, empty = 0 at time = 410
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 4, rd_data = 0, full = 0, empty = 0 at time = 410
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 4, rd_data = 2, full = 0, empty = 0 at time = 450
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 4, rd_data = 2, full = 0, empty = 0 at time = 450
+# KERNEL: [SCO]: Data Match: 2
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 8, rd_data = 0, full = 0, empty = 0 at time = 450
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 8, rd_data = 0, full = 0, empty = 0 at time = 450
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 8, rd_data = 2, full = 0, empty = 0 at time = 490
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 8, rd_data = 2, full = 0, empty = 0 at time = 490
+# KERNEL: [SCO]: Data write to queue: 8
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 490
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 490
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 6, rd_data = 8, full = 0, empty = 0 at time = 530
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 6, rd_data = 8, full = 0, empty = 0 at time = 530
+# KERNEL: [SCO]: Data Match: 8
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 9, rd_data = 0, full = 0, empty = 0 at time = 530
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 9, rd_data = 0, full = 0, empty = 0 at time = 530
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 9, rd_data = 8, full = 0, empty = 1 at time = 570
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 9, rd_data = 8, full = 0, empty = 1 at time = 570
+# KERNEL: [SCO]: Fifo is Empty
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 2, rd_data = 0, full = 0, empty = 0 at time = 570
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 2, rd_data = 0, full = 0, empty = 0 at time = 570
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 2, rd_data = 8, full = 0, empty = 0 at time = 610
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 2, rd_data = 8, full = 0, empty = 0 at time = 610
+# KERNEL: [SCO]: Data write to queue: 2
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 610
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 610
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 6, rd_data = 8, full = 0, empty = 0 at time = 650
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 6, rd_data = 8, full = 0, empty = 0 at time = 650
+# KERNEL: [SCO]: Data write to queue: 6
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 4, rd_data = 0, full = 0, empty = 0 at time = 650
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 4, rd_data = 0, full = 0, empty = 0 at time = 650
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 4, rd_data = 8, full = 0, empty = 0 at time = 690
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 4, rd_data = 8, full = 0, empty = 0 at time = 690
+# KERNEL: [SCO]: Data write to queue: 4
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 690
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 690
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 3, rd_data = 8, full = 0, empty = 0 at time = 730
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 3, rd_data = 8, full = 0, empty = 0 at time = 730
+# KERNEL: [SCO]: Data write to queue: 3
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 730
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 730
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 3, rd_data = 8, full = 0, empty = 0 at time = 770
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 3, rd_data = 8, full = 0, empty = 0 at time = 770
+# KERNEL: [SCO]: Data write to queue: 3
+# KERNEL: [GEN]: wr = 1, rd = 0, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 770
+# KERNEL: [DRV]: wr = 1, rd = 0, wr_data = 3, rd_data = 0, full = 0, empty = 0 at time = 770
+# KERNEL: [MON]: wr = 1, rd = 0, wr_data = 3, rd_data = 8, full = 0, empty = 0 at time = 810
+# KERNEL: [SCO]: wr = 1, rd = 0, wr_data = 3, rd_data = 8, full = 0, empty = 0 at time = 810
+# KERNEL: [SCO]: Data write to queue: 3
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 810
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 6, rd_data = 0, full = 0, empty = 0 at time = 810
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 6, rd_data = 2, full = 0, empty = 0 at time = 850
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 6, rd_data = 2, full = 0, empty = 0 at time = 850
+# KERNEL: [SCO]: Data Match: 2
+# KERNEL: [GEN]: wr = 0, rd = 1, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 850
+# KERNEL: [DRV]: wr = 0, rd = 1, wr_data = 7, rd_data = 0, full = 0, empty = 0 at time = 850
+# KERNEL: [MON]: wr = 0, rd = 1, wr_data = 7, rd_data = 6, full = 0, empty = 0 at time = 890
+# KERNEL: [SCO]: wr = 0, rd = 1, wr_data = 7, rd_data = 6, full = 0, empty = 0 at time = 890
+# KERNEL: [SCO]: Data Match: 6
+# RUNTIME: Info: RUNTIME_0068 testbench.sv (243): $finish called.
+# KERNEL: Time: 890 ns,  Iteration: 1,  Instance: /tb,  Process: @INITIAL#267_2@.
+# KERNEL: stopped at time: 890 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.

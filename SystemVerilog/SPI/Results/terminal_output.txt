@@ -1,0 +1,113 @@
+//Latest Update Date: 10th Aug, 2025
+//Owner: B Nithin Reddy
+
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5578 kB (elbread=459 elab2=4955 kernel=163 sdf=0)
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: [DRV]: DUT Reset Done
+# KERNEL: [GEN]: din: c61, newd: 0, cs : 0, mosi: 0 at Time: 145
+# KERNEL: [DRV]: din: c61, newd: 0, cs : 0, mosi: 0 at Time: 145
+# KERNEL: [MON]: serial_data: c61 at Time: 13865
+# KERNEL: [SCO]: d2s: c61, m2s: c61
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: e0a, newd: 0, cs : 0, mosi: 0 at Time: 13865
+# KERNEL: [DRV]: din: e0a, newd: 0, cs : 0, mosi: 0 at Time: 13865
+# KERNEL: [MON]: serial_data: e0a at Time: 28145
+# KERNEL: [SCO]: d2s: e0a, m2s: e0a
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 427, newd: 0, cs : 0, mosi: 0 at Time: 28145
+# KERNEL: [DRV]: din: 427, newd: 0, cs : 0, mosi: 0 at Time: 28145
+# KERNEL: [MON]: serial_data: 427 at Time: 42425
+# KERNEL: [SCO]: d2s: 427, m2s: 427
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 5c4, newd: 1, cs : 0, mosi: 0 at Time: 42425
+# KERNEL: [DRV]: din: 5c4, newd: 1, cs : 0, mosi: 0 at Time: 42425
+# KERNEL: [MON]: serial_data: 5c4 at Time: 56705
+# KERNEL: [SCO]: d2s: 5c4, m2s: 5c4
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 268, newd: 1, cs : 0, mosi: 0 at Time: 56705
+# KERNEL: [DRV]: din: 268, newd: 1, cs : 0, mosi: 0 at Time: 56705
+# KERNEL: [MON]: serial_data: 268 at Time: 70985
+# KERNEL: [SCO]: d2s: 268, m2s: 268
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: cba, newd: 0, cs : 0, mosi: 0 at Time: 70985
+# KERNEL: [DRV]: din: cba, newd: 0, cs : 0, mosi: 0 at Time: 70985
+# KERNEL: [MON]: serial_data: cba at Time: 85265
+# KERNEL: [SCO]: d2s: cba, m2s: cba
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 9fa, newd: 0, cs : 0, mosi: 0 at Time: 85265
+# KERNEL: [DRV]: din: 9fa, newd: 0, cs : 0, mosi: 0 at Time: 85265
+# KERNEL: [MON]: serial_data: 9fa at Time: 99545
+# KERNEL: [SCO]: d2s: 9fa, m2s: 9fa
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 835, newd: 0, cs : 0, mosi: 0 at Time: 99545
+# KERNEL: [DRV]: din: 835, newd: 0, cs : 0, mosi: 0 at Time: 99545
+# KERNEL: [MON]: serial_data: 835 at Time: 113825
+# KERNEL: [SCO]: d2s: 835, m2s: 835
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 9e, newd: 1, cs : 0, mosi: 0 at Time: 113825
+# KERNEL: [DRV]: din: 9e, newd: 1, cs : 0, mosi: 0 at Time: 113825
+# KERNEL: [MON]: serial_data: 9e at Time: 128105
+# KERNEL: [SCO]: d2s: 9e, m2s: 9e
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 7a, newd: 0, cs : 0, mosi: 0 at Time: 128105
+# KERNEL: [DRV]: din: 7a, newd: 0, cs : 0, mosi: 0 at Time: 128105
+# KERNEL: [MON]: serial_data: 7a at Time: 142385
+# KERNEL: [SCO]: d2s: 7a, m2s: 7a
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: a75, newd: 1, cs : 0, mosi: 0 at Time: 142385
+# KERNEL: [DRV]: din: a75, newd: 1, cs : 0, mosi: 0 at Time: 142385
+# KERNEL: [MON]: serial_data: a75 at Time: 156665
+# KERNEL: [SCO]: d2s: a75, m2s: a75
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: b62, newd: 0, cs : 0, mosi: 0 at Time: 156665
+# KERNEL: [DRV]: din: b62, newd: 0, cs : 0, mosi: 0 at Time: 156665
+# KERNEL: [MON]: serial_data: b62 at Time: 170945
+# KERNEL: [SCO]: d2s: b62, m2s: b62
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 8b3, newd: 0, cs : 0, mosi: 0 at Time: 170945
+# KERNEL: [DRV]: din: 8b3, newd: 0, cs : 0, mosi: 0 at Time: 170945
+# KERNEL: [MON]: serial_data: 8b3 at Time: 185225
+# KERNEL: [SCO]: d2s: 8b3, m2s: 8b3
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: c29, newd: 1, cs : 0, mosi: 0 at Time: 185225
+# KERNEL: [DRV]: din: c29, newd: 1, cs : 0, mosi: 0 at Time: 185225
+# KERNEL: [MON]: serial_data: c29 at Time: 199505
+# KERNEL: [SCO]: d2s: c29, m2s: c29
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: f91, newd: 1, cs : 0, mosi: 0 at Time: 199505
+# KERNEL: [DRV]: din: f91, newd: 1, cs : 0, mosi: 0 at Time: 199505
+# KERNEL: [MON]: serial_data: f91 at Time: 213785
+# KERNEL: [SCO]: d2s: f91, m2s: f91
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: c85, newd: 1, cs : 0, mosi: 0 at Time: 213785
+# KERNEL: [DRV]: din: c85, newd: 1, cs : 0, mosi: 0 at Time: 213785
+# KERNEL: [MON]: serial_data: c85 at Time: 228065
+# KERNEL: [SCO]: d2s: c85, m2s: c85
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 788, newd: 0, cs : 0, mosi: 0 at Time: 228065
+# KERNEL: [DRV]: din: 788, newd: 0, cs : 0, mosi: 0 at Time: 228065
+# KERNEL: [MON]: serial_data: 788 at Time: 242345
+# KERNEL: [SCO]: d2s: 788, m2s: 788
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: 2fa, newd: 0, cs : 0, mosi: 0 at Time: 242345
+# KERNEL: [DRV]: din: 2fa, newd: 0, cs : 0, mosi: 0 at Time: 242345
+# KERNEL: [MON]: serial_data: 2fa at Time: 256625
+# KERNEL: [SCO]: d2s: 2fa, m2s: 2fa
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: dbb, newd: 1, cs : 0, mosi: 0 at Time: 256625
+# KERNEL: [DRV]: din: dbb, newd: 1, cs : 0, mosi: 0 at Time: 256625
+# KERNEL: [MON]: serial_data: dbb at Time: 270905
+# KERNEL: [SCO]: d2s: dbb, m2s: dbb
+# KERNEL: [SCO]: Data Match
+# KERNEL: [GEN]: din: a6c, newd: 1, cs : 0, mosi: 0 at Time: 270905
+# KERNEL: [DRV]: din: a6c, newd: 1, cs : 0, mosi: 0 at Time: 270905
+# KERNEL: [MON]: serial_data: a6c at Time: 285185
+# KERNEL: [SCO]: d2s: a6c, m2s: a6c
+# KERNEL: [SCO]: Data Match
+# RUNTIME: Info: RUNTIME_0068 testbench.sv (233): $finish called.
+# KERNEL: Time: 285185 ns,  Iteration: 1,  Instance: /tb,  Process: @INITIAL#259_2@.
+# KERNEL: stopped at time: 285185 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
