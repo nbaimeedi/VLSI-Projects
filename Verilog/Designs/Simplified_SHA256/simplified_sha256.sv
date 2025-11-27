@@ -7,7 +7,7 @@
  input logic [31:0] mem_read_data);
 
 // FSM state variables 
-enum logic [2:0] {IDLE, REST, READ, BLOCK, COMPUTE, WRITE} state;
+enum logic [2:0] {IDLE, READ_PIPE, READ, BLOCK, COMPUTE, WRITE} state;
 
 // NOTE : Below mentioned frame work is for reference purpose.
 // Local variables might not be complete and you might have to add more variables
@@ -230,12 +230,12 @@ begin
 			temp_write_addr <= output_addr;
 		// blk_idx <= 0;
 		//	state <= READ;
-			state <= REST;
+			state <= READ_PIPE;
        end
     end
 	 
 	 
-	 REST: begin
+	 READ_PIPE: begin
 		state <= READ;
 	 end
 	 
@@ -244,7 +244,7 @@ begin
 	   if(offset < NUM_OF_WORDS - 1) begin
 			message[offset] <= mem_read_data;
 			offset <= offset + 1;
-			state <= REST;
+			state <= READ_PIPE;
 			//state <= READ;
 		end
 		else begin
@@ -451,22 +451,6 @@ begin
 	 end
 	 */
 	 
-	 /*
-	 BUFFER:begin
-			sha_temp[0] <= h0;
-			sha_temp[1] <= h1;
-			sha_temp[2] <= h2;
-			sha_temp[3] <= h3;
-			sha_temp[4] <= h4;
-			sha_temp[5] <= h5;
-			sha_temp[6] <= h6;
-			sha_temp[7] <= h7;
-			cur_we <= 1;
-			cur_addr <= temp_write_addr;
-			cur_write_data <= h0;
-			state <= WRITE;
-	 end
-	 */
 
     // h0 to h7 each are 32 bit hashes, which makes up total 256 bit value
     // h0 to h7 after compute stage has final computed hash value
