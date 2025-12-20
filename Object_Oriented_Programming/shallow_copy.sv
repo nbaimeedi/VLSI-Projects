@@ -32,7 +32,7 @@ module tb;
     $display("data_s in s1 after update: %0d", s1.data_s);
     $display("data_s in s2 after update: %0d", s2.data_s);
     
-    //Upding data member of the inner class from s2 will change the 
+    //Updating data member of the inner class from s2 will change the 
     //data member of the inner class from s1 i.e., object is not an independent copy
     //Output:
     //data_f in f from s1 after update: 78
