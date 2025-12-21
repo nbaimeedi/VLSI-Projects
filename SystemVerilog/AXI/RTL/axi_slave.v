@@ -44,7 +44,7 @@ module axi_slave(
   output reg [3:0] rid;	  //unique ID for each txn
   output reg [3:0] rresp; //read response from slave
   output reg rlast;		  //read data last signal from slave
-  
+);
   
   reg [7:0] mem [128] = '{default:12};
   reg [31:0] wdatat;
@@ -791,11 +791,282 @@ module axi_slave(
     endcase
   end
   
-  
+  //---------- FIXED Burst Type: Read -----------//
+  function void read_data_fixed(input [31:0] addr, input [2:0] arsize);
+    unique case(arsize)
+      3'b000: begin
+        rdata[7:0] = mem[addr];
+      end
       
+      3'b001: begin
+        rdata[7:0]  = mem[addr];
+        rdata[15:8] = mem[addr + 1];
+      end
       
+      3'b010: begin
+        rdata[7:0]   = mem[addr];
+        rdata[15:8]  = mem[addr + 1];
+        rdata[23:16] = mem[addr + 2];
+        rdata[31:24] = mem[addr + 3];
+      end
+    endcase
+  endfunction
   
+  //---------- INCR Burst Type: Read -----------//
+  function bit [31:0] read_data_incr(input [31:0] addr, input [2:0] arsize);
+    bit [31:0] nextaddr;
+    unique case(arsize)
+      3'b000: begin
+        rdata[7:0] = mem[addr];
+        nextaddr = addr + 1;
+      end
+      
+      3'b001: begin
+        rdata[7:0]  = mem[addr];
+        rdata[15:8] = mem[addr + 1];
+        nextaddr = addr + 2;
+      end
+      
+      3'b010: begin
+        rdata[7:0]   = mem[addr];
+        rdata[15:8]  = mem[addr + 1];
+        rdata[23:16] = mem[addr + 2];
+        rdata[31:24] = mem[addr + 3];
+        nextaddr = addr + 4;
+      end
+    endcase
+    return nextaddr;
+  endfunction
   
+  //---------- WRAP Burst Type: Read -----------//
+  function bit [31:0] read_data_wrap(input bit [31:0] addr, input bit [2:0] rsize, input [7:0] rboundary);
+    bit [31:0] addr1, addr2, addr3, addr4; 
+    unique case(rsize)
+      3'b000: begin
+        rdata[7:0] = mem[addr];
+        if ((addr + 1 % rboundary) == 0) begin
+          addr1 = (addr + 1) - rboundary;
+        end
+        else begin
+          addr1 = addr + 1;
+        end
+        return addr1;
+      end
+      
+      3'b001: begin
+        rdata[7:0] = mem[addr];
+        if ((addr + 1 % rboundary) == 0) begin
+          addr1 = (addr + 1) - rboundary;
+        end
+        else begin
+          addr1 = addr + 1;
+        end
+        rdata[15:8] = mem[addr1];
+        if ((addr1 + 1 % rboundary) == 0) begin
+          addr2 = (addr1 + 1) - rboundary;
+        end
+        else begin
+          addr2 = addr1 + 1;
+        end
+        return addr2;
+      end
+      
+      3'b010: begin
+        rdata[7:0] = mem[addr];
+        if ((addr + 1 % rboundary) == 0) begin
+          addr1 = (addr + 1) - rboundary;
+        end
+        else begin
+          addr1 = addr + 1;
+        end
+        rdata[15:8] = mem[addr1];
+        if ((addr1 + 1 % rboundary) == 0) begin
+          addr2 = (addr1 + 1) - rboundary;
+        end
+        else begin
+          addr2 = addr1 + 1;
+        end
+        rdata[23:16] = mem[addr2];
+        if ((addr2 + 1 % rboundary) == 0) begin
+          addr3 = (addr2 + 1) - rboundary;
+        end
+        else begin
+          addr3 = addr2 + 1;
+        end
+        rdata[31:24] = mem[addr3];
+        if ((addr3 + 1 % rboundary) == 0) begin
+          addr4 = (addr3 + 1) - rboundary;
+        end
+        else begin
+          addr4 = addr3 + 1;
+        end
+        return addr4;
+      end
+    endcase  
+  endfunction
   
+  //---------- Read Transaction ----------//
+  typedef enum bit [1:0] {aridle = 2'b00, arstart = 2'b01, arreadys = 2'b10} arstate_type;
+  typedef enum bit [2:0] {ridle = 3'b000, rstart = 3'b001, rwait = 3'b010, rvalids = 3'b011, rerror = 3'b100}  rstate_type;
   
-
+  arstate_type arpresent_state, arnext_state;
+  rstate_stype rpresent_state,  rnext_state;
+  
+  always_ff @(posedge clk, negedge resetn) begin
+    if (!resetn) begin
+      arpresent_state <= aridle;
+      rpresent_state  <= ridle;
+    end
+    else begin
+      arpresent_state <= arnext_state;
+      rpresent_state  <= rnext_state;
+    end
+  end
+  
+  reg [31:0] araddrt;
+  
+  //Read Address Channel - FSM 1
+  always_comb begin
+    case(arpresent_state)
+      aridle: begin
+        arnext_state = arstart;
+        arready = 1'b0;
+      end
+      
+      arstart: begin
+        if (arvalid == 1'b1) begin
+          arnext_state = arreadys;
+          araddrt = araddr;
+        end
+        else begin
+          arnext_state = arstart;
+        end
+      end
+      
+      arreadys: begin
+        arnext_state = aridle;
+        arready = 1'b1;
+      end
+    endcase
+  end
+  
+  reg rdfirst;
+  reg [31:0] rdnextaddr, rdretaddr;
+  reg [3:0] len_count;
+  reg [7:0] rdboundary;
+  
+  //Read Data Channel - FSM 2
+  always_comb begin
+    case(rpresent_state)
+      ridle: begin
+        rid = 0;
+        rdfirst = 0;
+        rdata = 0;
+        rresp = 0;
+        rlast = 0;
+        rvalid = 0;
+        len_count = 0;
+        if (arvalid) begin
+          rnext_state = rstart;
+        end
+        else begin
+          rnext_state = ridle;
+        end
+      end
+      
+      rstart: begin
+        if ((araddr < 128) && (arsize <= 3'b010)) begin
+          rid = arid;
+          rvalid = 1'b1;
+          rnext_state = rwait;
+          rresp = 2'b00;
+          unique case(arburst)
+            2'b00: begin
+              if(rdfirst == 0) begin
+                rdnextaddr = araddr;
+                rdfirst = 1'b1;
+                len_count = 0;
+              end
+              else if (len_count != (arlen + 1)) begin
+                rdnextaddr = araddr;
+              end
+              read_data_fixed(araddrt, arsize);             
+            end
+            
+            2'b01: begin
+              if(rdfirst == 0) begin
+                rdnextaddr = araddr;
+                rdfirst = 1'b1;
+                len_count = 0;
+              end
+              else if (len_count != (arlen + 1)) begin
+                rdnextaddr = rdretaddr;
+              end
+              rdretaddr = read_data_incr(rdnextaddr, arsize);
+            end
+            
+            2'b10: begin
+              if(rdfirst == 0) begin
+                rdnextaddr = araddr;
+                rdfirst = 1'b1;
+                len_count = 0;
+              end
+              else if (len_count != (arlen + 1)) begin
+                rdnextaddr = rdretaddr;
+              end
+              rdboundary = wrap_boundary(arlen, arsize);
+              rdretaddr = read_data_wrap(rdnextaddr, arsize, rdboundary);
+            end
+          endcase
+        end
+        else if ((araddr > 128) && (arsize <= 3'b010)) begin
+          rresp = 2'b11;
+          rnext_state = rerror;
+        end
+        else if (arsize > 3'b010) begin
+          rresp = 2'b10;
+          rnext_state = rerror;
+        end
+      end
+      
+      rwait: begin
+        rvalid = 1'b0;
+        len_count = len_count + 1;
+        if (rready == 1'b1) begin
+          rnext_state = rvalid;
+          if (len_count == (arlen + 1)) begin
+            rlast = 1'b1;
+          end
+          else begin
+            rlast = 1'b0;
+          end
+        end
+        else begin
+          rnext_state = rwait;
+        end
+      end
+      
+      rvalids: begin
+        if (len_count == (arlen + 1)) begin
+          rnext_state = ridle;
+        end
+        else begin
+          rnext_state = rstart;
+        end
+      end
+      
+      rerror: begin
+        len_count = len_count + 1;
+        if (len_count == (arlen + 1)) begin
+          rnext_state = rvalids;
+          rlast = 1'b1;
+        end
+        else begin
+          rlast = 1'b0;
+          rnext_state = rstart;
+        end
+      end
+    endcase
+  end
+  
+endmodule
