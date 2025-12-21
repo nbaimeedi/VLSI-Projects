@@ -6,7 +6,7 @@ module tb;
   cents c;
   
   initial begin
-    a = int'(pi);			//Static Cast
+    a = int'(pi);			      //Static Cast
     $display("a = %0d", a);
     //Ouput: a = 3
     
