@@ -1,0 +1,7 @@
+Both the counters are not initialized. Hence the initial value for the count in both the
+cases (up/down) remains at x despite clear being 0. The count values
+increment/decrement/reset after the design sees high on clear once.
+
+Fix: Initialized the up/down counters to 0/15 respectively so they start
+counting based on clear and select without waiting for the first high on
+clear.
