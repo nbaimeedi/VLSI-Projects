@@ -9,7 +9,7 @@ module up_counter    // Module start declaration
  );
 
  // Local variable declaration
-  logic[WIDTH-1:0] cnt_value; 
+  logic[WIDTH-1:0] cnt_value = 0; //RTL BUG: Initialize the count to 0 
   
  // always procedural block describing up counter behavior
  always @(posedge clk or posedge clear) 
