@@ -23,6 +23,7 @@ class monitor extends uvm_monitor;
     phase.raise_objection(this);
     forever begin
       @(posedge vif.clk);
+      #2; //Verification BUG: Sample the output of the design at the negative edge after the positive edge of the clock for accurate sampling
       t_dc.clear = vif.clear;
       t_dc.select = vif.select;
       t_dc.count_value = vif.count_value;
