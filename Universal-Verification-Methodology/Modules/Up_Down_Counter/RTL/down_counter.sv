@@ -10,7 +10,7 @@ module down_counter    // Module start declaration
 
  // down counter logic
  // Local variable declaration
-  logic[WIDTH-1:0] cnt_value; 
+  logic[WIDTH-1:0] cnt_value = 15; //RTL BUG: Initialize the count to 15 
   
  // always procedural block describing up counter behavior
  always @(posedge clk or posedge clear) 
