@@ -1,0 +1,8 @@
+The monitor captures the count value from the design at the positive edge of
+the clock. However, the design updates the count value at the positive edge of
+the clock. This leads to ambiguous sampling of the count value from the
+design.
+
+Fix: Update the Monitor to sample the count value from the design at some time after the positive
+edge of the clock (Negative edge after the positive edge) for accurate
+sampling of the output.
