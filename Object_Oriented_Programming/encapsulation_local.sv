@@ -3,7 +3,7 @@ class first;
   // int data_f = 12;
   
   //Encapsuation - Protect the data, only accessible by 
-  //an object of f or methods of f
+  //methods of f
   //If an attempt is made to change local variable,
   //Output -> Compile Time Error
   local int data_f = 12;
@@ -37,10 +37,19 @@ class second;
   
 endclass
 
+class third extends first;
+  
+  int data_t = 98;
+  
+endclass
+
 module tb;
   
   second s;
   int data;
+  
+  first f;
+  third t;
   
   initial begin
     s = new();
@@ -51,6 +60,21 @@ module tb;
     data = s.f.get();
     $display("data = %0d", data);
     //$display("data = %0d", s.f.data_f);
+    
+    //The following gives compile time error too
+    //i.e., even the object of first cannot access the local variable
+    //f = new();
+    //f.data_f = 98;
+    //$display("data= %0d",f.data_f);
+    
+    //The following gives compile time error too
+    //i.e., even the child instance (t) cannot access 
+    //the local variable of parent class instance (f)
+    //t = new();
+    //$display("data = %0d", t.data_t);
+    //t.data_f = 50;
+    //$display("data = %0d", t.data_f);
   end
   
 endmodule
+
