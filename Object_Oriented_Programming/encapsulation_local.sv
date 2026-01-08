@@ -3,7 +3,7 @@ class first;
   // int data_f = 12;
   
   //Encapsuation - Protect the data, only accessible by 
-  //methods of f
+  //methods of first class
   //If an attempt is made to change local variable,
   //Output -> Compile Time Error
   local int data_f = 12;
